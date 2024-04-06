@@ -57,7 +57,7 @@ Polizist: Ja, das müssen wohl die Politiker entscheiden. Wie dem auch sei. Eine
 $name: Alles klar. Danke und auf wiedersehen.
 
 
-[[Weiter-&gt;Build World 2]]</tw-passagedata><tw-passagedata pid="3" name="Nein 1" tags="" position="950,575" size="100,100">Seit dem Feierabendbier mit Lena und James sind nun bereits drei Jahre vergangen. Die Initiative zum Ausbau des Precitive Policing ist vom Stimmvolk abgelehnt worden. Ich habe mir kurz nach dem Scheitern der Initiative einen neuen Job gesucht, da es einige Budgetkürzungen in der Firma gab und ich nicht auf meine Kündigung warten wollte.
+[[Weiter-&gt;Build World 2.1]]</tw-passagedata><tw-passagedata pid="3" name="Nein 1" tags="" position="950,575" size="100,100">Seit dem Feierabendbier mit Lena und James sind nun bereits drei Jahre vergangen. Die Initiative zum Ausbau des Precitive Policing ist vom Stimmvolk abgelehnt worden. Ich habe mir kurz nach dem Scheitern der Initiative einen neuen Job gesucht, da es einige Budgetkürzungen in der Firma gab und ich nicht auf meine Kündigung warten wollte.
  
 Es ist Freitagabend, ich liege noch wach zu Hause im Bett. Eigentlich hatte ich geplant mit Lena und James, dieses Wochenende wegzufahren. In letzter Minute hat mich jedoch noch eine leichte Grippe erwischt, weswegen ich zu Hause geblieben bin.
  
@@ -81,30 +81,27 @@ Nachdem die Polizisten sich umgeschaut und ein paar Fotos gemacht haben, verlass
 Sie lassen mich nachdenklich in der Küche mit dem aufgebrochenen Fenster zurück. Mein Blick schweift über die Kommode in der Ecke wo ich immer die Uhr (if: $geschlecht is &quot;männlich&quot;)[meines Grossvaters](else:)[meiner Grossmutter] hinlege. Ein mir teures Erbstück.
 (if: $geschlecht is &quot;männlich&quot;)[Opas](else:)[Omas] Uhr liegt jedoch nicht mehr dort.
 
-[[Weiter-&gt;Build World 2]]</tw-passagedata><tw-passagedata pid="4" name="Build World 2" tags="" position="1175,425" size="100,200">Bereits 15 Jahre sind vergangen, seit ich mich damals mit Lena und James auf ein Feierabendbier getroffen und über die Initiative zum Predictive Policing gesprochen habe.
-Die Welt ist weiterhin moderner geworden. SmartPhones wurden durch intelligente und vernetzte Augmented Reality Brillen ersetzt. Auf den Strassen sind selbstfahrende, elektrische Autos zu sehen. Alles und jeder scheint heutzutage mit dem Internet verbunden zu sein.
+[[Weiter-&gt;Build World 2.1]]</tw-passagedata><tw-passagedata pid="4" name="Konsequenzen Ja 2" tags="" position="1900,350" size="100,100">(if:(visited:&#39;Konsequenzen Nein 2&#39;))[(text-colour:red)[Ich bin der Partei &quot;Freiheit für alle&quot; ausgetreten.]]
 
-Ich arbeite nun seit längerem nicht mehr als Software Entwickler. Vor ein paar Jahren hatte ich das Glück, viel Geld mit Kryptowährungen zu verdienen. Daher verbringe ich heutzutage den Grossteil meiner Zeit mit gemeinnütziger Arbeit, wie Behindertentransporte, Aushilfe in Pflegeheimen, usw.
-Auch politisch engagiere ich mich mehr. Ich bin einer lokalen Partei beigetreten und nehme dadurch an Diskussionsrunden teil, verschicke Flyer und hänge Plakate auf.
+(if:(visited:&#39;Konsequenzen Nein 2&#39;))[](else:)[Neben den Lockerungen im Datenschutz sind auch die Strafverfolgungsbehörden mit Quanten Computer ausgerüstet worden. Predictive Policing Software kann nun Daten in Echtzeit auswerten.]
 
-(if:(visited:&quot;Ja 1&quot;))[Seit die Initiative angenommen wurde, konnte das Predictive Policing erfolgreich ausgebaut werden. Zunächst hat die Einführung die Kriminalitätsrate reduzieren können. Mit der fortschreitender Technologisierung sieht jedoch ein Grossteil der Menschen im Land, die Strafverfolgungsbehörden zunehmend im Hintertreffen mit dem organisierten Verbrechen. Tatsächlich ist die Kriminalitätsrate seit einigen Jahren wieder ansteigend und hat zuletzt das Niveau von vor 15 Jahren übertroffen. Eine starke Bewegung in Gesellschaft und Parlament fordert daher den Datenschutz weiter zu lockern und mehr Ressourcen in das Predictive Policing zu investieren.] (else:)[Das Land verzeichnet über die letzten paar Jahre eine stetig anwachsende Kriminalitätsrate. Eine starke Bewegung in Gesellschaft sowie Parlament ist entstanden, die die restriktiven Gesetze an die sich das Predictive Policing halten muss, als nicht mehr zeitgemäss erachtet. Diese Bewegung möchte die Gesetze stark lockern und viele Ressourcen in das Predictive Policing investieren. Die angedachten Lockerungen sowie Investitionen würden dabei die Forderungen der Initiative von vor 15 Jahren bei weitem übertreffen.]
+Mit der Kombination von Quanten Computer und den Lockerungen im Datenschutz sinkt die Kriminalität weiter. Ich lese in der Zeitung die Schlagzeile &quot;Die Schweiz wird zum sichersten Land der Welt&quot;. Die Wirtschaft floriert und die Leute sind glücklich. Der Source Code vom Predictive Policing System wird offen gelegt und die Privatsphäre des Einzelnen ist gemäss Strafverfolgungsbehörden bestmöglich gewahrt.
 
-Gemäss den Befürwortern müsse die Strafverfolgung mit der Zeit gehen, um mit den Kriminellen Schritt halten zu können. Die vorgeschlagene Gesetzesvorlage erteilt den Strafverfolgungsbehörden umfassende Ermächtigungen, um Daten zu sammeln. Dabei handelt es sich nicht länger nur um anonyme, sondern auch um personenbezogene Daten aus öffentlichem Verkehr, Kamerafeeds und Internetverhalten. Ermöglicht wird die Verarbeitung der mittlerweile beträchtlichen Datenmengen durch grosse Fortschritte im Bereich der Quanten Computer, welche inzwischen breit eingesetzt werden. Erstmals ist es möglich die Daten in Echtzeit auszuwerten. Ebenfalls konnten damit bestehende Algorithmen deutlich verbessert werden. Somit solle das Predictive Policing ergänzend zur Frage &quot;Wo?&quot; nun auch das &quot;Wer?&quot; beantworten.
-Der Grossteil der Bevölkerung scheint in der Frage geeint, wie auch das Parlament, welches kurz vor der Annahme der neuen Gesetzesvorlage steht. Ein Teil der Bevölkerung sträubt sich jedoch gegen die neue Gesetzesvorlage und formt Widerstand. Diese Gruppe hat sich zum Ziel gesetzt, das Referendum gegen die Vorlage zu ergreifen und zu versuchen, den Rest der Bevölkerung zu überzeugen sich gegen das Gesetz auszusprechen.
+Allerdings ist der Mechanismus der Überwachung für mich mittlerweile zu kompliziert, um ihn zu verstehen. Jedoch interessiere ich mich auch nicht weiter dafür. Es gibt Dokumentationen vom Staat, die die ganzen Technologien dahinter erklären. So lange ich mich nicht kriminell verhalte, habe ich nichts zu befürchten. Trotz allem habe ich immer noch ein flaues Gefühl im Magen, wenn ich daran denke, dass diese Technologie auch missbraucht werden könnte, um z. B. politische Gegner gezielt mundtot zu machen.
 
-Du hast dich intensiv mit den Argumenten beider Seiten befasst und entscheidest dich:
-[[Ich stimme mit den Befürwortern der Gesetzesvorlage überein-&gt;Ja 2]]
-[[Mir geht die Gesetzesvorlage zu weit. Ich sammle Unterschriften für ein Referendum-&gt;Nein 2]]</tw-passagedata><tw-passagedata pid="5" name="Ja 2" tags="" position="1650,375" size="100,100">[[Konsequenzen Ja 2]]</tw-passagedata><tw-passagedata pid="6" name="Nein 2" tags="" position="1650,600" size="100,100">[[Konsequenzen Nein 2]]</tw-passagedata><tw-passagedata pid="7" name="Konsequenzen Ja 2" tags="" position="1900,400" size="100,100">//Wenn zuvor &quot;Ja&quot; (Kontra Referendum): Die Implementierung von Nanobots ist frei zugänglich. Durch das Implantieren werden viele Vorteile versprochen. Unter anderem, dass Leute die Nanobots haben, nicht mehr überwacht werden müssen, da diese nicht mehr straffällig werden können. Dadurch entsteht weniger Aufwand für den Staat, was sich in Steuervergünstigungen äussert. Auch erhält man durch das Implantat die Sicherheit, dass man nie straffällig wird und somit auch nie verurteilt werden kann.//
+[[Ich trete doch der Partei &quot;Freiheit für alle&quot; bei, welche das Referendum ergriffen will-&gt;Konsequenzen Nein 2]]
+[[Nein, ich bleibe bei meiner Meinung pro &quot;Für Recht und Ordnung in Helvetia&quot;-&gt;Build World 3]]</tw-passagedata><tw-passagedata pid="5" name="Konsequenzen Nein 2" tags="" position="1900,600" size="100,100">(if:(visited:&#39;Konsequenzen Ja 2&#39;))[(text-colour:red)[Ich bin der Partei &quot;Freiheit für alle&quot; beigetreten.]]
 
-[[Nanobots Akzeptieren]]</tw-passagedata><tw-passagedata pid="8" name="Konsequenzen Nein 2" tags="" position="1900,575" size="100,100">//Wenn zuvor &quot;Nein&quot; (Pro Referendum): Durch dein politisches Engagement gegen den weiteren Ausbau des Predictive Policings stehst du auf einer schwarzen Liste. Du bist daher vermehrt Repressalien ausgesetzt. Du hast das Gefühl, dass du stärker überwacht wirst als andere. Du hast das Gefühl, dass du bei jeglicher Interaktion mit dem Staat schikaniert wirst. Bspw. dauern Anträge wie Betreibungsregisteranfragen länger und werden gezielt verschleppt. Zudem hat deine Firma, die Softwareliefereant für öffentliche Stellen und Banken ist, zunehmend Probleme neue Aufträge zu erhalten.//
+(if:(visited:&#39;Konsequenzen Ja 2&#39;))[](else:)[Neben den Lockerungen im Datenschutz sind auch die Strafverfolgungsbehörden mit Quanten Computer ausgerüstet worden. Predictive Policing Software kann nun Daten in Echtzeit auswerten.]
 
-[[Nanobots Ablehnen]]</tw-passagedata><tw-passagedata pid="9" name="Nanobots Akzeptieren" tags="" position="2175,300" size="100,200">//Der Protagonist muss sich entscheiden, ob er sich Nanobots implementieren lässt. Personen, die sich die Nanobots implementiert haben, proftieren von staatlichen Vorteilen und erhalten eine offizelle Implantions-Bestätigung, die sie auf den sozialen Medien posten. Personen, die keine Nanobots implementiert haben, werden von der Gesellschaft misstrauisch gesehen. Viele der &quot;Unimplantierten&quot; können nicht nachvollziehen, dass Menschen einen so grossen Eingriff in die Privatsspähre akzeptieren und betonen das Recht auf Selbstautonomie.//
+Durch die Überwachung fühle ich mich in meiner Autonomie eingeschränkt, weil ich fürchten muss, dass alle meine Handlungen überwacht werden. Wenn ich das kleinste Vergehen begehe (z. B. bei rot über die Strasse laufen), muss ich damit rechnen, dass dies überwacht wird und eine Strafe zur Folge hat. Die Strafverfolgungsbehörden können zudem sämtliche persönliche Daten von mir einsehen. Ich fürchte, dass der Staat mich plötzlich im Visiert hat, da ich mich politisch engagiere. Positiv ist jedoch, dass Kriminalität mit der Kombination von Quanten Computer und den Lockerungen im Datenschutz weiter sinkt. Die Schweiz wird zum sichersten Land der Welt. Die Wirtschaft floriert und die Leute sind glücklich. In meinem Umfeld kenne ich nur Personen, welche von dieser Überwachung profitieren. Meine Schwester kann ohne Sorgen alleine nachts unterwegs sein.
 
-[[Ja 3 Ja]]
-[[Ja 3 Nein]]</tw-passagedata><tw-passagedata pid="10" name="Nanobots Ablehnen" tags="" position="2175,575" size="100,200">//Der Protagonist muss sich entscheiden, ob er sich Nanobots implementieren lässt. Personen, die sich die Nanobots implementiert haben, proftieren von staatlichen Vorteilen und erhalten eine offizelle Implantions-Bestätigung, die sie auf den sozialen Medien posten. Personen, die keine Nanobots implementiert haben, werden von der Gesellschaft misstrauisch gesehen. Viele der &quot;Unimplantierten&quot; können nicht nachvollziehen, dass Menschen einen so grossen Eingriff in die Privatsspähre akzeptieren und betonen das Recht auf Selbstautonomie.//
+Allerdings habe ich mit meinen Anlagen in Kryptowährungen ein riesiges Vermögen angespart und finde in der Partei &quot;Freiheit für alle&quot; Gleichgesinnte, denen es ähnlich wie mir ergeht. Dies stärkt den Rückhalt ungemein, gegen diese schleichenden Gesetzesänderungen mit einem Referendum vorzugehen.
 
-[[Nein 3 Ja]]
-[[Nein 3 Nein]]</tw-passagedata><tw-passagedata pid="11" name="Ja 3 Ja" tags="" position="2375,175" size="100,100">//Du lebst in einer Gesellschaft, in der es kaum noch Kriminialität gibt. Du hast dafür grosse Teile deiner Privatspähre aufgegeben und dem Staat die Erlaubnis gegeben, deine Daten zu sammeln und analysieren. Für dein Vertrauen und deine Unterstützung wirst du jedoch vom Staat belohnt und du bevorzugt behandelt.//</tw-passagedata><tw-passagedata pid="12" name="Ja 3 Nein" tags="" position="2375,375" size="100,100">//Du fühlst dich zunehmend stärker überwacht und kämpfst mit Repressalien durch den Staat. Dir ist es zwar wichtig, weiterhin Herr über deine eigenen Gedanken zu sein, jedoch ziehst du immer mehr in Betracht, dir die Nanobots doch zu implentieren, damit du ein normales Leben führen kannst.//</tw-passagedata><tw-passagedata pid="13" name="Nein 3 Nein" tags="" position="2375,775" size="100,100">//Deine maximale Ablehnung wird vom Staat bestraft. Weil sie nicht Nanobots verwenden können werden alle herkömlichen Methoden verwendet um dich zu Unterdrücken. Jede Kamera beobachtet dich, du gerätst in jede Polizeikontrolle etc. Du wirst zunehmend von der Gesellschaft und dem öffentlichen Leben ausgeschlossen. Immerhin bist du weiterhin Herr über deine eigenen Gedanken. Das ist das einzige, was dir noch Hoffnung verleiht.//</tw-passagedata><tw-passagedata pid="14" name="Nein 3 Ja" tags="" position="2375,575" size="100,100">//Auch wenn du persönlich gegen predictive Policing warst, respektiertst du die deokratischen Entscheide und arrangierst dich damit, dass signifikante Eingriffe in deine Privatspähre vorgenommen wurden. Obwohl du Bedenken hast, hast du dich für die Implemenation der Nanobots entschieden um am gesellschaftlichen Leben teilnehmen zu können. //</tw-passagedata><tw-passagedata pid="15" name="Personendaten" tags="" position="225,450" size="100,100">(font:&quot;Avenir Next&quot;)[
+[[Ich trete aus der Partei &quot;Freiheit für alle&quot; aus -&gt;Konsequenzen Ja 2]]
+[[Nein, ich bleibe in der Partei &quot;Freiheit für alle&quot;-&gt;Build World 3]]</tw-passagedata><tw-passagedata pid="6" name="Ja 3 Ja" tags="" position="2525,225" size="100,100">//Du lebst in einer Gesellschaft, in der es kaum noch Kriminialität gibt. Du hast dafür grosse Teile deiner Privatspähre aufgegeben und dem Staat die Erlaubnis gegeben, deine Daten zu sammeln und analysieren. Für dein Vertrauen und deine Unterstützung wirst du jedoch vom Staat belohnt und du bevorzugt behandelt.//</tw-passagedata><tw-passagedata pid="7" name="Ja 3 Nein" tags="" position="2525,400" size="100,100">//Du fühlst dich zunehmend stärker überwacht und kämpfst mit Repressalien durch den Staat. Dir ist es zwar wichtig, weiterhin Herr über deine eigenen Gedanken zu sein, jedoch ziehst du immer mehr in Betracht, dir die Nanobots doch zu implentieren, damit du ein normales Leben führen kannst.//</tw-passagedata><tw-passagedata pid="8" name="Nein 3 Nein" tags="" position="2525,775" size="100,100">//Deine maximale Ablehnung wird vom Staat bestraft. Weil sie nicht Nanobots verwenden können werden alle herkömlichen Methoden verwendet um dich zu Unterdrücken. Jede Kamera beobachtet dich, du gerätst in jede Polizeikontrolle etc. Du wirst zunehmend von der Gesellschaft und dem öffentlichen Leben ausgeschlossen. Immerhin bist du weiterhin Herr über deine eigenen Gedanken. Das ist das einzige, was dir noch Hoffnung verleiht.//
+
+Durch mein politisches Engagement gegen den weiteren Ausbau des Predictive Policings merke ich, dass ich vermehrt Repressalien vom Staat ausgesetzt bin sowie stärker als der/die normal Bürger:in überwacht werde. Wenn ich mit dem Auto unterwegs bin, werde ich mindestens wegen eines Kavaliersdelikts angehalten. Ich werde bei jeglicher Interaktion mit dem Staat schikaniert. Z. B. dauern Anträge wie Betreibungsregisteranfragen länger und werden gezielt verschleppt. Es ist mir nicht mehr möglich, aufgrund dieser Repressalien für TxiTaxi zu fahren. Im Pflegeheim merke ich, dass ich wegen meiner politischen Einstellung von verschiedenen Pfleger:innen gemieden werde.</tw-passagedata><tw-passagedata pid="9" name="Nein 3 Ja" tags="" position="2525,575" size="100,100">//Auch wenn du persönlich gegen predictive Policing warst, respektiertst du die deokratischen Entscheide und arrangierst dich damit, dass signifikante Eingriffe in deine Privatspähre vorgenommen wurden. Obwohl du Bedenken hast, hast du dich für die Implemenation der Nanobots entschieden um am gesellschaftlichen Leben teilnehmen zu können. //</tw-passagedata><tw-passagedata pid="10" name="Personendaten" tags="" position="225,450" size="100,100">(font:&quot;Avenir Next&quot;)[
 ####(text-colour:green)[Angaben zur Person]
 
 Geschlecht: (text-colour:blue)[(dropdown: bind $geschlecht, &quot;Bitte auswählen...&quot;, &quot;weiblich&quot;, &quot;männlich&quot;, &quot;divers&quot;)]
@@ -118,7 +115,7 @@ Was ist dein höchster Bildungsabschluss?
 (text-colour:blue)[(dropdown: bind $bildung, &quot;Bitte auswählen...&quot;, &quot;obligatorische Schule&quot;, &quot;Sekundarstufe II&quot;, &quot;Tertiärstufe&quot;)]
 
 [[Weiter-&gt;Namen eingeben]]
-]</tw-passagedata><tw-passagedata pid="16" name="Build World 1" tags="" position="550,450" size="100,100">Wir befinden uns in einer Stadt, die subtile, aber spürbare Veränderungen durchgemacht hat. Anstelle des altbekannten Stadtbildes zeichnen sich die Strassen nun unter anderem durch eine erhöhte Anzahl digitaler Anzeigen und intelligenter Strassenlaternen aus. Diese neuen Installationen sind nicht nur energieeffizienter, sondern fungieren auch als Sensoren für städtische Daten, von Verkehrsflüssen bis hin zu Umweltbedingungen. Vermehrt sind auch Überwachungskameras zu sehen.
+]</tw-passagedata><tw-passagedata pid="11" name="Build World 1" tags="" position="550,450" size="100,100">Wir befinden uns in einer Stadt, die subtile, aber spürbare Veränderungen durchgemacht hat. Anstelle des altbekannten Stadtbildes zeichnen sich die Strassen nun unter anderem durch eine erhöhte Anzahl digitaler Anzeigen und intelligenter Strassenlaternen aus. Diese neuen Installationen sind nicht nur energieeffizienter, sondern fungieren auch als Sensoren für städtische Daten, von Verkehrsflüssen bis hin zu Umweltbedingungen. Vermehrt sind auch Überwachungskameras zu sehen.
 
 Die städtische Infrastruktur ist zudem auch smarter geworden. Öffentliche Verkehrsmittel sind vernetzt und passen ihre Routen und Zeitpläne in Echtzeit an die Bedürfnisse der Bürger an. Die Einwohner nutzen vermehrt Apps, um Dienstleistungen von der Müllabfuhr bis zur Parkplatzsuche zu koordinieren. Diese Dienstleistungen werden ermöglicht durch ein untergründiges Netzwerk von Sensoren und Kameras, welche ständig Daten sammeln.
 
@@ -126,7 +123,7 @@ Ebenfalls können Veränderungen in der Kriminalitätsbekämpfung wahrgenommen w
 
 Des Weiteren hat der Einsatz von diesen technischen Hilfmittel zu einer Debatte unter den Bürger:innen geführt. Einige sehen die Gesellschaft an einem Scheideweg zwischen Bequemlichkeit und Privatsphäre. Während die einen die neuen Annehmlichkeiten begrüssen, haben andere eine wachsende Sorge um die Menge an persönlichen Informationen, die gesammelt und analysiert werden. 
 
-[[Deine Person]]</tw-passagedata><tw-passagedata pid="17" name="Namen eingeben" tags="" position="400,350" size="100,100">(font:&quot;Avenir Next&quot;)[
+[[Deine Person]]</tw-passagedata><tw-passagedata pid="12" name="Namen eingeben" tags="" position="400,350" size="100,100">(font:&quot;Avenir Next&quot;)[
 (set: $name to (prompt: [Bitte den gewünschten Namen eingeben:],&quot;Vorname&quot;,&quot;&quot;,&quot;OK&quot;))
 Hallo **(text-colour:green)[$name].**
 
@@ -135,14 +132,14 @@ Dann geht es nun los mit der Geschichte. Ich wünsche dir viel Spass dabei!
 [[Starte die Geschichte-&gt;Build World 1]] 
 
 [[Nein, ich habe mich vertippt und  möchte meinen Namen nochmals ändern-&gt;Namen eingeben]] 
-]</tw-passagedata><tw-passagedata pid="18" name="Deine Person" tags="" position="575,675" size="100,100">Ich bin $name, ein Softwareentwickler in einer Grossstadt, spezialisiert auf Smart-City-Lösungen. Mein Alltag ist ziemlich routiniert: Ich wache auf, mache mich bereit und trete den Weg zur Arbeit an. Mein Job ist es, Software zu entwickeln, die das Leben in der Stadt einfacher und sicherer machen sollen.
+]</tw-passagedata><tw-passagedata pid="13" name="Deine Person" tags="" position="575,675" size="100,100">Ich bin $name, ein Softwareentwickler in einer Grossstadt, spezialisiert auf Smart-City-Lösungen. Mein Alltag ist ziemlich routiniert: Ich wache auf, mache mich bereit und trete den Weg zur Arbeit an. Mein Job ist es, Software zu entwickeln, die das Leben in der Stadt einfacher und sicherer machen sollen.
 
 Ich arbeite an einem prädiktiven Polizeisystem, das mithilfe von Datenanalysen und Mustervorhersagen dazu beitragen soll, die in den letzten Jahren unveränderte Kriminalitätsrate zu senken. Es ist faszinierend zu sehen, wie Technologie angewendet werden kann, um reale Probleme zu lösen. Ich verbringe viel Zeit mit der Entwicklung von Algorithmen, die grosse Datenmengen verarbeiten und Muster erkennen, die für die Sicherheit der Stadt relevant sein könnten.
 
 Es ist Spätsommer, die Sonne scheint und es ist warm.
 Heute Abend habe ich mit meinen zwei Freunden James und Lena auf ein Feierabendbier in einer Bar in unserem Quartier abgemacht.
 
-[[Ich packe meinen Laptop ein und treffe mich mit Lena und James-&gt;Charaktere in Bar]] </tw-passagedata><tw-passagedata pid="19" name="Charaktere in Bar" tags="" position="725,450" size="100,100">Wir sitzen im Garten unserer Lieblingsbar. Soeben haben wir die Getränke erhalten, angestossen und uns über unser gegenseitiges Befinden ausgetauscht.
+[[Ich packe meinen Laptop ein und treffe mich mit Lena und James-&gt;Charaktere in Bar]] </tw-passagedata><tw-passagedata pid="14" name="Charaktere in Bar" tags="" position="725,450" size="100,100">Wir sitzen im Garten unserer Lieblingsbar. Soeben haben wir die Getränke erhalten, angestossen und uns über unser gegenseitiges Befinden ausgetauscht.
 Nach einem weiteren erfrischenden Schluck des eiskalten Getränks in der abendlichen Sommerhitze fällt dir ein News-Artikel ein, den du heute morgen gelesen hattest.
 
 $name: Habt ihr schon von der neuen Initiative gehört? Die Initianten wollen das Predictive Policing weiter ausbauen. Aktuell können sie ja nur das Wo identifizieren, wenn es sich um Serien der gleichen Straftat handelt. Das Wer ist mit den bisherigen Mitteln nicht möglich. Jedoch stösst das System an seine Grenzen. Damit das Identifizieren des Wo verbessert und auch erste Straftaten besser vorausgesagt werden können, müsste aber der Datenschutz stark gelockert werden. Beispielsweise sollen die Daten aus dem Internet-Traffic, die Sensoren aus dem öffentlichen Verkehr sowie das Einwählen in einen Telefonmasten verwendet werden dürfen. All dies jedoch ohne die Daten zu einzelnen Personen zuzuordnen. Was nach wie vor nicht erlaubt sein soll ist beispielsweise die direkte Analyse von Daten der Überwachungskameras oder von den Telefongesprächen selbst. Damit wäre das Wer immer noch nicht möglich. Zudem wollen sie zusätzlich mehrere Millionen pro Jahr für die Weiterentwicklung verwenden. Angeblich soll das unsere Strassen sicherer machen und die Kosten der Polizei trotz dieser Weiterentwicklungskosten nachhaltig senken. Ich weiss noch nicht, wie ich dazu stehe. Was haltet ihr davon?
@@ -163,7 +160,122 @@ James: Ich traue dem Ganzen nicht. Sie finden schlussendlich sicherlich ein Grau
 Durch die Diskussion mit James und Lena konntest du dich nun etwas stärker mit den Vor- und Nachteilen der neuen Initative befassen. Dadurch hast du für dich selbst eine Entscheidung getroffen:
 [[$name: Du hast Recht Lena, ich werde für die Initiative stimmen.-&gt;Ja 1]]
 
-[[$name: Nein Lena, ich sehe das wie James. Die Risiken sind zu gross und ich werde nein stimmen-&gt;Nein 1]]</tw-passagedata></tw-storydata>
+[[$name: Nein Lena, ich sehe das wie James. Die Risiken sind zu gross und ich werde nein stimmen-&gt;Nein 1]]</tw-passagedata><tw-passagedata pid="15" name="Build World 2.1" tags="" position="1150,475" size="100,100">(text-style:&quot;bold&quot;)[//Bereits 15 Jahre sind vergangen//], seit ich mich damals mit Lena und James auf ein Feierabendbier getroffen und über die Initiative zum Predictive Policing gesprochen habe.
+
+Die Welt ist moderner geworden. Smart Phones wurden durch intelligente und vernetzte Augmented Reality Brillen ersetzt. Auf den Strassen sind selbstfahrende, elektrische Autos zu sehen. Alles und jeder scheint heutzutage mit dem Internet verbunden zu sein. Ebenso finden Quanten Computer vermehrt Verwendung, allerdings sind diese Computer für den privat Gebrauch nur sehr teuer zu erwerben.
+
+Ich entscheide mich beruflich neu zu orientieren und beschliesse meine Geld nicht mehr als Software Entwickler:in zu verdienen. Sondern mein Erspartes in Kryptowährungen zu investieren 💸 💰🤑. Der INS (Insane) Coin und den BBISW (Big Brother is watching you) Coin haben mein Interesse geweckt. Die prophezeiten Kursentwicklungen von Kryptoexperten sehen für beide Coins vielversprechend aus.
+
+In welchen Coin möchtest du dein Geld investieren?
+
+(link: &quot;Ich investiere in den INS Coin&quot;)[
+	(set: $COIN to &quot;INS Coin&quot;)
+	(go-to: &quot;Build World 2.2&quot;)
+]
+(link: &quot;Ich investiere in den BBISW Coin&quot;)[
+	(set: $COIN to &quot;BBISW Coin&quot;)
+	(go-to: &quot;Build World 2.2&quot;)
+]</tw-passagedata><tw-passagedata pid="16" name="Build World 2.2" tags="" position="1300,475" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X&quot;)[&#39;&#39;💸 💰 BINGO - Herzlichen Glückwunsch 💸 💰&#39;&#39;]
+
+Der Kurs von meinem $COIN hat sich praktisch verhundertfacht im letzen Jahr. Das Investment hat sich geloht und ich habe ebenfalls viel Geld mit anderen Kryptowährungen erwirtschaftet. 
+
+Ich beschliesse meinen Job als Software Entwickler:in an den Nagel zu hängen und ein Grossteil meiner Zeit in gemeinnützige Arbeit zu investieren wie z. B. Behindertentransporte, Aushilfe in Pflegeheimen usw. Auch politisch engagiere ich mich mehr. Ich nehme an Diskussionsrunden teil und besuche politische Veranstaltungen.
+
+(if:(visited:&quot;Ja 1&quot;))[Seit die Initiative angenommen wurde, konnte das Predictive Policing erfolgreich ausgebaut werden. Zunächst hat die Einführung die Kriminalitätsrate kurzfristig reduzieren können, jedoch ist die Kriminalitätsrate seit einigen Jahren wieder ansteigend. Statistiken vom &lt;a href=&quot;https://www.bfs.admin.ch/bfs/de/home.html&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;BFS&lt;/a&gt; zeigen, dass bald das Niveau von vor 16 Jahren übertroffen wird. Die organisierte Kriminalität hat ihr Vorgehen an die veränderten Bedingen adaptiert und verschleiert ihre Bewegungen im Internet immer geschickter. Sie verwenden weitgehend  &lt;a href=&quot;https://de.wikipedia.org/wiki/Virtual_Private_Network&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;VPNs&lt;/a&gt;, Wegwerfhandys und das &lt;a href=&quot;https://www.torproject.org/de/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Tor-Neztwerk&lt;/a&gt;. Eine neue Gesetzesvorlage &quot;Für Recht und Ordnung in Helvetia&quot; und auch Stimmen aus der Gesellschaft fordern daher, den Datenschutz weiter zu lockern und mehr Ressourcen in Predictive Policing zu investieren.] (else:)[Im letzten Monat wurde in meinem Wohnquartier zum wiederholten Mal eingebrochen und du hörst von Arbeitskollegen bei deiner gemeinnützigen Arbeit von Identitätsdiebstahl, Cyberkriminalität und weitern Einbrüchen. Statistiken vom &lt;a href=&quot;https://www.bfs.admin.ch/bfs/de/home.html&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;BFS&lt;/a&gt; bestätigen diesen Trend. Da alles mit dem Internet verbunden ist, sind im Netz auch viel mehr persönliche Daten vorhanden. Kriminelle nutzen diesen Schatz an Daten, um sich lohnenswerte Ziele auszusuchen oder direkt übers WWW Cyberverbrechen zu begehen. Immer lauter werdende Stimmen in der Gesellschaft und auch eine Gesetzesvorlage &quot;Für Recht und Ordnung in Helvetia&quot; fordern, dass die restriktiven Gesetze, an die sich das Predictive Policing halten muss, stark gelockert werden sowie grössere Investitionen in Predictive Policing getätigt werden sollen. Wenn Kriminelle diese Daten nutzen dürfen, warum auch nicht die Strafverfolgungsbehörden?]
+
+Ich bin hin und her gerissen, ob ich das Referendum für die Gesetzesvorlage &quot;Für Recht und Ordnung in Helvetia&quot; ergreifen soll oder nicht. Auf der Website des Komitees der Initiative erfahre ich, dass bald eine Podiumsdiskussion via Livestream direkt aus dem Kongresszentrum übertragen wird. Ich beschliesse, am Event morgen nach meinem Einsatz im Pflegeheim teilzunehmen.
+
+[[📞 Ring Ring... eine Pushnotifikation von deiner Augmented Reality Brillen kündigt an: &quot;Wähle dich über die Anruf Entgegennehmen Geste in die Podiumsdiskussion ein&quot;-&gt;Podiumsdiskussion]]</tw-passagedata><tw-passagedata pid="17" name="Podiumsdiskussion" tags="" position="1450,475" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X&quot;)[&lt;img src=&quot;https://www.ilkagroenewold.de/wp-content/uploads/2017/07/podiumsdiskussion-mit-moderatorin-ilka-groenewold.jpg&quot; alt=&quot;Podiums Diskussion&quot; width=&quot;417&quot; height=&quot;278&quot;/&gt;]
+
+Ich setze mich auf einen virtuellen Sitzplatz und die Podiumsdiskussion startet...
+
+&#39;&#39;//Moderator:in:// &#39;&#39; Willkommen bei der Podiumsdiskussion über die Gesetzesvorlage &quot;Für Recht und Ordnung in Helvetia&quot;. Zu erst übergebe ich das Wort direkt an das an Frau Antić vom Komitee der Gesetzesvorlage &quot;Für Recht und Ordnung in Helvetia&quot;.
+
+&#39;&#39;//Frau Antić://&#39;&#39; Besten Dank fürs Wort, wie verschiedene Statistiken belegen, ist eindeutig erkennbar, dass die Kriminalitätsrate Besorgnis erregend steigt. Wir müssen mit der Zeit gehen, um mit den Kriminellen Schritt halten zu können. Eine umfassende Lockerung im Datenschutz für Strafverfolgungsbehörden und Investitionen in Predictive Policing Software könnten helfen, diesem Trend entgegenzuwirken.
+
+&#39;&#39;//Moderator:in:// &#39;&#39; Wie gedenken Sie dies zu erreichen?
+
+&#39;&#39;//Frau Antić://&#39;&#39; Erstens sollen nicht länger nur anonyme, sondern auch um personenbezogene Daten aus öffentlichem Verkehr, Kamerafeeds, Internetverkehr, Telefonate, sozialen Medienprofilen bis hin zu Finanztransaktionen etc. von der Polizei ausgewertet werden. Zweitens sollen Bürger:innen mittels Sensoren und biometrische Scans überwacht werden dürfen. Sind diese zwei Bedingungen erfüllt, ist es nun möglich, mit der Rechenleistung der Quanten Computer und den weiterentwickelten Algorithmen alle diese personenbezogenen Daten, Sensor Daten und Livefeeds in Echtzeit mit Predictive Policing Software auszuwerten. Basierend auf historischen Trends, Verhaltensmustern und künstlicher Intelligenz erstellt die Predictive Policing Software Vorhersagen, die potenzielle Verbrechen mit Koordinaten und sogar individuellen Verdächtigen benennen können - noch bevor ein Verbrechen begangen wird.
+
+&#39;&#39;//Moderator:in:// &#39;&#39; Interessant vielen Dank für Ihre Ausführung, allerdings würde dies bedeuten, dass enorme Summen in Quanten Computer für Predictive Policing investiert werden müssten. Herr Müller von der Partei &quot;Freiheit für alle&quot;, ich sehe Sie runzeln die Stirn, was sind ihre Bedenken?
+
+&#39;&#39;//Herr Müller://&#39;&#39; Merci, also... Nur schon aus einer Umweltperspektive sehe ich hier Probleme. Einerseits benötigen Quanten Computer enorm viel Energie, damit diese stabil betrieben werden können. Andrerseits könnte Predictive Policing Software auch missbraucht werden, um gezielt ethnische Minderheiten oder politische Gegner zu überwachen. Auch sehe ich die Meinungsfreiheit bedroht, die ständige Überwachung führt dazu, dass sich niemand mehr getraut eine gegenteilige Meinung zur traditionellen Politik zu äussern. 
+
+&#39;&#39;//Moderator:in:// &#39;&#39; Berechtigte Einwände... in Ihrem Vlog auf TikTok weisen Sie auch auf falsche Vorhersagen von Predictive Policing Software hin, sehen Sie Verbesserungen, wenn Quanten Computer vermehr eingesetzt würden?
+
+&#39;&#39;//Herr Müller://&#39;&#39; Das lässt sich schwierig beurteilen, jedoch ist es gut möglich, dass Predictive Policing Software auch einen falschen Ort vorhersagt oder eine falsche Person eines Verbrechens bezichtigt. Stellen Sie sich vor, ein unschuldiger Bürger wird von der Software zu Unrecht von der Polizei festgehalten und beschuldigt, einen Mord begehen zu wollen. Für mich wäre das ein sehr traumatisierendes und unangenehmes Erlebnis.
+
+Ich habe genug gehört und verlasse die virtuelle Podiumsdiskussion. 
+
+[[Ich bin für die Gesetzesvorlage &quot;Für Recht und Ordnung in Helvetia&quot;-&gt;Pro &quot;Für Recht und Ordnung in Helvetia&quot;]]
+[[Ich trete der Partei &quot;Freiheit für alle&quot; bei, welche das Referendum ergriffen will-&gt;Partei &quot;Freiheit für alle&quot;]]</tw-passagedata><tw-passagedata pid="18" name="Hirn Chips Akzeptieren" tags="" position="2225,375" size="100,100">//Der Protagonist muss sich entscheiden, ob er sich Nanobots implementieren lässt. Personen, die sich die Nanobots implementiert haben, proftieren von staatlichen Vorteilen und erhalten eine offizelle Implantions-Bestätigung, die sie auf den sozialen Medien posten. Personen, die keine Nanobots implementiert haben, werden von der Gesellschaft misstrauisch gesehen. Viele der &quot;Unimplantierten&quot; können nicht nachvollziehen, dass Menschen einen so grossen Eingriff in die Privatsspähre akzeptieren und betonen das Recht auf Selbstautonomie.//
+
+[[Hirn Chips Ablehnen]]
+[[Ja 3 Ja]]
+[[Ja 3 Nein]]</tw-passagedata><tw-passagedata pid="19" name="Hirn Chips Ablehnen" tags="" position="2225,600" size="100,100">//akzeptieren und betonen das Recht auf Selbstautonomie.//
+
+[[Hirn Chips Akzeptieren]] 
+[[Nein 3 Ja]]
+[[Nein 3 Nein]]</tw-passagedata><tw-passagedata pid="20" name="Partei &quot;Freiheit für alle&quot;" tags="" position="1675,600" size="100,100">Ich bin der Partei &quot;Freiheit für alle&quot; beigetreten und sammle fleissig Unterschriften für das Referendum gegen die Gesetzesvorlage &quot;Für Recht und Ordnung in Helvetia&quot;. Allerdings werden schon die ersten Lockerungen im Datenschutz eingeführt, sodass die Stadtpolizei personenbezogene Daten mit Predictive Policing Software auswerten darf.
+
+Heute helfe ich wieder einmal im Pflegeheim aus und werde von einem älteren Herrn angesprochen, der vor der Pension als Kommissar tätig war.
+
+(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X&quot;)[&lt;img src=&quot;https://www.baden-wuerttemberg.de/fileadmin/_processed_/1/2/csm_Pfleger_Pflegeheim_1_2434x1310_9269393f8e.jpg&quot; width=&quot;417&quot; height=&quot;220&quot;/&gt;]
+
+&#39;&#39;//Älterer Herr: // &#39;&#39; Schon Wahnsinn $name, in unserer Stadtpolizei darf man neu auch personenbezogene Daten mit Predictive Policing Software auswerten und die Delikte sind im Nu um die Hälfte weniger geworden. Die Polizisten, die sonst immer Überstunden schieben mussten, konnten ihre Arbeiten im normalen Pensum erledigen. Zudem ist das Arbeitsklima gemäss Umfragen in den Strafverfolgungsbehörden erheblich besser geworden, da durch diese Software die Effizienz gesteigert werden konnte. Wahnsinn, Wahnsinn diese Technologie heute...
+
+&#39;&#39;//$name: // &#39;&#39; Spannend bis anhin hatte ich immer Angst, dass die Polizei solche personenbezogene Daten missbräuchlich verwenden würden und aber wenn die Delikte um die Hälfte reduziert werden konnten, ist das schon was tolles.
+
+Ist es doch nicht so eine gute Idee gegen die Gesetzesvorlage &quot;Für Recht und Ordnung in Helvetia&quot; das Referendum zu ergreifen?
+
+[[Ich bin doch für die Gesetzesvorlage &quot;Für Recht und Ordnung in Helvetia&quot;-&gt;Pro &quot;Für Recht und Ordnung in Helvetia&quot;]]
+[[Nein, ich bleibe in der Partei &quot;Freiheit für alle&quot;-&gt;Konsequenzen Nein 2]]</tw-passagedata><tw-passagedata pid="21" name="Pro &quot;Für Recht und Ordnung in Helvetia&quot;" tags="" position="1675,350" size="100,100">(if:(visited:&#39;Partei &quot;Freiheit für alle&quot;&#39;))[(text-colour:red)[Ich bin der Partei &quot;Freiheit für alle&quot; ausgetreten.]]
+
+(if:(visited:&#39;Partei &quot;Freiheit für alle&quot;&#39;))[](else:)[Mittlerweile wurden schon die ersten Lockerungen im Datenschutz eingeführt, sodass die Stadtpolizei personenbezogene Daten mit Predictive Policing Software auswerten darf.]
+
+Heute unterstütze ich TixiTaxi, welches Behindertentransporte anbietet. Zwar fahren die Autos mittlerweile autonom, aber bei Ein- und Aussteigen brauchen die Passagiere Hilfe. Es für mich eine erfüllende Arbeit neben dem sonst sehr digitalen Alltag.
+
+(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X&quot;)[&lt;img src=&quot;https://media.springernature.com/lw400/springer-cms/rest/v1/content/16003852/data/v2&quot; width=&quot;417&quot; height=&quot;240&quot;/&gt;]
+
+👮🏻‍♂️🚔🚨 DüdaDüda... das kann es nicht sein, schon wieder ein Streifenwagen. Ich wurde heute schon zum zweiten Mal von der Polizei angehalten. Brav halte ich an der nächste Gelegenheit mit dem TixiTaxi an.
+
+//&#39;&#39;Polizist:&#39;&#39;// Guten Tag, mein Name ist Hungentobler. Unsere Software hat uns gemeldet, dass Sie Ihr Taxi überladen werden, darum haben wir Sie abgefangen, als Sie losgefahren sind. Bitte Fahrzeugausweis und Führerausweis.
+
+//&#39;&#39;$name:&#39;&#39;// Guten Tag, das kann nicht sein, ich beförder nur einen Passagier zurzeit.  Ich habe nichts zu verbergen. Hier die Dokumente. Etwas verunsichert händige ich die Dokumente dem Polizisten aus.
+
+//&#39;&#39;Polizist:&#39;&#39;// Aha, interessant heute schon das zweite Mal von der Polizei gestoppt worden. Was sagt man dazu. Wir werden nun das Auto wägen. Ich werde die mobile Wage aufstellen, damit wir überprüfen können, ob das Nutzgewicht überschritten wurde.
+
+//&#39;&#39;$name:&#39;&#39;// Ja, das Prozedere kenne ich schon. Ich kann Ihnen versichern, ich habe nichts Illegales getan oder mein TixiTaxi überladen.
+
+//15 min später ...//
+
+//&#39;&#39;Polizist:&#39;&#39;// Aha, wahrhafitg, ihr TixiTaxi ist nicht überladen. Alles in Ordnung, bitte fahren sie weiter und einen schönen Tag!
+
+Die zweite Polizeikontrolle hinterlässt bei mir einen fahlen Geschmack. In meinem privaten Auto wurde ich noch nicht angehalten. Warum schon zweimal im TixiTaxi, hängt es eventuell damit zusammen, dass ich Behindertentransporte durchführe? Sind die Predictive Policing Software fehlerhaft? Wird hier effektiv eine Minderheit von den Algorithmen diskriminiert? Was wäre, wenn es sich nicht um ein leichtes Vergehen gehandelt hätte, sondern um Raub, Körperverletzung oder sogar Mord?
+
+Ich bin mir doch nicht mehr so sicher, ob ich nicht besser etwas gegen die Gesetzesvorlage &quot;Für Recht und Ordnung in Helvetia&quot; unternehmen sollte.
+
+[[Ich trete doch der Partei &quot;Freiheit für alle&quot; bei, welche das Referendum ergriffen will-&gt;Partei &quot;Freiheit für alle&quot;]]
+[[Nein, ich bleibe bei meiner Meinung pro &quot;Für Recht und Ordnung in Helvetia&quot;-&gt;Konsequenzen Ja 2]]</tw-passagedata><tw-passagedata pid="22" name="Build World 3" tags="" position="2050,475" size="100,100">//szenario definieren//
+
+(if:(visited:&#39;Konsequenzen Ja 2&#39;))[
+//szenario Beschreiben für World 3 wenn visited:&#39;Konsequenzen Ja 2&#39;//
+Referendum abgelehnt
+
+
+
+
+](else:)[
+//szenario Beschreiben für World 3 wenn visited:&#39;Konsequenzen Nein 2&#39;//
+
+Referendum abgelehnt
+
+
+
+]
+
+[[Hirn Chips Akzeptieren]] 
+[[Hirn Chips Ablehnen]] </tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
