@@ -19,17 +19,14 @@ tw-story {
   	font-size: 1.5em;
 	line-height: 1.5em;
 --&gt;
-(text-style:&quot;bold&quot;)[(text-colour:grey)[(text-size:1.5)[BD2 Big Data/Data Science und Strafverfolgung: Ich werde kein Opfer sein – aber ein Täter vielleicht]]]
-(font:&quot;Bradley Hand&quot;)[(text-style:&quot;italic&quot;,&quot;subscript&quot;)[by Seluan Bahith, Joel Kurmann, Alexander Petermaier, Adrian Peter &amp; Andreas Trippel]]
-
+(text-style:&quot;bold&quot;)[(text-colour:grey)[(text-size:1.5)[BD2 Big Data/Data Science und Strafverfolgung: Ich werde kein Opfer sein – aber ein Täter vielleicht?]]]
+&lt;!--(font:&quot;Bradley Hand&quot;)[(text-style:&quot;italic&quot;,&quot;subscript&quot;)[by Seluan Bahith, Joel Kurmann, Alexander Petermaier, Adrian Peter &amp; Andreas Trippel]]--&gt;
 ###(text-colour:cyan)[Herzlich Willkommen!]
-
 Schön, dass du auf diese Seite gelangt bist.
 
 Dies ist der Anfang einer interaktiven Geschichte, die wir im Rahmen des Moduls Digital Society entwickelt haben.
 
 Die Geschichte dreht sich um Predictive Policing, also den Einsatz von Datenanalyse-Techniken in der Strafverfolgung, um Verbrechen vorherzusagen und zu verhindern.
-
 
 Das Lesen der Geschichte dauert ca. 15 - 20 Minuten. Dabei gelangst du an Stellen, wo du dich entscheiden musst, wie die Geschichte weitergehen soll. Dazu kannst du jeweils den entsprechenden Link am Ende einer Seite anklicken. Stell dir bei deinen Entscheidungen jeweils die Frage, ob deine Wahl &#39;&#39;deiner gewünschten Zukunft &#39;&#39;entspricht.
 
@@ -92,8 +89,7 @@ Eine der zwei erwidert: Ja, das scheint wohl die Bande zu sein, der wir schon se
  
 Nachdem die Polizisten sich umgeschaut und ein paar Fotos gemacht haben, verlassen sie die Wohnung mit der Zusicherung, dass sie die Bande sicher irgendwann zu fassen kriegen, obwohl sie dabei nicht sehr zuversichtlich klingen.
 
-Sie lassen mich nachdenklich in der Küche mit dem aufgebrochenen Fenster zurück. Mein Blick schweift über die Kommode in der Ecke, wo ich immer die Uhr (if: $geschlecht is &quot;männlich&quot;)[meines Grossvaters](else:)[meiner Grossmutter] hinlege. Ein mir teures Erbstück.
-(if: $geschlecht is &quot;männlich&quot;)[Opas](else:)[Omas] Uhr liegt jedoch nicht mehr dort.
+Sie lassen mich nachdenklich in der Küche mit dem aufgebrochenen Fenster zurück. Mein Blick schweift über die Kommode in der Ecke, wo ich immer die Uhr (if: $geschlecht is &quot;männlich&quot;)[meines Grossvaters](else:)[meiner Grossmutter] hinlege. Ein mir teures Erbstück. (if: $geschlecht is &quot;männlich&quot;)[Opas](else:)[Omas] Uhr liegt jedoch nicht mehr dort.
 
 [[Weiter-&gt;Build World 2.1]]</tw-passagedata><tw-passagedata pid="4" name="Konsequenzen Ja 2" tags="" position="2700,450" size="100,100">(if:(visited:&#39;Konsequenzen Nein 2&#39;))[(text-colour:red)[Ich bin aus der Partei &quot;Freiheit für alle&quot; ausgetreten.]]
 
@@ -128,13 +124,12 @@ Mit meinen Investitionen in den $COIN habe ich ein riesiges Vermögen erwirtscha
 
 Geschlecht: (text-colour:blue)[(dropdown: bind $geschlecht, &quot;Bitte auswählen...&quot;, &quot;weiblich&quot;, &quot;männlich&quot;, &quot;divers&quot;)]
 
-&lt;!--Brauchen wir das irgendwo?--&gt;
+&lt;!--Brauchen wir das irgendwo?
 Wie alt bist du? (text-colour:blue)[(dropdown: bind $alter, &quot;Bitte auswählen...&quot;, &quot;jünger als 13&quot;,&quot;13&quot;,&quot;14&quot;,&quot;15&quot;,&quot;16&quot;,&quot;17&quot;,&quot;18&quot;,&quot;19&quot;,&quot;20&quot;,&quot;21&quot;,&quot;22&quot;,&quot;23&quot;,&quot;24&quot;,&quot;25&quot;,&quot;26&quot;,&quot;27&quot;,&quot;28&quot;,&quot;29&quot;,&quot;30&quot;,&quot;31&quot;,&quot;32&quot;,&quot;33&quot;,&quot;34&quot;,&quot;35&quot;,&quot;36&quot;,&quot;37&quot;,&quot;38&quot;,&quot;39&quot;,&quot;40&quot;,&quot;41&quot;,&quot;42&quot;,&quot;43&quot;,&quot;44&quot;,&quot;45&quot;,&quot;46&quot;,&quot;47&quot;,&quot;48&quot;,&quot;49&quot;,&quot;50&quot;,&quot;51&quot;,&quot;52&quot;,&quot;53&quot;,&quot;54&quot;,&quot;55&quot;,&quot;56&quot;,&quot;57&quot;,&quot;58&quot;,&quot;59&quot;,&quot;60&quot;,&quot;61&quot;,&quot;62&quot;,&quot;63&quot;,&quot;64&quot;,&quot;65&quot;,&quot;66&quot;,&quot;67&quot;,&quot;68&quot;,&quot;69&quot;,&quot;70&quot;,&quot;71&quot;,&quot;72&quot;,&quot;73&quot;,&quot;74&quot;,&quot;75&quot;,&quot;76&quot;,&quot;77&quot;,&quot;78&quot;,&quot;79&quot;,&quot;80&quot;,&quot;81&quot;,&quot;82&quot;,&quot;83&quot;,&quot;84&quot;,&quot;85&quot;,&quot;86&quot;,&quot;87&quot;,&quot;88&quot;,&quot;89&quot;,&quot;90&quot;,&quot;über 90&quot;,&quot;Keine Antwort&quot;)]
 
-&lt;!--Brauchen wir das irgendwo?--&gt;
 Was ist dein höchster Bildungsabschluss? 
 ^^Erläuterung: zur Sekundarstufe II gehört die Berufsbildung, Allgemeinbildender Abschluss sowie Matura; zur Tertiärstufe gehören die höhere Berufsbildung und Hochschule/Universität^^
-(text-colour:blue)[(dropdown: bind $bildung, &quot;Bitte auswählen...&quot;, &quot;obligatorische Schule&quot;, &quot;Sekundarstufe II&quot;, &quot;Tertiärstufe&quot;)]
+(text-colour:blue)[(dropdown: bind $bildung, &quot;Bitte auswählen...&quot;, &quot;obligatorische Schule&quot;, &quot;Sekundarstufe II&quot;, &quot;Tertiärstufe&quot;)]--&gt;
 
 [[Weiter-&gt;Einleitung]]</tw-passagedata><tw-passagedata pid="10" name="Build World 1_1" tags="" position="700,550" size="100,100">Wir befinden uns im Stadtzentrum von Gasel, das subtile, aber spürbare Veränderungen durchgemacht hat. Das Stadtbild hat sich in den letzten Jahren gewandelt und die Stadt ist wesentlich digitaler geworden. Ich verlasse gerade das Büro und warte auf das nächste Tram. Auf der gegenüberliegenden Strassenseite sehe ich eine Szene, die die Veränderungen des Stadtbilds inklusive der Einwohner:innen gut zusammenfasst: Leute starren auf ihre Smartphones während sie vor digitalen Werbeanzeigen sitzen. 
 
@@ -168,7 +163,6 @@ Nach einem weiteren Schluck des erfrischenden Getränks fällt mir ein weiterer 
 
 //&#39;&#39;$name: &#39;&#39;//Habt ihr schon von der neuen Initiative gehört? Die Initianten wollen das Predictive Policing weiter ausbauen. Aktuell wird das System ja nur genutzt, um die Orte zu ermitteln, an welchen wahrscheinlich ein Verbrechen stattfinden wird. Also praktisch das Wo eines Verbrechens. Mit den bisherigen Mitteln ist es der Polizei auch nicht möglich Vorhersagen zu treffen, wer das Verbrechen begehen wird. Das derzeitige System soll aber an seine Grenzen gestossen sein. Zum einen sind diese Vorhersagen statisch und berücksichtigen keine aktuellen Informationen. Damit die Polizei ihre Ressourcen noch besser einsetzen kann, soll das Predictive Policing ausgebaut werden. Dadurch soll das Identifizieren des Wo verbessert und in einzelnen Fällen erste grundsätzliche demographische Beschreibungen zu den Tatverdächtigen - dem Wer - gemacht werden können. Dafür bräuchte die Polizei aber Zugriff auf mehr Daten und die derzeitigen Datenschutzgesetze müssten gelockert werden.
 
-
 //&#39;&#39;James: &#39;&#39;//Was für Daten wollen die denn in Zukunft dafür nutzen?
 
 //&#39;&#39;$name: &#39;&#39;//Beispielsweise sollen die Daten aus dem Internetverkehr, die Sensoren aus dem öffentlichen Verkehr sowie die Einwahlen in Telefonmasten verwendet werden dürfen. All dies jedoch ohne die Daten einzelnen Personen zuzuordnen. Was nach wie vor nicht erlaubt sein soll, ist beispielsweise die konstante Analyse der Daten aus den Überwachungskameras oder von den Telefongesprächen selbst. Damit könnte die Polizei zwar aktuellere Vorhersagen zu Verbrechen sowie vereinzelt demographische Eigenschaften zu den Tatverdächtigen abzuleiten, es wäre ihr aber weiterhin nicht möglich, das Wer auf eine einzelne Person zu reduzieren. 
@@ -188,9 +182,7 @@ Gerade als Lena etwas sagen möchte, beginnt es zu regnen. Hastig stehen wir auf
 src=&quot;https://www.energie.de/fileadmin/dokumente/ew/News/ew_0078_News_Kaiserslautern/Leuchte_Fauthweg_Kaiserslautern.jpg&quot; 
 alt=&quot;Augmented Reality&quot; width=&quot;800&quot; height=&quot;600&quot;/&gt;
 
-
 Diese neuen Installationen sind nicht nur energieeffizient, sondern fungieren auch als Sensoren für städtische Daten, von Verkehrsflüssen bis hin zu Umweltbedingungen. Auch die Polizei nutzt vermehrt Daten, vor allem zur Effizienzsteigerung. Statt in der ganzen Stadt zu patroullieren, setzt die Polizei neu auf Datenanalysen, um potenzielle Problemzonen zu identifizieren und damit die limitierten Ressourcen gezielter einsetzen zu können. Diese neuen Methoden haben dazu beigetragen, dass die Polizei mit der immer organisierteren Kriminalität Schritt halten kann. 
-
 
 Jedoch gibt es aber auch Fragen bezüglich der Genauigkeit und der Fairness beim Einsatz dieser als &quot;Predictive Policing&quot; bekannten neuen Methoden. Dies hat zu einer Debatte unter den Bürger:innen geführt. Einige sehen die Gesellschaft am Scheideweg zwischen Bequemlichkeit und Privatsphäre. Während Teile der Gesellschaft die neuen Annehmlichkeiten begrüssen, haben andere eine wachsende Sorge um die Menge an persönlichen Informationen, die gesammelt und analysiert werden. 
 
@@ -237,9 +229,7 @@ Nachdem er sich verabschiedet hat, geht Paul wieder auf die andere Seite der Bar
 
 (link: &quot;$name: Ich brauche auch nichts, danke.&quot;)[(set: $drink to 0)(goto: &quot;James kommt zurück&quot;)]
 
-(link: &quot;$name: Ich nehme nochmals das gleiche, danke dir.&quot;)[(set: $drink to 1)(goto: &quot;James kommt zurück&quot;)]</tw-passagedata><tw-passagedata pid="18" name="James kommt zurück" tags="" position="1250,575" size="100,100">(if: $drink is 0) [James kommt zurück und setzt sich wieder auf seinen Stuhl.]
-
-(if: $drink is 1) [James kommt zurück, stellt dein Getränk vor dich und setzt sich wieder auf seinen Stuhl.]
+(link: &quot;$name: Ich nehme nochmals das gleiche, danke dir.&quot;)[(set: $drink to 1)(goto: &quot;James kommt zurück&quot;)]</tw-passagedata><tw-passagedata pid="18" name="James kommt zurück" tags="" position="1250,575" size="100,100">(if: $drink is 0) [James kommt zurück und setzt sich wieder auf seinen Stuhl.](if: $drink is 1) [James kommt zurück, stellt dein Getränk vor dich und setzt sich wieder auf seinen Stuhl.]
 
 //&#39;&#39;Lena: &#39;&#39;//Wo waren wir? Ach ja, das Sammeln und Auswerten der Daten. Das mit der Überwachung stört mich nicht wirklich. Ich habe ja nichts zu verbergen. Und wenn jemand etwas zu verbergen hat, sollte man den ja auch erwischen, nicht? Zudem vertraue ich unserer Regierung, dass das System richtig eingesetzt wird. Da gibts doch sicher verschiedenste Organe, die die Entwicklung und Nutzung überwachen. Wir leben schliesslich in einem Rechtsstaat. Ausserdem arbeitet ja $name in der Entwicklerfirma. Er wird schon aufpassen. Nicht wahr, $name? (Lena zwinkert mir zu).
 
@@ -362,7 +352,7 @@ Es hat leider nicht geholfen, der Partei &quot;Freiheit für alle&quot; beizutre
 erzählt und du nimmst darin die Hauptrolle ein.
 Ab und zu wirst du auch mit deinem Namen angesprochen.
 Bitte sag mir , wie du in der Geschichte heissen möchtest.
-(text-style:&quot;subscript&quot;)[//Der Name wird nur innerhalb des Browsers in 
+(text-size:0.8)[//Der Name wird nur innerhalb des Browsers in 
 dieser Geschichte verwendet, um sie persönlicher zu gestalten; und 
 ansonsten nirgends gespeichert. Du kannst aber auch einen Phantasienamen
  für die Geschichte angeben, mit welchem du angesprochen werden 
