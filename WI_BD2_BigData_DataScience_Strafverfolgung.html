@@ -118,12 +118,12 @@ dieser Geschichte verwendet, um sie persönlicher zu gestalten; und
 ansonsten nirgends gespeichert. Du kannst aber auch einen Phantasiegeschlecht
  für die Geschichte angeben, mit dem du dich angesprochen fühlst.//]
 
-&lt;!--Brauchen wir das irgendwo?
+&lt;!--Brauchen wir das irgendwo?--&gt;
 Wie alt bist du? (text-colour:blue)[(dropdown: bind $alter, &quot;Bitte auswählen...&quot;, &quot;jünger als 13&quot;,&quot;13&quot;,&quot;14&quot;,&quot;15&quot;,&quot;16&quot;,&quot;17&quot;,&quot;18&quot;,&quot;19&quot;,&quot;20&quot;,&quot;21&quot;,&quot;22&quot;,&quot;23&quot;,&quot;24&quot;,&quot;25&quot;,&quot;26&quot;,&quot;27&quot;,&quot;28&quot;,&quot;29&quot;,&quot;30&quot;,&quot;31&quot;,&quot;32&quot;,&quot;33&quot;,&quot;34&quot;,&quot;35&quot;,&quot;36&quot;,&quot;37&quot;,&quot;38&quot;,&quot;39&quot;,&quot;40&quot;,&quot;41&quot;,&quot;42&quot;,&quot;43&quot;,&quot;44&quot;,&quot;45&quot;,&quot;46&quot;,&quot;47&quot;,&quot;48&quot;,&quot;49&quot;,&quot;50&quot;,&quot;51&quot;,&quot;52&quot;,&quot;53&quot;,&quot;54&quot;,&quot;55&quot;,&quot;56&quot;,&quot;57&quot;,&quot;58&quot;,&quot;59&quot;,&quot;60&quot;,&quot;61&quot;,&quot;62&quot;,&quot;63&quot;,&quot;64&quot;,&quot;65&quot;,&quot;66&quot;,&quot;67&quot;,&quot;68&quot;,&quot;69&quot;,&quot;70&quot;,&quot;71&quot;,&quot;72&quot;,&quot;73&quot;,&quot;74&quot;,&quot;75&quot;,&quot;76&quot;,&quot;77&quot;,&quot;78&quot;,&quot;79&quot;,&quot;80&quot;,&quot;81&quot;,&quot;82&quot;,&quot;83&quot;,&quot;84&quot;,&quot;85&quot;,&quot;86&quot;,&quot;87&quot;,&quot;88&quot;,&quot;89&quot;,&quot;90&quot;,&quot;über 90&quot;,&quot;Keine Antwort&quot;)]
 
 Was ist dein höchster Bildungsabschluss? 
 ^^Erläuterung: zur Sekundarstufe II gehört die Berufsbildung, Allgemeinbildender Abschluss sowie Matura; zur Tertiärstufe gehören die höhere Berufsbildung und Hochschule/Universität^^
-(text-colour:blue)[(dropdown: bind $bildung, &quot;Bitte auswählen...&quot;, &quot;obligatorische Schule&quot;, &quot;Sekundarstufe II&quot;, &quot;Tertiärstufe&quot;)]--&gt;
+(text-colour:blue)[(dropdown: bind $bildung, &quot;Bitte auswählen...&quot;, &quot;obligatorische Schule&quot;, &quot;Sekundarstufe II&quot;, &quot;Tertiärstufe&quot;)]
 
 [[Weiter-&gt;Einleitung]]</tw-passagedata><tw-passagedata pid="7" name="Build World 1_1" tags="" position="700,550" size="100,100">Wir befinden uns im Stadtzentrum von Gasel, das subtile, aber spürbare Veränderungen durchgemacht hat. Das Stadtbild hat sich in den letzten Jahren gewandelt und die Stadt ist wesentlich digitaler geworden. Ich verlasse gerade das Büro und warte auf das nächste Tram. Auf der gegenüberliegenden Strassenseite sehe ich eine Szene, die die Veränderungen des Stadtbilds inklusive der Einwohner:innen gut zusammenfasst: Leute starren auf ihre Smartphones, während sie vor digitalen Werbeanzeigen sitzen. 
 
@@ -532,6 +532,48 @@ Wir plaudern noch weitere 15 Minuten miteinander und die unterschiedlichen Reali
 [[Zum Ende der Geschichte-&gt;ENDE]]</tw-passagedata><tw-passagedata pid="40" name="ENDE" tags="" position="4175,575" size="100,100">&#39;&#39;(text-size:1.5)[(text-colour:grey)[ENDE - BD2 Big Data/Data Science und Strafverfolgung]]&#39;&#39;
 
 Das ist das Ende dieser Geschichte. Wir hoffen, es hat dir Spass gemacht und dich angeregt, über dieses Thema nachzudenken.
+
+
+(text-colour:green)[Mit dem Klick auf den untenstehenden Link 
+&quot;&#39;&#39;Senden&#39;&#39;&quot;, wirst du auf die externe Website LimeSurvey 
+weitergeleitet. 
+
+Das kann einige Sekunden dauern - bitte warte bis die Seite erscheint.
+
+Dort bitte noch auf den Knopf &quot;&#39;&#39;Absenden&#39;&#39;&quot; klicken], so sendest du mir
+ automatisch folgende Daten:
+
+- Antworten der Fragen vor &amp; nach der Geschichte
+- Angaben aus dem Freitextfeld zu deinem Feedback
+- Den Weg, den du durch die Geschichte gegangen bist bzw. deine 
+Entscheidungen innerhalb der Geschichte
+- Zeit &amp; Datum der Teilnahme
+
+Dein Name, die IP-Adresse oder Geo-Daten werden &#39;&#39;NICHT&#39;&#39; aufgezeichnet.
+
+Nochmals ganz herzlichen Dank für deine Teilnahme!
+
+(set: $path to (str: (history:)))
+
+[[Senden-&gt;Abschluss]]
+
+
+</tw-passagedata><tw-passagedata pid="41" name="Abschluss" tags="" position="4400,575" size="100,100">(text-colour:(hsl:300,0.8039,0.5,0.55))[(text-rotate-y:45)+(text-rotate-z:331)
+[Dankeschön :-)]]
+
+
+&lt;!--(set: $umfrage to 
+&quot;https://survey.webcenter.ch/limesurvey2018/index.php/375482?
+lang=de&amp;gender=&quot;+$geschlecht+&quot;&amp;age=&quot;+$alter)--&gt;
+
+
+(set: $umfrage to &quot;https://peteral2.limesurvey.net/237763?lang=de&amp;geschlecht=&quot;+$geschlecht+&quot;&amp;bildung=&quot;+$bildung+&quot;&amp;alter=&quot;+$alter+&quot;&amp;history=&quot;+$path)
+
+
+
+(link:&quot;Daten übermitteln&quot;)[(open-url: $umfrage)]
+
+
 
 Klicke den Link unten, um die Geschichte neu zu starten.
 
