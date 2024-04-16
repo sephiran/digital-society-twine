@@ -520,59 +520,46 @@ Wir plaudern noch weitere 15 Minuten miteinander und verabschieden uns dann. Die
 ] 
 
 [[Zum Ende der Geschichte-&gt;ENDE]]</tw-passagedata><tw-passagedata pid="39" name="ENDE" tags="" position="4800,450" size="100,100">&#39;&#39;(text-size:1.5)[(text-colour:grey)[ENDE - BD2 Big Data/Data Science und Strafverfolgung]]&#39;&#39;
-
+ 
 Das ist das Ende dieser Geschichte. Wir hoffen, es hat dir Spass gemacht und dich angeregt, über dieses Thema nachzudenken.
-
-(text-colour:cyan)[Mit dem Klick auf den untenstehenden Link 
-&quot;&#39;&#39;Senden&#39;&#39;&quot;, wirst du auf die externe Website LimeSurvey 
-weitergeleitet. 
-
+ 
+(text-colour:cyan)[Mit dem Klick auf den untenstehenden Link &quot;&#39;&#39;Daten übermitteln&#39;&#39;&quot; öffnet sich ein neues Browser-Tab und du wirst auf die externe Website LimeSurvey weitergeleitet.
+ 
 Das kann einige Sekunden dauern - bitte warte bis die Seite erscheint.
+ 
+Dort bitte noch auf den Knopf &quot;&#39;&#39;Weiter&#39;&#39;&quot; klicken, &#39;&#39;runterscrollen&#39;&#39; und auf dann auf den Knopf &quot;&#39;&#39;Absenden&#39;&#39;&quot; klicken].
 
-Dort bitte noch auf den Knopf &quot;&#39;&#39;Absenden&#39;&#39;&quot; klicken], so sendest du uns
- automatisch folgende Daten:
-
-- Antworten der Fragen vor &amp; nach der Geschichte
-- Angaben aus dem Freitextfeld zu deinem Feedback
-- Den Weg, den du durch die Geschichte gegangen bist bzw. deine 
-Entscheidungen innerhalb der Geschichte
+So sendest du uns automatisch folgende Daten: 
+- Geschlecht, Alter und höchsten Bildungsabschluss
+- Den Weg, den du durch die Geschichte gegangen bist bzw. deine Entscheidungen innerhalb der Geschichte
 - Zeit &amp; Datum der Teilnahme
-
+ 
 Dein Name, die IP-Adresse oder Geo-Daten werden &#39;&#39;NICHT&#39;&#39; aufgezeichnet.
-
+ 
 Nochmals ganz herzlichen Dank für deine Teilnahme!
-
+ 
 (set: $path to (str: (history:)))
-
-[[Senden-&gt;Abschluss]]
-
-
-</tw-passagedata><tw-passagedata pid="40" name="Abschluss" tags="" position="5125,450" size="100,100">(text-colour:(hsl:300,0.8039,0.5,0.55))[(text-rotate-y:45)+(text-rotate-z:331)
-[Dankeschön :-)]]
-
-
-&lt;!--(set: $umfrage to 
-&quot;https://survey.webcenter.ch/limesurvey2018/index.php/375482?
-lang=de&amp;gender=&quot;+$geschlecht+&quot;&amp;age=&quot;+$alter)--&gt;
-
-
-(set: $umfrage to &quot;https://peteral2.limesurvey.net/237763?lang=de&amp;geschlecht=&quot;+$geschlecht+&quot;&amp;bildung=&quot;+$bildung+&quot;&amp;alter=&quot;+$alter+&quot;&amp;history=&quot;+$path)
-
-
-
+(set: $umfrage to &quot;https://peteral2.limesurvey.net/237763?lang=de&amp;geschlecht=&quot;+$geschlecht+&quot;&amp;bildung=&quot;+$bildung+&quot;&amp;alter=&quot;+$alter+&quot;&amp;verlauf=&quot;+$path)
+ 
 (link:&quot;Daten übermitteln&quot;)[(open-url: $umfrage)]
-
-
-
+ 
+ 
 Klicke den Link unten, um die Geschichte neu zu starten.
-
-[[Zurück zum Start -&gt;Intro]]</tw-passagedata><tw-passagedata pid="41" name="Build World 3_1" tags="" position="3650,450" size="100,100">Parallel zur Entwicklung der Gehirn-Computer-Schnittstellen haben Quantencomputer, einst aufgrund ihrer enormen Kosten das Privileg grosser Unternehmen, ihren Weg in private Haushalte gefunden. Ähnlich der Revolution durch PCs, die den Mainframes folgten, sind Quantencomputer nun ein unverzichtbarer Bestandteil jedes Haushalts, was das Verarbeiten gigantischer Datenmengen zum neuen Standard gemacht hat.
+ 
+[[Zurück zum Start -&gt;Intro]]
+ 
+&lt;!-- for Testing
+(set: $path to (str: (history:)))
+(set: $geschlecht to &quot;weiblich&quot;)
+(set: $alter to &quot;18&quot;)
+(set: $bildung to &quot;Schule&quot;)
+--&gt;</tw-passagedata><tw-passagedata pid="40" name="Build World 3_1" tags="" position="3650,450" size="100,100">Parallel zur Entwicklung der Gehirn-Computer-Schnittstellen haben Quantencomputer, einst aufgrund ihrer enormen Kosten das Privileg grosser Unternehmen, ihren Weg in private Haushalte gefunden. Ähnlich der Revolution durch PCs, die den Mainframes folgten, sind Quantencomputer nun ein unverzichtbarer Bestandteil jedes Haushalts, was das Verarbeiten gigantischer Datenmengen zum neuen Standard gemacht hat.
  
 AR-Brillen, die mit der Umgebung, sowie falls vorhanden mit den implantierten Chips, kommunizieren und das Benutzererlebnis in Echtzeit anpassen, basieren auf dieser fortschrittlichen Rechentechnik und bieten ein immersives Erlebnis, wie es zuvor unvorstellbar war. In dieser neuen Ära sind die Städte zu pulsierenden Knotenpunkten der Technologie und Innovation geworden. Gebäude und Fahrzeuge sind intelligent vernetzt, optimieren Energieverbrauch und Verkehrsfluss durch den Einsatz von Quantencomputertechnologie. Öffentliche Räume und Wohnungen passen sich auf Basis der kontinuierlich analysierten Daten, welche unter anderem auch durch die implantierten Chips generiert werden, automatisch den Bedürfnissen und der Stimmung ihrer Bewohner:innen an. Auch die Bildung hat einen Sprung nach vorne gemacht. Schulen und Universitäten nutzen Augmented Reality und Quantencomputer, um ein dynamisches Lernumfeld zu schaffen, in dem Schüler:innen durch direktes Erleben und Interagieren in virtuellen Welten lernen. Bei Vorhandensein eines Chips kann der Zugriff auf Wissen oder Internetsuchen durch eine einfache Gedankenabfrage erfolgen, wodurch das Lernen beschleunigt und personalisiert wird.
  
 In dieser fortschrittlichen Welt, in der die Grenzen zwischen Mensch und Technologie zunehmend verschwimmen, hat die breite Nutzung von Gehirn-Computer-Schnittstellen und die damit verbundene Fähigkeit, komplexe Datenmuster aus dem menschlichen Gehirn und Körper zu extrahieren, die Tür zu einer neuen Ära der prädiktiven Analytik geöffnet.
  
-[[An einem ruhigen Sonntagnachmittag... -&gt;Build World 3_2]]</tw-passagedata><tw-passagedata pid="42" name=" Definition Hormone" tags="" position="3850,775" size="100,100">Hormone sind spezielle Botenstoffe, die von Drüsen im Körper produziert und ins Blut abgegeben werden, um entfernte Organe oder Gewebe zu beeinflussen. Sie regulieren wichtige Funktionen wie Wachstum, Stoffwechsel, Fortpflanzung und Stimmung. Durch die Bindung an spezifische Rezeptoren in Zielzellen steuern Hormone komplexe Prozesse und helfen dem Körper, sein inneres Gleichgewicht zu erhalten. Bekannte Hormone sind zum Beispiel Insulin, Östrogene / Testosteron oder Dopamin.
+[[An einem ruhigen Sonntagnachmittag... -&gt;Build World 3_2]]</tw-passagedata><tw-passagedata pid="41" name=" Definition Hormone" tags="" position="3850,775" size="100,100">Hormone sind spezielle Botenstoffe, die von Drüsen im Körper produziert und ins Blut abgegeben werden, um entfernte Organe oder Gewebe zu beeinflussen. Sie regulieren wichtige Funktionen wie Wachstum, Stoffwechsel, Fortpflanzung und Stimmung. Durch die Bindung an spezifische Rezeptoren in Zielzellen steuern Hormone komplexe Prozesse und helfen dem Körper, sein inneres Gleichgewicht zu erhalten. Bekannte Hormone sind zum Beispiel Insulin, Östrogene / Testosteron oder Dopamin.
  
 [[Was waren nochmals Neurotransmitter?-&gt; Definition Neurotransmitter]]
  
