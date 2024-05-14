@@ -13,7 +13,66 @@
     font: 100% "Avenir Next", serif;
   	font-size: 1.5em;
 	line-height: 1.5em;
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Intro" tags="" position="100,400" size="100,200">&lt;!-- (font:&quot;Avenir Next&quot;)[] 
+}
+tw-story[tags ="Zeit1"] {
+  background-image: url('https://images.pexels.com/photos/1563256/pexels-photo-1563256.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+tw-story[tags ="Zeit2"] {
+  background-image: url('https://images.pexels.com/photos/1106476/pexels-photo-1106476.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+tw-story[tags ="Zeit3"] {
+  background-image: url('https://images.pexels.com/photos/6635796/pexels-photo-6635796.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+tw-passage {
+  display: block;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: black;
+  border-radius: 2em;
+  border-color: #464646;
+  padding-left: 6%;
+  padding-right: 6%;
+  padding-bottom: 10%;
+  padding-top: 6%;
+  margin: 0 auto;
+  flex-direction: column;
+  width: 120%;
+  text-align: left;
+}
+
+tw-passage[tags ~ ="land"] {
+  display: block;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: black;
+  border-radius: 2em;
+  border-color: #464646;
+  padding-left: 6%;
+  padding-right: 6%;
+  padding-bottom: 10%;
+  padding-top: 6%;
+  margin: 0% auto;
+  flex-direction: column;
+  width: 120%;
+  text-align: left;
+}
+
+tw-sidebar {
+  color: white;
+  opacity: 1;
+}
+
+tw-icon[alt] {
+  opacity: 1 !important;
+}
+</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="Zeit2" color="yellow"></tw-tag><tw-tag name="Zeit3" color="red"></tw-tag><tw-tag name="Zeit1" color="green"></tw-tag><tw-passagedata pid="1" name="Intro" tags="Zeit1" position="100,400" size="100,200">&lt;!-- (font:&quot;Avenir Next&quot;)[] 
 tw-story {
     font: 100% &quot;Avenir Next&quot;, serif;
   	font-size: 1.5em;
@@ -37,9 +96,9 @@ Das Lesen der Geschichte dauert ca. 15 - 20 Minuten. Dabei gelangst du an Stelle
 
 Wir beginnen mit ein paar Fragen zu deiner Person. 
 
-[[Weiter zu den Angaben zu deiner Person-&gt;Personendaten]]</tw-passagedata><tw-passagedata pid="2" name="Ja 1" tags="" position="1700,375" size="100,100">Seit dem Feierabendbier mit Lena und James ist nun bereits etwas Zeit vergangen. Die Initiative zum Ausbau des Precitive Policing ist vom Stimmvolk angenommen worden.
+[[Weiter zu den Angaben zu deiner Person-&gt;Personendaten]]</tw-passagedata><tw-passagedata pid="2" name="Ja 1" tags="Zeit1" position="1700,375" size="100,100">Seit dem Feierabendbier mit Lena und James ist nun bereits etwas Zeit vergangen. Die Initiative zum Ausbau des Predictive Policing ist vom Stimmvolk angenommen worden.
 
-Ich hatte seit der Annahme viel zu tun auf der Arbeit, da ich den Ausbau der Software zur Datensammlung -und analyse aktiv mitbegleitete.
+Ich hatte seit der Annahme viel zu tun auf der Arbeit, da ich den Ausbau der Software zur Datensammlung und -analyse aktiv mitbegleitete.
 Die weiterentwickelte Software ist auch bereits im Einsatz, jedoch habe ich bis jetzt noch von keinen grösseren Erfolgsmeldungen in der Strafverfolgung gehört. Ich frage mich langsam, ob meine Arbeit jemals Früchte tragen wird.
 
 Es ist Samstagnachmittag. Der Herbst zeigt bereits seine Ankunft in Form von orangen Blättern an den Bäumen und einer eisigen Brise, die draussen durch das Quartier weht.
@@ -50,34 +109,36 @@ Ich sitze zu Hause auf dem Sofa mit einer heissen Tasse Tee in der Hand. Amüsie
 
 Plötzlich klingelt es an der Tür. Ich stehe auf, schlurfe zur Tür und öffne sie. Mir gegenüber steht ein bulliger Polizist mit einem dicken Wollschal um den Hals.
 
-//&#39;&#39;$name: &#39;&#39;//Guten Tag, wie kann ich Ihnen helfen?
+//&#39;&#39;(text-colour:cyan)[$name]: &#39;&#39;//Guten Tag, wie kann ich Ihnen helfen?
 
-//&#39;&#39;Polizist: &#39;&#39;//Guten Tag. Ich bin hier, um Sie zu informieren, dass ihr Haus Ziel einer organisierten Diebesbande geworden ist. Wir konnten die Täter jedoch gerade schnappen. Ich wollte Sie nur darauf hinweisen, dass sie in den nächsten Wochen trotzdem etwas aufmerksamer ihr Quartier beobachten und ihre Fenster und Türen immer zusperren sollten, wenn sie das Haus verlassen. Man weiss ja nie, ob wir vielleicht doch nicht alle erwischt haben. Falls Ihnen etwas auffallen sollte, rufen sie bitte unverzüglich den Notruf an.
+//&#39;&#39;(text-colour:purple)[Polizist]:&#39;&#39;// Guten Tag. Ich bin hier, um Sie zu informieren, dass ihr Haus Ziel einer organisierten Diebesbande geworden ist. Wir konnten die Täter jedoch gerade schnappen. Ich wollte Sie nur darauf hinweisen, dass sie in den nächsten Wochen trotzdem etwas aufmerksamer ihr Quartier beobachten und ihre Fenster und Türen immer zusperren sollten, wenn sie das Haus verlassen. Man weiss ja nie, ob wir vielleicht doch nicht alle erwischt haben. Falls Ihnen etwas auffallen sollte, rufen sie bitte unverzüglich den Notruf an.
 
-//&#39;&#39;$name: &#39;&#39;//Wow, vielen Dank für die Information! Darf ich fragen, wie Sie die Bande gefasst haben? Ich arbeite eben an der Predictive Policing Software und hatte mich gerade gefragt, ob diese effektiv nützlich ist.
+//&#39;&#39;(text-colour:cyan)[$name]: &#39;&#39;//Wow, vielen Dank für die Information! Darf ich fragen, wie Sie die Bande gefasst haben? Ich arbeite eben an der Predictive Policing Software und hatte mich gerade gefragt, ob diese effektiv nützlich ist.
 
-//&#39;&#39;Polizist: &#39;&#39;//Ah, das ist ja ein Zufall. Ja, wir konnten die Täter tatsächlich durch die neue Software identifizieren. Die ist echt super. Unter anderem durch die Analyse des Internetverkehrs und die daraus gezogenen Erkenntnisse über die Bewohner:innen konnten wir dieses Quartier bereits früh als interessantes Ziel für Einbrecherbanden identifizieren.
+//&#39;&#39;(text-colour:purple)[Polizist]:&#39;&#39;// Ah, das ist ja ein Zufall. Ja, wir konnten die Täter tatsächlich durch die neue Software identifizieren. Die ist echt super. Unter anderem durch die Analyse des Internetverkehrs und die daraus gezogenen Erkenntnisse über die Bewohner:innen konnten wir dieses Quartier bereits früh als interessantes Ziel für Einbrecherbanden identifizieren.
 Zudem konnten wir vor ein paar Wochen erkennen, dass sich in der Zeit vor einem erfolgten Einbruch immer die gleichen Smartphones in die Handymasten eingewählt hatten, welche zuvor nie an diesem Ort waren. Diese Smartphones haben wir natürlich entsprechend genauer überwacht. Zudem haben die Parksensoren einen verdächtigen Lieferwagen entdeckt, der häufiger in Ihrem Quartier geparkt war. Diese Kombination hat uns zuletzt zur Ergreifung der Täter geführt.
 
-//&#39;&#39;$name: &#39;&#39;//Schön zu hören, dass das System auch wirklich funktioniert!
+//&#39;&#39;(text-colour:cyan)[$name]: &#39;&#39;//Schön zu hören, dass das System auch wirklich funktioniert!
 
-//&#39;&#39;Polizist: &#39;&#39;//Jedoch gibt es noch ein einige Schwachstellen. Wenn wir mehr Daten im Vorfeld über die Täter:innen hätten, hätten wir die Bande wohl bereits vor dem ersten Einbruch stoppen können. Im aktuellen Fall hatten wir schlicht und einfach zu viele potenziell verdächtige Kombinationen von den Handymasten und den Parksensoren. Ohne Verbindung dieser Informationen zu Personen bleibt die Anzahl an zu überwachenden Orten einfach zu hoch. Dafür haben wir mit den Personalkürzungen schlicht und einfach zu wenig Ressourcen. So konnten sie schon zwei Häuser ausrauben und eine Person schwer verletzen.
+//&#39;&#39;(text-colour:purple)[Polizist]:&#39;&#39;// Jedoch gibt es noch ein einige Schwachstellen. Wenn wir mehr Daten im Vorfeld über die Täter:innen hätten, hätten wir die Bande wohl bereits vor dem ersten Einbruch stoppen können. Im aktuellen Fall hatten wir schlicht und einfach zu viele potenziell verdächtige Kombinationen von den Handymasten und den Parksensoren. Ohne Verbindung dieser Informationen zu Personen bleibt die Anzahl an zu überwachenden Orten einfach zu hoch. Dafür haben wir mit den Personalkürzungen schlicht und einfach zu wenig Ressourcen. So konnten sie schon zwei Häuser ausrauben und eine Person schwer verletzen.
 Könnten Sie da nicht etwas einbauen? (Er zwinkert mir zu).
 
-//&#39;&#39;$name: &#39;&#39;//Das liegt nicht in meiner Hand. (Ich lächle verlegen)
+//&#39;&#39;(text-colour:cyan)[$name]: &#39;&#39;//Das liegt nicht in meiner Hand. (Ich lächle verlegen)
 
-//&#39;&#39;Polizist: &#39;&#39;//Ja, das müssen wohl die Politiker entscheiden. Wie dem auch sei. Einen schönen Abend noch und halten Sie immer die Augen offen und die Türen sowie Fenster geschlossen. Auf Wiedersehen.
+//&#39;&#39;(text-colour:purple)[Polizist]:&#39;&#39;// Ja, das müssen wohl die Politiker entscheiden. Wie dem auch sei. Einen schönen Abend noch und halten Sie immer die Augen offen und die Türen sowie Fenster geschlossen. Auf Wiedersehen.
 
-//&#39;&#39;$name: &#39;&#39;//Alles klar. Danke und auf Wiedersehen.
+//&#39;&#39;(text-colour:cyan)[$name]: &#39;&#39;//Alles klar. Danke und auf Wiedersehen.
 
-[[Weiter-&gt;Build World 2.1]]</tw-passagedata><tw-passagedata pid="3" name="Nein 1" tags="" position="1700,550" size="100,100">Seit dem Feierabendbier mit Lena und James ist nun bereits etwas Zeit vergangen. Die Initiative zum Ausbau des Precitive Policing ist vom Stimmvolk abgelehnt worden. Ich habe mir kurz nach dem Scheitern der Initiative einen neuen Job gesucht, da es einige Budgetkürzungen in der Firma gab und ich nicht auf meine Kündigung warten wollte.
+[[Weiter-&gt;Build World 2.1]]</tw-passagedata><tw-passagedata pid="3" name="Nein 1" tags="Zeit1" position="1700,550" size="100,100">Seit dem Feierabendbier mit Lena und James ist nun bereits etwas Zeit vergangen. Die Initiative zum Ausbau des Predictive Policing ist vom Stimmvolk abgelehnt worden. Ich habe mir kurz nach dem Scheitern der Initiative einen neuen Job gesucht, da es einige Budgetkürzungen in der Firma gab und ich nicht auf meine Kündigung warten wollte.
  
 Es ist Freitagabend, ich liege noch wach zu Hause im Bett. Eigentlich hatte ich geplant, dieses Wochenende mit Lena und James wegzufahren. In letzter Minute hat mich jedoch eine leichte Grippe erwischt, weswegen ich zu Hause geblieben bin.
  
 Plötzlich höre ich unten im Haus ein Geräusch. &quot;Ist wahrscheinlich nur die Katze, die nach Hause gekommen ist&quot;, denke ich.
-Jetzt höre ich jedoch plötzlich leise Stimmen reden und weitere, lautere Geräusche. Ich schrecke panisch im Bett hoch und lausche angestrengt. Jetzt höre ich klar und deutlich, wie sich zwei Männer flüsternd unterhalten. Ich sammle mich einige Sekunden lang, fasse dann all meinen Mut zusammen, schleiche zur Schlafzimmertür und öffne diese langsam. Wie versteinert starre ich in ein vermummtes Gesicht. Das Gesicht starrt erschrocken zurück.
- 
-Die vermummte Gestalt schreit etwas Unverständliches. Von unten kommt eine ebenso erschrockene und unverständliche Antwort zurück. Bevor ich reagieren kann, dreht sich die Gestalt um und rennt die Treppe hinunter. Verdutzt stehe ich noch ein paar Sekunden reglos da, bis ich die Situation langsam realisiere. Ich renne zum Fenster und schaue hinaus. Auf der Strasse sehe ich zwei Gestalten mit einer schwarzen Tasche in ein Auto einsteigen und davon fahren. Noch immer zitternd nehme ich mein Handy in die Hand und rufe die Polizei an. Ich erkläre der Dame am anderen Ende der Leitung in mehreren schnellen und aufgeregten Sätzen die Situation. Der Streifenwagen sei unterwegs und ich solle die Ruhe bewahren.
+Jetzt höre ich jedoch plötzlich leise Stimmen reden und weitere lautere Geräusche. Ich schrecke panisch im Bett hoch und lausche angestrengt. Jetzt höre ich klar und deutlich, wie sich zwei Männer flüsternd unterhalten. Ich sammle mich einige Sekunden lang, fasse dann all meinen Mut zusammen, schleiche zur Schlafzimmertür und öffne diese langsam. Wie versteinert starre ich in ein vermummtes Gesicht. Das Gesicht starrt erschrocken zurück.
+
+(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X&quot;)[&lt;img 
+src=&quot;https://www.news38.de/wp-content/uploads/sites/5/2022/04/Einbrecher.jpg&quot; width=&quot;600&quot; height=&quot;400&quot;/&gt;]
+Die vermummte Gestalt schreit etwas Unverständliches. Von unten kommt eine ebenso erschrockene und unverständliche Antwort zurück. Bevor ich reagieren kann, dreht sich die Gestalt um und rennt die Treppe hinunter. Verdutzt stehe ich noch ein paar Sekunden reglos da, bis ich die Situation langsam realisiere. Ich renne zum Fenster und schaue hinaus. Auf der Strasse sehe ich zwei Gestalten mit einer schwarzen Tasche in ein Auto einsteigen und davonfahren. Noch immer zitternd nehme ich mein Handy in die Hand und rufe die Polizei an. Ich erkläre der Dame am anderen Ende der Leitung in mehreren schnellen und aufgeregten Sätzen die Situation. Der Streifenwagen sei unterwegs und ich solle die Ruhe bewahren.
  
 Ich denke mir: &quot;Ruhe bewahren. Ruhe bewahren. Ruhe bewahren.&quot;
  
@@ -85,35 +146,28 @@ Kurze Zeit später trifft ein Streifenwagen ein. Ich erkläre den zwei Polizisti
  
 Eine der zwei erwidert: Ja, das scheint wohl die Bande zu sein, der wir schon seit längerem auf der Spur sind. Leider kriegen wir die einfach nicht zu fassen.
  
-//&#39;&#39;$name: &#39;&#39;//Seit längerem? Benutzen Sie denn keine Predictive Policing Software? Die sollte doch genau solche Muster erkennen?
+//&#39;&#39;(text-colour:cyan)[$name]: &#39;&#39;//Seit längerem? Benutzen Sie denn keine Predictive Policing Software? Die sollte doch genau solche Muster erkennen?
  
-//&#39;&#39;Polizistin: &#39;&#39;//Doch schon, aber die Bande stellt sich klüger an als andere. Und unsere Software ist ziemlich eingeschränkt. Hätten wir nur mehr Daten, dann könnten wir sie vielleicht schnappen. Aber das Volk wollte das ja nicht. Ich konnte die Argumente gegen die Initiative ja noch nachvollziehen, aber man kann halt nicht restriktiven Datenschutz und ein zuverlässiges Predictive Policing haben.
+//&#39;&#39;(text-colour:purple)[Polizistin]:&#39;&#39;// Doch schon, aber die Bande stellt sich klüger an als andere. Und unsere Software ist ziemlich eingeschränkt. Hätten wir nur mehr Daten, dann könnten wir sie vielleicht schnappen. Aber das Volk wollte das ja nicht. Ich konnte die Argumente gegen die Initiative ja noch nachvollziehen, aber man kann halt nicht restriktiven Datenschutz und ein zuverlässiges Predictive Policing haben.
  
 Nachdem die Polizistinnen sich umgeschaut und ein paar Fotos gemacht haben, verlassen sie die Wohnung mit der Zusicherung, dass sie die Bande sicher irgendwann zu fassen kriegen, obwohl sie dabei nicht sehr zuversichtlich klingen.
 
 Sie lassen mich nachdenklich in der Küche mit dem aufgebrochenen Fenster zurück. Mein Blick schweift über die Kommode in der Ecke, wo ich immer die Uhr (if: $geschlecht is &quot;männlich&quot;)[meines Grossvaters](else:)[meiner Grossmutter] hinlege. Ein mir teures Erbstück. (if: $geschlecht is &quot;männlich&quot;)[Opas](else:)[Omas] Uhr liegt jedoch nicht mehr dort.
 
-[[Weiter-&gt;Build World 2.1]]</tw-passagedata><tw-passagedata pid="4" name="Konsequenzen Ja 2" tags="" position="3025,425" size="100,100">(if:(visited:&#39;Konsequenzen Nein 2&#39;))[(text-colour:red)[Ich bin aus der Partei &quot;Freiheit für alle&quot; ausgetreten.
-]]
-Mit der Kombination aus Quantencomputern und den Lockerungen im Datenschutz sinkt die Kriminalität weiter. Ich lese in der Zeitung die Schlagzeile &quot;Swissovia wird zu einem der sichersten Länder der Welt&quot;. Die Wirtschaft floriert und die Mehrheit der Bevölkerung scheint glücklich zu sein. Der Source Code vom Predictive Policing System wird offengelegt und die Privatsphäre des Einzelnen ist gemäss den Strafverfolgungsbehörden bestmöglich gewahrt.
+[[Weiter-&gt;Build World 2.1]]</tw-passagedata><tw-passagedata pid="4" name="Konsequenzen Ja 2" tags="Zeit2" position="3100,525" size="100,100">Mit der Kombination aus Quantencomputern und den Lockerungen im Datenschutz sinkt die Kriminalität weiter. Ich lese in der Zeitung die Schlagzeile &quot;Swissovia wird zu einem der sichersten Länder der Welt&quot;. Die Wirtschaft floriert und die Mehrheit der Bevölkerung scheint glücklich zu sein. Der Source Code vom Predictive Policing System wird offengelegt und die Privatsphäre des Einzelnen ist gemäss den Strafverfolgungsbehörden bestmöglich gewahrt.
 
 Allerdings ist der Mechanismus der Überwachung für mich mittlerweile zu kompliziert, um ihn wirklich zu verstehen. Jedoch interessiere ich mich auch nicht mehr wirklich dafür. Es gibt Dokumentationen vom Staat, welche die ganzen Technologien dahinter erklären. So lange ich mich nicht kriminell verhalte, habe ich nichts zu befürchten. Trotz allem habe ich immer noch ein flaues Gefühl im Magen, wenn ich daran denke, dass diese Technologie auch missbraucht werden könnte. Beispielsweise können politische Gegner mit dieser Technologie gezielt mundtot gemacht werden. Auch an die Polizeikontrollen mit Mohammed im Auto muss ich immer noch denken. Seither bin ich nicht mehr im selben Auto wie er gefahren und wurde auch nicht mehr angehalten.
 
-[[Ich trete doch der Partei &quot;Freiheit für alle&quot; bei, welche das Referendum ergriffen hat-&gt;Konsequenzen Nein 2]]
 
-[[Nein, ich bleibe bei meiner Meinung pro &quot;Für Recht und Ordnung in Swissovia&quot;-&gt;End World 2]]</tw-passagedata><tw-passagedata pid="5" name="Konsequenzen Nein 2" tags="" position="3025,550" size="100,100">(if:(visited:&#39;Konsequenzen Ja 2&#39;))[(text-colour:red)[Ich bin der Partei &quot;Freiheit für alle&quot; beigetreten und sammle fleissig Unterschriften für das Referendum gegen das Gesetz &quot;Für Recht und Ordnung in Swissovia&quot;
-]]
-Ich unterstütze die Partei &quot;Freiheit für alle&quot; intensiv und übernehme verschiedene Aufgaben, um dem Referendum zum Erfolg zu verhelfen.
-Zeitgleich fühle ich mich allmählich durch die Überwachung in meiner Autonomie eingeschränkt, weil ich fürchten muss, dass alle meine Handlungen beobachtet werden. Wenn ich das kleinste Vergehen begehe (z. B. bei rot über die Strasse gehen), muss ich damit rechnen, dass dies überwacht wird und eine Strafe zur Folge hat. Die Strafverfolgungsbehörden können zudem sämtliche persönliche Daten von mir einsehen. Ich fürchte, dass der Staat mich plötzlich im Visier hat, da ich mich politisch gegen das Predictive Policing engagiere. Positiv ist jedoch, dass die Kriminalität mit der Kombination von Quantencomputer und den Lockerungen im Datenschutz weiter sinkt. Swissovia wird zu einem der sichersten Länder der Welt. Die Wirtschaft floriert und die Mehrheit der Bevölkerung scheint glücklich zu sein.
+[[Weiter-&gt;End World 2]]</tw-passagedata><tw-passagedata pid="5" name="Konsequenzen Nein 2" tags="Zeit2" position="3100,250" size="100,100">Ich unterstütze die Partei &quot;Freiheit für alle&quot; intensiv und übernehme verschiedene Aufgaben, um dem Referendum zum Erfolg zu verhelfen.
+Zeitgleich fühle ich mich allmählich durch die Überwachung in meiner Autonomie eingeschränkt, weil ich fürchten muss, dass alle meine Handlungen beobachtet werden. Wenn ich das kleinste Vergehen begehe (z. B. bei Rot über die Strasse gehen), muss ich damit rechnen, dass dies überwacht wird und eine Strafe zur Folge hat. Die Strafverfolgungsbehörden können zudem sämtliche persönliche Daten von mir einsehen. Ich fürchte, dass der Staat mich plötzlich im Visier hat, da ich mich politisch gegen das Predictive Policing engagiere. Positiv ist jedoch, dass die Kriminalität mit der Kombination von Quantencomputer und den Lockerungen im Datenschutz weiter sinkt. Swissovia wird zu einem der sichersten Länder der Welt. Die Wirtschaft floriert und die Mehrheit der Bevölkerung scheint glücklich zu sein.
 
 In meinem Umfeld kenne ich viele Personen, welche von dieser Überwachung profitieren. Andere hingegen scheinen unter dem neuen Gesetzt zu leiden. Während meine Schwester nachts sorglos alleine unterwegs sein kann, hat sich James in letzter Zeit über die häufigeren Personenkontrollen beschwert, die er über sich ergehen lassen muss.
 
 Mit meinen Investitionen in den $COIN habe ich ein riesiges Vermögen erwirtschaftet und habe somit die Zeit und Ressourcen, mich für das Referendum zu engagieren. Zudem habe ich in der Partei &quot;Freiheit für alle&quot; Gleichgesinnte gefunden, die wie ich dem neuen Gesetz skeptisch gegenüberstehen. Dies stärkt den Rückhalt gegen diese Gesetzesänderung mit einem Referendum vorzugehen. Ich wäge nochmals alle Vor- und Nachteile der Predictive Policing Software ab und entscheide mich ...
 
-[[... das Gesetz zu unterstützen. Ich trete aus der Partei &quot;Freiheit für alle&quot; aus -&gt;Konsequenzen Ja 2]]
-
-[[... in der Partei &quot;Freiheit für alle&quot; zu bleiben und weiterhin das Referendum zu unterstützen-&gt;End World 2]]</tw-passagedata><tw-passagedata pid="6" name="Personendaten" tags="" position="225,450" size="100,100">####(text-colour:cyan)[Angaben zur Person]
-Für eine möglichst realitätsnahe Erzählung der Geschichte, bitten wir dich, die folgenden Daten anzugeben. Diese werden &#39;&#39;nicht &#39;&#39;abgespeichert. Zum Schluss der Geschichte hast du die Wahl uns deine Angaben sowie den gewählten Erzählungsstrang zur Auswertung zukommen zu lassen. Dementsprechend kannst du hier natürlich auch fiktive Angaben vornehmen.
+[[Weiter-&gt;End World 2]]</tw-passagedata><tw-passagedata pid="6" name="Personendaten" tags="Zeit1" position="275,450" size="100,100">####(text-colour:cyan)[Angaben zur Person]
+Für eine möglichst realitätsnahe Erzählung der Geschichte bitten wir dich, die folgenden Daten anzugeben. Diese werden &#39;&#39;nicht &#39;&#39;abgespeichert. Zum Schluss der Geschichte hast du die Wahl, uns deine Angaben sowie den gewählten Erzählungsstrang zur Auswertung zukommen zu lassen. Dementsprechend kannst du hier natürlich auch fiktive Angaben vornehmen.
 
 
 Geschlecht: (text-colour:blue)[(dropdown: bind $geschlecht, &quot;Bitte auswählen...&quot;, &quot;weiblich&quot;, &quot;männlich&quot;, &quot;divers&quot;)]
@@ -127,7 +181,7 @@ Was ist dein höchster Bildungsabschluss?
 (text-colour:blue)[(dropdown: bind $bildung, &quot;Bitte auswählen...&quot;, &quot;obligatorische Schule&quot;, &quot;Sekundarstufe II&quot;, &quot;Tertiärstufe&quot;)]
 
 
-[[Weiter-&gt;Einleitung]]</tw-passagedata><tw-passagedata pid="7" name="Build World 1_1" tags="" position="675,450" size="100,100">Wir befinden uns im Stadtzentrum von Gasel, das subtile, aber spürbare Veränderungen durchgemacht hat. Das Stadtbild hat sich in den letzten Jahren gewandelt und die Stadt ist wesentlich digitaler geworden. Ich verlasse gerade das Büro und warte auf das nächste Tram. Auf der gegenüberliegenden Strassenseite sehe ich eine Szene, die die Veränderungen des Stadtbilds inklusive der Einwohner:innen gut zusammenfasst: Leute starren auf ihre Smartphones, während sie vor digitalen Werbeanzeigen sitzen. 
+[[Weiter-&gt;Einleitung]]</tw-passagedata><tw-passagedata pid="7" name="Build World 1_1" tags="Zeit1" position="675,450" size="100,100">Wir befinden uns im Stadtzentrum von Gasel, das subtile, aber spürbare Veränderungen durchgemacht hat. Das Stadtbild hat sich in den letzten Jahren gewandelt und die Stadt ist wesentlich digitaler geworden. Ich verlasse gerade das Büro und warte auf das nächste Tram. Auf der gegenüberliegenden Strassenseite sehe ich eine Szene, die die Veränderungen des Stadtbilds inklusive der Einwohner:innen gut zusammenfasst: Leute starren auf ihre Smartphones, während sie vor digitalen Werbeanzeigen sitzen. 
 
 (align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X&quot;)[&lt;img 
 src=&quot;https://cdn.unitycms.io/images/8WzAfzMdKi78hiHLitKGxA.jpg?op=ocroped&amp;val=2001,2000,1000,1000,0,0&amp;sum=EdL3Mb1zUX0&quot; 
@@ -135,14 +189,14 @@ alt=&quot;Augmented Reality&quot; width=&quot;600&quot; height=&quot;400&quot;&g
 
 Die städtische Infrastruktur ist nicht nur digitaler, sondern auch smarter geworden. Öffentliche Verkehrsmittel sind vernetzt und passen ihre Routen und Zeitpläne in Echtzeit an die Bedürfnisse der Bürger:innen an. Die Einwohner:innen nutzen vermehrt Apps, um Dienstleistungen von der Müllabfuhr bis zur Parkplatzsuche zu koordinieren. Diese Dienstleistungen werden ermöglicht durch ein Netzwerk von Sensoren und Kameras, welche ständig Daten sammeln. Vermehrt sind auch Überwachungskameras auf den Strassen zu sehen. 
 
-[[Mein Tram fährt ein und ich steige ins Tram-&gt;Build World 1_2]]</tw-passagedata><tw-passagedata pid="8" name="Namen eingeben" tags="" position="400,650" size="100,100">(set: $name to (prompt: [Bitte den gewünschten Namen eingeben:],&quot;Vorname&quot;,&quot;&quot;,&quot;OK&quot;))
+[[Mein Tram fährt ein und ich steige ins Tram-&gt;Build World 1_2]]</tw-passagedata><tw-passagedata pid="8" name="Namen eingeben" tags="Zeit1" position="500,750" size="100,100">(set: $name to (prompt: [Bitte den gewünschten Namen eingeben:],&quot;Vorname&quot;,&quot;&quot;,&quot;OK&quot;))
 Hallo **(text-colour:cyan)[$name]!**
 
 Dann geht es nun los mit der Geschichte. Wir wünschen dir viel Spass dabei!
 
 [[Starte die Geschichte-&gt;Build World 1_1]] 
 
-[[Nein, ich habe mich vertippt und  möchte meinen Namen nochmals ändern-&gt;Namen eingeben]]</tw-passagedata><tw-passagedata pid="9" name="Deine Person" tags="" position="925,450" size="100,100">Ich verfolge die Debatte rund um den Einsatz technischer Hilfsmittel, wie jener der systematischen Datenanalyse, aufmerksam. Mein Name ist $name und ich arbeite in Gasel (if: $geschlecht contains &quot;weiblich&quot;) [als Softwareentwicklerin] (else-if: $geschlecht contains &quot;männlich&quot;) [als Softwareentwickler] (else-if: $geschlecht contains &quot;divers&quot;) [in der Softwareentwicklung] für eine auf Smart-City-Lösungen spezialisierte Firma. Mein Job ist es, Software zu entwickeln, die das Leben in der Stadt durch datenbasierte Entscheidungen verbessern soll.
+[[Nein, ich habe mich vertippt und  möchte meinen Namen nochmals ändern-&gt;Namen eingeben]]</tw-passagedata><tw-passagedata pid="9" name="Deine Person" tags="Zeit1" position="925,450" size="100,100">Ich verfolge die Debatte rund um den Einsatz technischer Hilfsmittel, wie jener der systematischen Datenanalyse aufmerksam. Mein Name ist **(text-colour:cyan)[$name]** und ich arbeite in Gasel (if: $geschlecht contains &quot;weiblich&quot;) [als Softwareentwicklerin] (else-if: $geschlecht contains &quot;männlich&quot;) [als Softwareentwickler] (else-if: $geschlecht contains &quot;divers&quot;) [in der Softwareentwicklung] für eine auf Smart-City-Lösungen spezialisierte Firma. Mein Job ist es, Software zu entwickeln, die das Leben in der Stadt durch datenbasierte Entscheidungen verbessern soll.
 
 Derzeit arbeite ich an einem prädiktiven Polizeisystem, das mit Hilfe von Datenanalysen und Mustererkennungen dazu beitragen soll, die in den letzten Jahren unveränderte Kriminalitätsrate zu senken. Es ist faszinierend zu sehen, wie Technologie angewendet werden kann, um reale Probleme zu lösen.
 
@@ -151,100 +205,104 @@ Da ich mich heute Abend mit meinen zwei Freunden James und Lena auf ein Feierabe
 (align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X&quot;)[&lt;img 
 src=&quot;https://www.zuerich.com/sites/default/files/styles/2432_1368_focal_scale_crop/public/keyvisual/web_zuerich_binz_kunz_1600x900.jpg?h=1653382066&quot;
 alt=&quot;Bild von Bar&quot; height=&quot;450&quot;/&gt;]
-[[Ich sehe Lena und James schon am Tisch sitzend und gehe zu ihnen rüber -&gt;Charaktere in Bar]] </tw-passagedata><tw-passagedata pid="10" name="Charaktere in Bar" tags="" position="1075,450" size="100,100">Da heute ein schöner Sommerabend ist, sitzen wir im Aussenbereich der Bar. Soeben haben wir die Getränke erhalten, angestossen und uns über das Neuste in unseren Leben ausgetauscht.
+[[Ich sehe Lena und James schon am Tisch sitzend und gehe zu ihnen rüber -&gt;Charaktere in Bar]] </tw-passagedata><tw-passagedata pid="10" name="Charaktere in Bar" tags="Zeit1" position="1075,450" size="100,100">Da heute ein schöner Sommerabend ist, sitzen wir im Aussenbereich der Bar. Soeben haben wir die Getränke erhalten, angestossen und uns über das Neuste in unseren Leben ausgetauscht.
 Nach einem weiteren Schluck des erfrischenden Getränks fällt mir ein weiterer Artikel ein, den ich heute Morgen in der Zeitung gelesen habe.
 
-//&#39;&#39;$name: &#39;&#39;//Habt ihr schon von der neuen Initiative gehört? Die Initianten wollen das Predictive Policing weiter ausbauen. Aktuell wird das System ja nur genutzt, um die Orte zu ermitteln, an welchen wahrscheinlich ein Verbrechen stattfinden wird. Also praktisch das Wo eines Verbrechens. Mit den bisherigen Mitteln ist es der Polizei auch nicht möglich Vorhersagen zu treffen, wer das Verbrechen begehen wird. Das derzeitige System soll aber an seine Grenzen gestossen sein. Zum einen sind diese Vorhersagen statisch und berücksichtigen keine aktuellen Informationen. Damit die Polizei ihre Ressourcen noch besser einsetzen kann, soll das Predictive Policing nun entsprechend ausgebaut werden. Dadurch soll das Identifizieren des Wo verbessert und in einzelnen Fällen erste grundsätzliche demografische Beschreibungen zu den Tatverdächtigen - dem Wer - gemacht werden können. Dafür bräuchte die Polizei aber Zugriff auf mehr Daten und die derzeitigen Datenschutzgesetze müssten gelockert werden.
+(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X&quot;)[&lt;img 
+src=&quot;https://assets3.thrillist.com/v1/image/3177881/1584x1056/crop;webp=auto;jpeg_quality=60;progressive.jpg&quot; 
+alt=&quot;Sommerabend in Bar&quot; width=&quot;600&quot; height=&quot;400&quot;&gt;]
+//&#39;&#39;(text-colour:cyan)[$name]: &#39;&#39;//Habt ihr schon von der neuen Initiative gehört? Die Initianten wollen das Predictive Policing weiter ausbauen. Aktuell wird das System ja nur genutzt, um die Orte zu ermitteln, an welchen wahrscheinlich ein Verbrechen stattfinden wird. Also praktisch das Wo eines Verbrechens. Mit den bisherigen Mitteln ist es der Polizei auch nicht möglich Vorhersagen zu treffen, wer das Verbrechen begehen wird. Das derzeitige System soll aber an seine Grenzen gestossen sein. Zum einen sind diese Vorhersagen statisch und berücksichtigen keine aktuellen Informationen. Damit die Polizei ihre Ressourcen noch besser einsetzen kann, soll das Predictive Policing nun entsprechend ausgebaut werden. Dadurch soll das Identifizieren des Wo verbessert und in einzelnen Fällen erste grundsätzliche demografische Beschreibungen zu den Tatverdächtigen - dem Wer - gemacht werden können. Dafür bräuchte die Polizei aber Zugriff auf mehr Daten und die derzeitigen Datenschutzgesetze müssten gelockert werden.
 
-//&#39;&#39;James: &#39;&#39;//Was für Daten wollen die denn in Zukunft dafür nutzen?
+//&#39;&#39;(text-colour:red)[James]: &#39;&#39;//Was für Daten wollen die denn in Zukunft dafür nutzen?
 
-//&#39;&#39;$name: &#39;&#39;//Beispielsweise sollen die Daten aus dem Internetverkehr, die Sensoren aus dem öffentlichen Verkehr sowie die Einwahlen in Telefonmasten verwendet werden dürfen. All dies jedoch, ohne die Daten einzelnen Personen zuzuordnen. Was nach wie vor nicht erlaubt sein soll, ist beispielsweise die konstante Analyse der Daten aus den Überwachungskameras oder von den Telefongesprächen selbst. Damit könnte die Polizei zwar aktuellere Vorhersagen zu Verbrechen sowie vereinzelt demografische Eigenschaften zu den Tatverdächtigen ableiten, es wäre ihr aber weiterhin nicht möglich, das Wer auf eine einzelne Person zu reduzieren. 
+//&#39;&#39;(text-colour:cyan)[$name]: &#39;&#39;//Beispielsweise sollen die Daten aus dem Internetverkehr, die Sensoren aus dem öffentlichen Verkehr sowie die Einwahlen in Telefonmasten verwendet werden dürfen. All dies jedoch, ohne die Daten einzelnen Personen zuzuordnen. Was nach wie vor nicht erlaubt sein soll, ist beispielsweise die konstante Analyse der Daten aus den Überwachungskameras oder von den Telefongesprächen selbst. Damit könnte die Polizei zwar aktuellere Vorhersagen zu Verbrechen sowie vereinzelt demografische Eigenschaften zu den Tatverdächtigen ableiten, es wäre ihr aber weiterhin nicht möglich, das Wer auf eine einzelne Person zu reduzieren. 
 
-//&#39;&#39;James: &#39;&#39;//Haben sie geschrieben, was das Ganze kosten wird?
+//&#39;&#39;(text-colour:red)[James]: &#39;&#39;//Haben sie geschrieben, was das Ganze kosten wird?
 
-//&#39;&#39;$name: &#39;&#39;//Die genaue Zahl weiss ich nicht mehr, aber es sollen wohl mehrere Millionen pro Jahr sein, die für diese Weiterentwicklung der bestehenden Systeme benötigt werden. Interessanterweise sollen die Kosten für die Polizei und Gesellschaft dennoch langfristig sinken, da die vorhanden Ressourcen effizienter eingesetzt werden könnten. 
+//&#39;&#39;(text-colour:cyan)[$name]: &#39;&#39;//Die genaue Zahl weiss ich nicht mehr, aber es sollen wohl mehrere Millionen pro Jahr sein, die für diese Weiterentwicklung der bestehenden Systeme benötigt werden. Interessanterweise sollen die Kosten für die Polizei und Gesellschaft dennoch langfristig sinken, da die vorhanden Ressourcen effizienter eingesetzt werden könnten. 
 Obwohl ich selbst in dem Bereich arbeite, weiss ich nicht, was ich von dieser Erweiterung halten soll. Wie steht ihr dazu?
 
 Gerade als Lena etwas sagen möchte, beginnt es zu regnen. Hastig stehen wir auf und packen unsere Sachen.
 
-[[$name: Lasst uns unter das Vordach dort gehen, das ist sicher nur ein kurzer Regenschauer -&gt;Aussenplatz]]
+[[ Lasst uns unter das Vordach dort gehen, das ist sicher nur ein kurzer Regenschauer -&gt;Aussenplatz]]
 
-[[$name: Lasst uns drinnen einen Platz suchen. -&gt;Wir gehen rein]]</tw-passagedata><tw-passagedata pid="11" name="Build World 1_2" tags="" position="800,450" size="100,100">Nach fünf Stationen kommt meine Haltestelle. Es dämmert mittlerweile schon. Ich gehe die Strasse entlang und plötzlich geht die Strassenlaterne über mir an. Ich blicke nach oben und sehe eine dieser neuen intelligenten Strassenlaternen, von denen ich erst heute Morgen einen Artikel in der Zeitung gelesen habe.
+[[Lasst uns drinnen einen Platz suchen -&gt;Wir gehen rein]]</tw-passagedata><tw-passagedata pid="11" name="Build World 1_2" tags="Zeit1" position="800,450" size="100,100">Nach fünf Stationen kommt meine Haltestelle. Es dämmert mittlerweile schon. Ich gehe die Strasse entlang und plötzlich geht die Strassenlaterne über mir an. Ich blicke nach oben und sehe eine dieser neuen intelligenten Strassenlaternen, von denen ich erst heute Morgen einen Artikel in der Zeitung gelesen habe.
 
 (align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X&quot;)[&lt;img 
 src=&quot;https://www.energie.de/fileadmin/dokumente/ew/News/ew_0078_News_Kaiserslautern/Leuchte_Fauthweg_Kaiserslautern.jpg&quot; 
 alt=&quot;Augmented Reality&quot; width=&quot;600&quot; height=&quot;400&quot;/&gt;]
+Diese neuen Installationen sind nicht nur energieeffizient, sondern fungieren als Sensoren für städtische Daten, von Verkehrsflüssen bis hin zu Umweltbedingungen. Auch die Polizei nutzt vermehrt Daten, vor allem zur Effizienzsteigerung. Statt in der ganzen Stadt zu patrouillieren, setzt die Polizei neu auf Datenanalysen, um potenzielle Problemzonen zu identifizieren und damit die limitierten Ressourcen gezielter einsetzen zu können. Diese neuen Methoden haben dazu beigetragen, dass die Polizei mit der immer besser organisierteren Kriminalität Schritt halten kann. 
 
-Diese neuen Installationen sind nicht nur energieeffizient, sondern fungieren auch als Sensoren für städtische Daten, von Verkehrsflüssen bis hin zu Umweltbedingungen. Auch die Polizei nutzt vermehrt Daten, vor allem zur Effizienzsteigerung. Statt in der ganzen Stadt zu patrouillieren, setzt die Polizei neu auf Datenanalysen, um potenzielle Problemzonen zu identifizieren und damit die limitierten Ressourcen gezielter einsetzen zu können. Diese neuen Methoden haben dazu beigetragen, dass die Polizei mit der immer organisierteren Kriminalität Schritt halten kann. 
+Jedoch gibt es aber auch Fragen bezüglich der Genauigkeit und der Fairness beim Einsatz dieser als &quot;Predictive Policing&quot; bekannten neuen Methoden. Dies hat zu einer Debatte unter den Bürger:innen geführt. Einige sehen die Gesellschaft am Scheideweg zwischen Bequemlichkeit und Privatsphäre. Während Teile der Gesellschaft die neue Entwicklung begrüssen, haben andere eine wachsende Sorge um die Menge an persönlichen Informationen, die gesammelt und analysiert werden. 
 
-Jedoch gibt es aber auch Fragen bezüglich der Genauigkeit und der Fairness beim Einsatz dieser als &quot;Predictive Policing&quot; bekannten neuen Methoden. Dies hat zu einer Debatte unter den Bürger:innen geführt. Einige sehen die Gesellschaft am Scheideweg zwischen Bequemlichkeit und Privatsphäre. Während Teile der Gesellschaft die neuen Annehmlichkeiten begrüssen, haben andere eine wachsende Sorge um die Menge an persönlichen Informationen, die gesammelt und analysiert werden. 
+[[Zu meiner Person-&gt;Deine Person]]</tw-passagedata><tw-passagedata pid="12" name="Aussenplatz" tags="Zeit1" position="1225,300" size="100,100">Wir sind nicht die einzigen, die hoffen, dass es nur ein kurzer Regenschauer ist. Gefühlt der halbe Aussenbereich der Bar steht zusammengepfercht unter dem kleinen Vordach. James zieht sein Handy aus der Hosentasche und öffnet den Wetterbericht für heute Abend.
 
-[[Zu meiner Person-&gt;Deine Person]]</tw-passagedata><tw-passagedata pid="12" name="Aussenplatz" tags="" position="1225,300" size="100,100">Wir sind nicht die einzigen, die hoffen, dass es nur ein kurzer Regenschauer ist. Gefühlt der halbe Aussenbereich der Bar steht zusammengepfercht unter dem kleinen Vordach. James zieht sein Handy aus der Hosentasche und öffnet den Wetterbericht für heute Abend.
+//&#39;&#39;(text-colour:red)[James]:  &#39;&#39;//Oh, es soll noch für zwei Stunden regnen. Lasst uns lieber reingehen, das wird sonst mit der Zeit ungemütlich hier draussen.
 
-//&#39;&#39;James: &#39;&#39;//Oh, es soll noch für zwei Stunden regnen. Lasst uns lieber reingehen, das wird sonst mit der Zeit ungemütlich hier draussen.
-
-[[Wir gehen rein]]</tw-passagedata><tw-passagedata pid="13" name="Wir gehen rein" tags="" position="1225,450" size="100,100">Drinnen angekommen, setzt sich Lena an den letzten freien Tisch. Draussen wird der Regen immer stärken und mehr Leute kommen in den Innenbereich, der entsprechend voller wird. Zum Glück haben wir gerade noch den letzten Tisch ergattert - sogar ein Fensterplatz.
+[[Wir gehen rein]]</tw-passagedata><tw-passagedata pid="13" name="Wir gehen rein" tags="Zeit1" position="1225,450" size="100,100">Drinnen angekommen, setzt sich Lena an den letzten freien Tisch. Draussen wird der Regen immer stärken und mehr Leute kommen in den Innenbereich, der entsprechend voller wird. Zum Glück haben wir gerade noch den letzten Tisch ergattert - sogar ein Fensterplatz.
 
 (align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X&quot;)[&lt;img 
 src=&quot;https://as2.ftcdn.net/v2/jpg/02/25/30/57/1000_F_225305754_n0xvCCiIFV0YVLaLDlo97drqLF3eiA7L.jpg&quot; 
 alt=&quot;Augmented Reality&quot; width=&quot;600&quot; height=&quot;400&quot;/&gt;]
+//&#39;&#39;(text-colour:green)[Lena]:  &#39;&#39;//Das war wirklich knapp! Stellt euch vor, die Polizei hätte so etwas wie einen Wetterbericht, der vorhersagt, wo Verbrechen passieren werden. Das wäre doch toll! Mehr Sicherheit, weniger Kriminalität und gleichzeitig könnten Einsparungen bei der Polizei in unser Sozialversicherungssystem fliessen. Ich sehe das als eine Win-Win-Situation, bei der mehr Geld und mehr Sicherheit herauskommen.
 
-//&#39;&#39;Lena: &#39;&#39;//Das war knapp, schaut nur, wie stark der Regen ist. Aber wäre es nicht toll, wenn es im Grunde einen Wetterbericht für die Polizei geben würde? Damit würde diese dann wissen, wo demnächst ein Verbrechen stattfinden wird. Ich fände das grossartig. Weniger Verbrechen und dadurch mehr Sicherheit – das ist doch, was wir alle wollen, oder? Dass zwar mehr Geld in dieses Predictive Policing System investiert werden soll, aber unter dem Strich viel Geld bei der Polizei und dem Rechtssystem eingespart werden kann, habe ich auch schon gehört. Dieses Geld könnte dann beispielsweise für den Ausbau unseres angeschlagenen Sozialversicherungssystem verwendet werden. Eine Lösung zur nachhaltigen Finanzierung von diesem ist ja auch nach diversen Initiativen und Vorschlägen noch immer nicht in Sicht. Somit mehr Geld und mehr Sicherheit. Aus meiner Sicht eine klare Win-Win-Situation.
-
-//&#39;&#39;James: &#39;&#39;//Nicht so schnell, Lena. Es ist nicht alles so einfach. Machst du dir nicht Sorgen, dass wir stetig mehr überwacht werden und dafür unsere Freiheit nach und nach aufgeben? Es gibt bereits heute schon vermehrt Fälle von Racial Profiling durch Predictive Policing. Zudem kann ein solches Überwachungssystem auch missbraucht werden. Noch nie George Orwells 1984 gelesen?
+//&#39;&#39;(text-colour:red)[James]:  &#39;&#39;//Das klingt zwar gut, Lena, aber es ist komplizierter. Hast du keine Bedenken wegen der zunehmenden Überwachung und dem schleichenden Verlust unserer Freiheit? Predictive Policing führt auch zu mehr Racial Profiling. Und ein solches Überwachungssystem kann missbraucht werden. Hast du nie George Orwells „1984“ gelesen?
 
 Plötzlich spüre ich eine Hand auf meiner Schulter.
 
-[[Ich drehe mich um -&gt;Paul]]</tw-passagedata><tw-passagedata pid="14" name="Paul" tags="" position="1375,450" size="100,100">Hinter dir steht Paul, ein alter Freund. 
+[[Ich drehe mich um -&gt;Paul]]</tw-passagedata><tw-passagedata pid="14" name="Paul" tags="Zeit1" position="1375,450" size="100,100">Hinter dir steht Paul, ein alter Freund. 
 
-//&#39;&#39;Paul: &#39;&#39;//Hallo $name, wie gehts? 
+//&#39;&#39;(text-colour:grey)[Paul]:  &#39;&#39;//Hallo $name, wie gehts? 
 
-//&#39;&#39;$name: &#39;&#39;//Hey Paul! Gut, danke. Und dir?
+//&#39;&#39;(text-colour:cyan)[$name]: &#39;&#39;//Hey Paul! Gut, danke. Und dir?
 
-//&#39;&#39;Paul: &#39;&#39;//Danke, danke. Mir gehts blendend. Mein Freund am Tisch dort hinten feiert gerade seinen Geburtstag und die Drinks kommen wie von selbst. Wer sind deine Freunde hier?
+//&#39;&#39;(text-colour:grey)[Paul]:  &#39;&#39;//Danke, danke. Mir gehts blendend. Mein Freund am Tisch dort hinten feiert gerade seinen Geburtstag und die Drinks kommen wie von selbst. Wer sind deine Freunde hier?
 
-//&#39;&#39;$name: &#39;&#39;//Darf ich vorstellen, das sind Lena und James. Wir haben gerade über die Abstimmung zum Predictive Policing gesprochen. 
+//&#39;&#39;(text-colour:cyan)[$name]: &#39;&#39;//Darf ich vorstellen, das sind Lena und James. Wir haben gerade über die Abstimmung zum Predictive Policing gesprochen. 
 
-//&#39;&#39;Paul: &#39;&#39;//Ah, ihr seid also schon bei den tiefgreifenden politischen Diskussionen angelangt? Da brauche ich zuerst noch ein paar Drinks, bevor ich so weit bin. Ja, ja, irgendwann wird die Regierung alles über uns wissen. Mit den ganzen digitalen Spuren, die wir hinterlassen, können wir ja sowieso nichts dagegen machen. Als könnte heute noch jemand ohne Handy und den ganzen Apps überleben. 
+//&#39;&#39;(text-colour:grey)[Paul]:  &#39;&#39;//Ah, ihr seid also schon bei den tiefgreifenden politischen Diskussionen angelangt? Da brauche ich zuerst noch ein paar Drinks, bevor ich so weit bin. Ja, ja, irgendwann wird die Regierung alles über uns wissen. Mit den ganzen digitalen Spuren, die wir hinterlassen, können wir ja sowieso nichts dagegen machen. Als könnte heute noch jemand ohne Handy und den ganzen Apps überleben. 
 
-//&#39;&#39;Paul&#39;&#39;// (In leicht ironischem Tonfall)//&#39;&#39;:&#39;&#39;// Sobald Elon Musk dann noch seinen Neuralink auf den Markt bringt, können bald auch unsere Gedanken überwacht werden.
+//&#39;&#39;(text-colour:grey)[Paul]:  &#39;&#39;//(In leicht ironischem Tonfall)//&#39;&#39;:&#39;&#39;// Sobald Elon Musk dann noch seinen Neuralink auf den Markt bringt, können bald auch unsere Gedanken überwacht werden.
 
-//&#39;&#39;Lena: &#39;&#39;//Neuralink?
+//&#39;&#39;(text-colour:green)[Lena]:  &#39;&#39;//Neuralink?
 
-//&#39;&#39;Paul: &#39;&#39;//Musk scheint an einer Art Chip zu arbeiten, den man sich ins Hirn implantiert. Im ersten Schritt soll man damit dann Dinge steuern können. Aber wer weiss, was dann als nächstes kommt? Stellt euch nur vor, wie gut das Predictive Policing werden würde, wenn diese Daten verwendet werden könnten. Aber genug jetzt, ich muss wieder zurück zur Geburtstagsparty. Ich wünsche euch einen schönen Abend!
+//&#39;&#39;(text-colour:grey)[Paul]:  &#39;&#39;//Musk scheint an einer Art Chip zu arbeiten, den man sich ins Hirn implantiert. Im ersten Schritt soll man damit dann Dinge steuern können. Aber wer weiss, was dann als nächstes kommt? Stellt euch nur vor, wie gut das Predictive Policing werden würde, wenn diese Daten verwendet werden könnten. Aber genug jetzt, ich muss wieder zurück zur Geburtstagsparty. Ich wünsche euch einen schönen Abend!
 
 Nachdem er sich verabschiedet hat, geht Paul wieder auf die andere Seite der Bar zu seinen Freunden. 
 
-//&#39;&#39;James: &#39;&#39;// Ich hole mir noch ein Bier, soll ich euch auch etwas mitbringen?
 
-//&#39;&#39;Lena: &#39;&#39;//Ich brauche nichts, danke.
+//&#39;&#39;(text-colour:red)[James]:  &#39;&#39;//Ich hole mir noch ein Bier, soll ich euch auch etwas mitbringen?
 
-(link: &quot;$name: Ich brauche auch nichts, danke.&quot;)[
+//&#39;&#39;(text-colour:green)[Lena]:  &#39;&#39;//Ich brauche nichts, danke.
+
+(link: &quot;Ich brauche auch nichts, danke&quot;)[
 	(set: $drink to 0)
 	(goto: &quot;James kommt zurück&quot;)
 ]
 
-(link: &quot;$name: Ich nehme nochmals das gleiche, danke dir.&quot;)[
+(link: &quot;Ich nehme nochmals das gleiche, danke dir&quot;)[
 	(set: $drink to 1)
 	(goto: &quot;James kommt zurück&quot;)
-]</tw-passagedata><tw-passagedata pid="15" name="James kommt zurück" tags="" position="1525,450" size="100,100">(if: $drink is 0) [James kommt zurück und setzt sich wieder auf seinen Stuhl.](if: $drink is 1) [James kommt zurück, stellt dein Getränk vor dich und setzt sich wieder auf seinen Stuhl.]
+]</tw-passagedata><tw-passagedata pid="15" name="James kommt zurück" tags="Zeit1" position="1525,450" size="100,100">(if: $drink is 0) [James kommt zurück und setzt sich wieder auf seinen Stuhl.](if: $drink is 1) [James kommt zurück, stellt dein Getränk vor dich und setzt sich wieder auf seinen Stuhl.]
 
-//&#39;&#39;Lena: &#39;&#39;//Wo waren wir? Ach ja, das Sammeln und Auswerten der Daten. Das mit der Überwachung stört mich nicht wirklich. Ich habe ja nichts zu verbergen. Und wenn jemand etwas zu verbergen hat, sollte man den ja auch erwischen, nicht? Zudem vertraue ich unserer Regierung, dass das System richtig eingesetzt wird. Da gibts doch sicher verschiedenste Organe, die die Entwicklung und Nutzung überwachen. Wir leben schliesslich in einem Rechtsstaat. Ausserdem arbeitet ja $name in der Entwicklerfirma. Er wird schon aufpassen. Nicht wahr, $name? (Lena zwinkert mir zu).
+//&#39;&#39;(text-colour:green)[Lena]:  &#39;&#39;//Wo waren wir? Ach ja, das Sammeln und Auswerten der Daten. Das mit der Überwachung stört mich nicht wirklich. Ich habe ja nichts zu verbergen. Und wenn jemand etwas zu verbergen hat, sollte man den ja auch erwischen, nicht? Zudem vertraue ich unserer Regierung, dass das System richtig eingesetzt wird. Da gibts doch sicher verschiedenste Organe, die die Entwicklung und Nutzung überwachen. Wir leben schliesslich in einem Rechtsstaat. Ausserdem arbeitet ja $name in der Entwicklerfirma. Er wird schon aufpassen. Nicht wahr, $name? (Lena zwinkert mir zu).
 
-//&#39;&#39;James: &#39;&#39;//Das ist ein Trugschluss, Lena. Es geht nicht darum, ob man etwas zu verbergen hat. Es geht um Gerechtigkeit und gleiche Behandlung für alle. Ich habe einfach Bedenken, dass das System nicht alle von uns gleich behandelt. Mit meiner dunklen Hautfarbe ist doch schon vorprogrammiert, dass das System besonders auf mich ausgerichtet ist. Rechtsstaat hin oder her. Solche Systeme sind aus meiner Sicht brandgefährlich.
+//&#39;&#39;(text-colour:red)[James]:  &#39;&#39;//Das ist ein Trugschluss, Lena. Es geht nicht darum, ob man etwas zu verbergen hat. Es geht um Gerechtigkeit und gleiche Behandlung für alle. Ich habe einfach Bedenken, dass das System nicht alle von uns gleich behandelt. Mit meiner dunklen Hautfarbe ist doch schon vorprogrammiert, dass das System besonders auf mich ausgerichtet ist. Rechtsstaat hin oder her. Solche Systeme sind aus meiner Sicht brandgefährlich.
 
-//&#39;&#39;Lena: &#39;&#39;//Aber sie dürfen die Daten ja keinen Personen zuordnen, woher sollen sie dann wissen, was für eine Hautfarbe du hast? So wie ich gelesen habe, sollen die zusätzlichen Daten nur ermöglichen, besser vorauszusagen, wo bevorstehende Straftaten begangen werden. Wenn du dich dann in dieser Gegend befindest, aber nichts verbrichst, dann hast du ja auch nichts zu befürchten. Aber wie das genau funktioniert, verstehe ich nicht, da ist $name sicherlich besser informiert.
+//&#39;&#39;(text-colour:green)[Lena]:  &#39;&#39;//Aber sie dürfen die Daten ja keinen Personen zuordnen, woher sollen sie dann wissen, was für eine Hautfarbe du hast? So wie ich gelesen habe, sollen die zusätzlichen Daten nur ermöglichen, besser vorauszusagen, wo bevorstehende Straftaten begangen werden. Wenn du dich dann in dieser Gegend befindest, aber nichts verbrichst, dann hast du ja auch nichts zu befürchten. Aber wie das genau funktioniert, verstehe ich nicht, da ist $name sicherlich besser informiert.
 
-//&#39;&#39;James: &#39;&#39;//Ich traue dem Ganzen nicht. Sie finden schlussendlich sicher einen Graubereich oder identifizieren einfach trotzdem Personen. Du hast doch gehört, was $name vorher gesagt hat: Sie wollen auch grundlegende demografische Eigenschaften möglicher Täter:innen ermitteln. Wir haben das in der Vergangenheit doch bereits in anderen Ländern gesehen und dort waren die erlaubten Möglichkeiten noch viel geringer. $name, du stimmst mir da sicher zu, oder?
+//&#39;&#39;(text-colour:red)[James]:  &#39;&#39;//Ich traue dem Ganzen nicht. Sie finden schlussendlich sicher einen Graubereich oder identifizieren einfach trotzdem Personen. Du hast doch gehört, was $name vorher gesagt hat: Sie wollen auch grundlegende demografische Eigenschaften möglicher Täter:innen ermitteln. Wir haben das in der Vergangenheit doch bereits in anderen Ländern gesehen und dort waren die erlaubten Möglichkeiten noch viel geringer. $name, du stimmst mir da sicher zu, oder?
 
 Durch die Diskussion mit James und Lena habe ich nochmals die verschiedenen Perspektiven der neuen Initiative gehört. Dadurch habe ich für mich selbst eine Entscheidung getroffen:
 
-[[$name: Du hast Recht Lena, ich werde für die Initiative stimmen.-&gt;Ja 1]]
+[[👍 Du hast Recht Lena, ich werde für die Initiative stimmen -&gt;Ja 1]]
 
-[[$name: Nein Lena, ich sehe das wie James. Die Risiken sind zu gross und ich werde nein stimmen.-&gt;Nein 1]]</tw-passagedata><tw-passagedata pid="16" name="Build World 2.1" tags="" position="2175,450" size="100,100">(text-style:&quot;bold&quot;)[//Bereits 15 Jahre sind vergangen//], seit ich mich damals mit Lena und James auf ein Feierabendbier getroffen und über die Initiative zum Predictive Policing gesprochen hatte.
+[[👎 Nein Lena, ich sehe das wie James. Die Risiken sind zu gross und ich werde nein stimmen -&gt;Nein 1]]</tw-passagedata><tw-passagedata pid="16" name="Build World 2.1" tags="Zeit2" position="2175,450" size="100,100">(text-style:&quot;bold&quot;)[//Bereits 15 Jahre sind vergangen//], seit ich mich damals mit Lena und James auf ein Feierabendbier getroffen und über die Initiative zum Predictive Policing gesprochen hatte.
 
 Die Welt ist moderner geworden. Smartphones wurden durch intelligente und vernetzte Augmented Reality (AR) Brillen ersetzt. Auf den Strassen sind selbstfahrende, elektrische Autos zu sehen. Alles und jede:r scheint heutzutage mit dem Internet verbunden zu sein. Ebenso finden Quantencomputer vermehrt Verwendung. Allerdings sind diese Computer bislang für den privaten Gebrauch nur sehr teuer zu erwerben.
 
+(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X&quot;)[&lt;img 
+src=&quot;https://image.geo.de/33578398/t/oZ/v5/w1440/r1.5/-/quantencomputer-as-479424300.jpg&quot; width=&quot;600&quot;/&gt;]
 [[Was sind nochmals Quantencomputer?-&gt;Definition Quantencomputer]]
 
 Ich arbeite noch immer (if: $geschlecht contains &quot;weiblich&quot;) [als Softwareentwicklerin] (else-if: $geschlecht contains &quot;männlich&quot;) [als Softwareentwickler] (else-if: $geschlecht contains &quot;divers&quot;) [in der Softwareentwicklung] und konnte mir über die letzten Jahre ein nettes Sümmchen ansparen.
@@ -261,57 +319,40 @@ Aber welchen Coin soll ich bloss kaufen...?
 (link: &quot;Ich investiere in den BBISW Coin&quot;)[
 	(set: $COIN to &quot;BBISW Coin&quot;)
 	(go-to: &quot;Build World 2.2&quot;)
-]</tw-passagedata><tw-passagedata pid="17" name="Build World 2.2" tags="" position="2350,450" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X&quot;)[&#39;&#39;💸 💰 BINGO - Herzlichen Glückwunsch 💸 💰&#39;&#39;]
+]</tw-passagedata><tw-passagedata pid="17" name="Build World 2.2" tags="Zeit2" position="2350,450" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X&quot;)[&#39;&#39;💸 💰 BINGO - Herzlichen Glückwunsch 💸 💰&#39;&#39;]
 Der Kurs von meinem $COIN hat sich nahezu verhundertfacht im letzten Jahr. Das Investment hat sich gelohnt.
 
-Ich beschliesse meinen Job(if: $geschlecht contains &quot;weiblich&quot;) [als Softwareentwicklerin] (else-if: $geschlecht contains &quot;männlich&quot;) [als Softwareentwickler] (else-if: $geschlecht contains &quot;divers&quot;) [in der Softwareentwicklung] an den Nagel zu hängen und den Grossteil meiner Zeit gemeinnütziger Arbeit zu widmen. Beispielsweise als Unterstützung bei Behindertentransporten, als Aushilfe in Pflegeheimen oder im Tierheim. Seit vergangener Woche helfe ich ebenfalls bei der Integration von Asylsuchenden. Ich nehme sie auf meine gemeinnützigen Arbeiten mit und ermögliche ihnen so Einblicke in unsere Gesellschaft. Auch politisch engagiere ich mich vermehrt. Ich nehme an Diskussionsrunden teil und besuche politische Veranstaltungen.
+(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X&quot;)[&lt;img 
+src=&quot;https://www.vis.bayern.de/geld_versicherungen/konten_zahlungsverkehr/pic/kryptowaehrung_b750.jpg&quot; width=&quot;600&quot;/&gt;]
+Ich beschliesse meinen Job (if: $geschlecht contains &quot;weiblich&quot;) [als Softwareentwicklerin] (else-if: $geschlecht contains &quot;männlich&quot;) [als Softwareentwickler] (else-if: $geschlecht contains &quot;divers&quot;) [in der Softwareentwicklung] an den Nagel zu hängen und den Grossteil meiner Zeit gemeinnütziger Arbeit zu widmen. Beispielsweise als Unterstützung bei Behindertentransporten, als Aushilfe in Pflegeheimen oder im Tierheim. Seit vergangener Woche helfe ich ebenfalls bei der Integration von Asylsuchenden. Ich nehme sie auf meine gemeinnützigen Arbeiten mit und ermögliche ihnen so Einblicke in unsere Gesellschaft. Auch politisch engagiere ich mich vermehrt. Ich nehme an Diskussionsrunden teil und besuche politische Veranstaltungen.
 
-(if:(visited:&quot;Ja 1&quot;))[Seit die Initiative zum Predictive Policing angenommen wurde, fand ein grosser Ausbau dieser Systeme statt. Zunächst konnte mit dessen Einführung die Kriminalitätsrate reduziert werden. Jedoch ist diese seit einigen Jahren wieder rasant angestiegen. Statistiken vom Bundesministerium für Statistik (BFS) bestätigen diesen Trend. Die Kriminalitätsrate ist mittlerweile höher als vor der Abstimmung. Der grösste Faktor für die steigende Kriminalitätsrate ist das veränderte Verhalten der organisierten Kriminalität. Diese hat ihr Vorgehen an die sich wandelnden Bedingungen angepasst und verschleiert ihre Bewegungen im Internet immer geschickter mit der Hilfe von Virtual Private Network (VPNs), Wegwerfhandys und dem Tor-Neztwerk. Auch werden die im Netz vorhandenen persönlichen Daten systematischer genutzt, um lohnenswerte Ziele zu identifizieren oder Cyberverbrechen zu begehen. ] (else:)[In den letzten Monaten wurde in meinem Wohnquartier zum wiederholten Mal eingebrochen und ich höre von Arbeitskolleg:innen bei meiner gemeinnützigen Arbeit von Identitätsdiebstahl, Cyberkriminalität und weiteren Einbrüchen. Statistiken vom Bundesministerium für Statistik (BFS) bestätigen eine steigende Kriminalitätsrate. Da alles mit dem Internet verbunden ist, sind im Netz auch viel mehr persönliche Daten vorhanden. Kriminelle nutzen diesen Schatz an Daten, um sich lohnenswerte Ziele auszusuchen oder direkt über das WorldWideWeb Cyberverbrechen zu begehen. Wenn Kriminelle diese Daten nutzen dürfen, warum nicht auch die Strafverfolgungsbehörden?]
+(if:(visited:&quot;Ja 1&quot;))[Seit die Initiative zum Predictive Policing angenommen wurde, fand ein grosser Ausbau dieser Systeme statt. Zunächst konnte mit dessen Einführung die Kriminalitätsrate reduziert werden. Jedoch ist diese seit einigen Jahren wieder rasant angestiegen. Statistiken vom Bundesministerium für Statistik (BFS) bestätigen diesen Trend. Die Kriminalitätsrate ist mittlerweile höher als vor der Abstimmung. Der grösste Faktor für die steigende Kriminalitätsrate ist das veränderte Verhalten der organisierten Kriminalität. Diese hat ihr Vorgehen an die sich wandelnden Bedingungen angepasst und verschleiert ihre Bewegungen im Internet immer geschickter mit der Hilfe von Virtual Private Network (VPNs), Wegwerfhandys und dem Tor-Netzwerk. Auch werden die im Netz vorhandenen persönlichen Daten systematischer genutzt, um lohnenswerte Ziele zu identifizieren oder Cyberverbrechen zu begehen. ] (else:)[In den letzten Monaten wurde in meinem Wohnquartier zum wiederholten Mal eingebrochen und ich höre von Arbeitskolleg:innen bei meiner gemeinnützigen Arbeit von Identitätsdiebstahl, Cyberkriminalität und weiteren Einbrüchen. Statistiken vom Bundesministerium für Statistik (BFS) bestätigen eine steigende Kriminalitätsrate. Da alles mit dem Internet verbunden ist, sind im Netz auch viel mehr persönliche Daten vorhanden. Kriminelle nutzen diesen Schatz an Daten, um sich lohnenswerte Ziele auszusuchen oder direkt über das WorldWideWeb Cyberverbrechen zu begehen. Wenn Kriminelle diese Daten nutzen dürfen, warum nicht auch die Strafverfolgungsbehörden?]
 
 (if:(visited:&quot;Ja 1&quot;)) [[Was war nochmals ein VPN? Lass mich das kurz googlen. -&gt;Definition VPN]]
 (if:(visited:&quot;Ja 1&quot;)) [[Ich habe vom Tor-Netzwerk schon mal gehört. Lass mich nochmals kurz nachlesen, um was es da ging... -&gt;Definition Tor-Netzwerk]]
 
-Um der rasant steigenden Kriminalitätsrate entgegenzuwirken, sah sich die Regierung gezwungen, den Strafverfolgungsbehörden per Notdekret zu erlauben, (if:(visited:&quot;Ja 1&quot;))[auch personenbezogene Daten mit der Predictive Policing Software auszuwerten](else:)[das Predictive Policing System signifikant zu erweitern. Dabei dürfen nun Daten aus dem Internetverkehr, den Sensoren aus dem öffentlichen Verkehr sowie aus dem Einwählen in einen Telefonmasten ausgewertet und verwendet werden. Zusätzlich ist auch die Auswertung von personenbezogenen Daten erlaubt]. Dies, obwohl (if:(visited:&quot;Ja 1&quot;))[in der Initiative vor 16 Jahren beschossen wurde, dass exakt diese Daten nicht mit der Predictive Policing Software ausgewertet werden dürfen](else:)[die Initiative dazu vor 16 Jahren abgelehnt wurde].
+In den letzten Jahren ist die Kriminalitätsrate in Swissovia im Vergleich zu den Nachbarländern deutlich stärker gestiegen. Um der rasant steigenden Kriminalitätsrate entgegenzuwirken, sah sich die Regierung gezwungen, den Strafverfolgungsbehörden per Notdekret zu erlauben, (if:(visited:&quot;Ja 1&quot;))[auch personenbezogene Daten mit der Predictive Policing Software auszuwerten](else:)[das Predictive Policing System signifikant zu erweitern. Dabei dürfen nun Daten aus dem Internetverkehr, den Sensoren aus dem öffentlichen Verkehr sowie aus dem Einwählen in einen Telefonmasten ausgewertet und verwendet werden. Zusätzlich ist auch die Auswertung von personenbezogenen Daten erlaubt]. Dies, obwohl (if:(visited:&quot;Ja 1&quot;))[in der Initiative vor 16 Jahren beschossen wurde, dass exakt diese Daten nicht mit der Predictive Policing Software ausgewertet werden dürfen](else:)[die Initiative dazu vor 16 Jahren abgelehnt wurde].
 Die notwendige Gesetzesänderung, um diese Befugnisse rechtlich zu legitimieren, wurde nun unter dem Namen &quot;Für Recht und Ordnung in Swissovia&quot; dem Parlament in die Vernehmlassung übergeben. Gegen diese Gesetzesänderung regt sich jedoch Widerstand und es werden Unterschriften für ein Referendum gesammelt.
 
 Ich bin hin und her gerissen, ob ich das Referendum gegen das Gesetz &quot;Für Recht und Ordnung in Swissovia&quot; unterstützen soll oder nicht. Auf der Website des Komitees gegen das Gesetz erfahre ich, dass gleich eine Podiumsdiskussion via Livestream direkt aus dem Kongresszentrum übertragen wird. Ich beschliesse, am Event teilzunehmen.
 
-[[📞 Ich wähle mich mit der &quot;Anrufen Geste&quot; via AR-Brille in die Podiumsdiskussion mit ein.-&gt;Podiumsdiskussion]]</tw-passagedata><tw-passagedata pid="18" name="Podiumsdiskussion" tags="" position="2525,450" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X&quot;)[&lt;img src=&quot;https://www.ilkagroenewold.de/wp-content/uploads/2017/07/podiumsdiskussion-mit-moderatorin-ilka-groenewold.jpg&quot; alt=&quot;Podiums Diskussion&quot; width=&quot;417&quot; height=&quot;278&quot;/&gt;]
-Ich setze mich auf einen virtuellen Sitzplatz und die Podiumsdiskussion startet...
-
-&#39;&#39;//Moderator:// &#39;&#39; Willkommen bei der Podiumsdiskussion über das Referendum zum Gesetz &quot;Für Recht und Ordnung in Swissovia&quot;. Zuerst übergebe ich das Wort an Frau Antić von der Arbeitsgruppe des Bundes, welche die Gesetzesvorlage ursprünglich erarbeitet hatte.
-
-&#39;&#39;//Frau Antić://&#39;&#39; Besten Dank! Wie verschiedene Statistiken belegen, ist die Kriminalität  in unserem schönen Swissovia ausser Rand und Band. Wir sahen uns gezwungen mit der Zeit zu gehen, um mit den Kriminellen Schritt halten zu können. Nur mit diesem Gesetz und den einhergehenden Lockerungen im Datenschutz sowie massiven Investitionen in Predictive Policing können wir diesem Trend entgegenwirken.
-
-&#39;&#39;//Moderator:// &#39;&#39; Die ersten Zahlen zur Kriminalitätsstatistik scheinen Ihnen Recht zu geben, Frau Antić. Bereits jetzt kann man von einem Trendbruch reden - Wie wurde das konkret erreicht?
-
-&#39;&#39;//Frau Antić://&#39;&#39; Erstens werden nicht länger nur anonyme, sondern auch personenbezogene Daten aus öffentlichem Verkehr, Kamerafeeds, Internetverkehr, Telefonate, den sozialen Medien bis hin zu Finanztransaktionen von der Polizei ausgewertet. Zweitens sind in der Öffentlichkeit Sensoren und biometrische Scanner installiert worden, mit denen die Bürger:innen besser überwacht werden können. Dank der Rechenleistung der Quantencomputer und den weiterentwickelten Algorithmen sind wir nun in der Lage, in Echtzeit mit Predictive Policing Software diese Daten und Livefeeds auszuwerten. In Verbindung mit den Erkenntnissen über historische Trends sowie Verhaltensmustern, erstellt die Predictive Policing Software Vorhersagen, die potenzielle Verbrechen mit Koordinaten und teilweise sogar individuellen Verdächtigen benennen kann - noch bevor ein Verbrechen begangen wird.
-
-&#39;&#39;//Moderator:// &#39;&#39; Interessant - vielen Dank für Ihre Ausführung. Dieses Vorhaben wird aber unter anderem deshalb kritisiert, da enorme Summen in Quantencomputer für Predictive Policing investiert werden müssten. Herr Müller von der Partei &quot;Freiheit für alle&quot;, ich sehe Sie runzeln die Stirn. Was sind Ihre Bedenken?
-
-&#39;&#39;//Herr Müller://&#39;&#39; Merci, also... Nur schon aus einer Umweltperspektive sehe ich hier Probleme. Einerseits benötigen Quantencomputer enorm viel Energie, damit diese stabil betrieben werden können. Andererseits könnte die Predictive Policing Software missbraucht werden, um gezielt Minderheiten oder politische Gegner zu überwachen. Auch sehe ich die Meinungsfreiheit bedroht - die ständige Überwachung führt dazu, dass sich niemand mehr traut, eine gegenteilige Meinung zur traditionellen Politik zu äussern. Zudem stellt sich auch die Frage, ob wir dann überhaupt noch ein Datenschutzgesetz brauchen, wenn all diese Datenquellen angezapft und ausgewertet werden dürfen.
-
-&#39;&#39;//Moderator:// &#39;&#39; Berechtigte Einwände... In Ihrem Video auf TikTok und den von Ihnen publizierten Studien weisen Sie auch auf falsche Vorhersagen der Predictive Policing Software hin. Sehen Sie Verbesserungen, wenn vermehrt Quantencomputer in Kombination mit zusätzlichen Datenquellen eingesetzt werden?
-
-&#39;&#39;//Herr Müller://&#39;&#39; Eine generelle Aussage möchte ich hierzu nicht treffen. In meinen Feldstudien wurde jedoch ersichtlich, dass Predictive Policing Software immer wieder einen falschen Ort vorhersagt oder eine falsche Person eines Verbrechens bezichtigt. Stellen Sie sich vor, ein unschuldiger Bürger wird von der Software zu Unrecht von der Polizei festgehalten und beschuldigt, einen Mord begehen zu wollen. Für mich wäre das ein sehr traumatisierendes und unangenehmes Erlebnis.
-
-Ich habe genug gehört und verlasse die virtuelle Podiumsdiskussion. Nachdenklich gehe ich zum Fenster und schaue hinab auf die Strasse. Meine Gedanken sind noch bei dem eben Gehörten. Ich frage mich, wie ich zu diesem Thema stehe.
-
-[[Ich möchte das Referendum nicht unterstützen -&gt;Pro &quot;Für Recht und Ordnung in Swissovia&quot;]]
-
-[[Ich trete der Partei &quot;Freiheit für alle&quot; bei, welche das Referendum ergreifen will-&gt;Partei &quot;Freiheit für alle&quot;]]</tw-passagedata><tw-passagedata pid="19" name="Partei &quot;Freiheit für alle&quot;" tags="" position="2750,650" size="100,100">Ich bin der Partei &quot;Freiheit für alle&quot; beigetreten und sammle fleissig Unterschriften für das Referendum gegen das Gesetz &quot;Für Recht und Ordnung in Swissovia&quot;. Heute kann ich aber keine Unterschriften sammeln, da ich im Pflegeheim aushelfe. Ich gehe gerade am Aufenthaltsraum vorbei, als ich von Franz angesprochen werde, der gerade durch seine Zeitung blättert. Franz hat zuvor als Kommissar bei der Polizei gearbeitet und ist fasziniert von dem Zeitungsartikel über die Predictive Policing Software.
+[[📞 Ich wähle mich mit der &quot;Anrufen Geste&quot; via AR-Brille in die Podiumsdiskussion mit ein-&gt;Podiumsdiskussion]]</tw-passagedata><tw-passagedata pid="18" name="Partei &quot;Freiheit für alle&quot;" tags="Zeit2" position="2825,225" size="100,100">Ich bin der Partei &quot;Freiheit für alle&quot; beigetreten und sammle fleissig Unterschriften für das Referendum gegen das Gesetz &quot;Für Recht und Ordnung in Swissovia&quot;. Heute kann ich aber keine Unterschriften sammeln, da ich im Pflegeheim aushelfe. Ich gehe gerade am Aufenthaltsraum vorbei, als ich von Franz angesprochen werde, der gerade durch seine Zeitung blättert. Franz hat zuvor als Kommissar bei der Polizei gearbeitet und ist fasziniert von dem Zeitungsartikel über die Predictive Policing Software.
 
 (align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X&quot;)[&lt;img src=&quot;https://image.bz-berlin.de/data/uploads/multimedia/archive/00286/rentner2_286720a.jpg?impolicy=channel&amp;imwidth=992&quot; width=&quot;417&quot; height=&quot;220&quot;/&gt;]
 
-&#39;&#39;//Franz: // &#39;&#39; Schon Wahnsinn $name, in unserer Stadtpolizei darf man neu auch personenbezogene Daten mit Predictive Policing Software auswerten und die Delikte sind im Nu weniger geworden. Die Polizist:innen, die sonst immer Überstunden schieben mussten, können ihre Arbeiten im normalen Pensum erledigen. Zudem ist das Arbeitsklima gemäss Umfragen in den Strafverfolgungsbehörden erheblich besser geworden, da durch diese Software die Effizienz gesteigert werden konnte und die Polizistinnen und Polizisten dadurch nicht mehr so überarbeitet sind. Wahnsinn, Wahnsinn diese Technologie heute...
+&#39;&#39;//(text-colour:#ea9090)[Franz]: // &#39;&#39; Schon Wahnsinn $name in unserer Stadtpolizei darf man neu auch personenbezogene Daten mit Predictive Policing Software auswerten und die Delikte sind im Nu weniger geworden. Die Polizist:innen, die sonst immer Überstunden schieben mussten, können ihre Arbeiten im normalen Pensum erledigen. Zudem ist das Arbeitsklima gemäss Umfragen in den Strafverfolgungsbehörden erheblich besser geworden, da durch diese Software die Effizienz gesteigert werden konnte und die Polizistinnen und Polizisten dadurch nicht mehr so überarbeitet sind. Wahnsinn, Wahnsinn diese Technologie heute...
 
-&#39;&#39;//$name: // &#39;&#39; Spannend, bis anhin hatte ich immer Angst, dass die Polizei solche personenbezogenen Daten missbräuchlich verwenden würde. (if:(visited:&#39;Polizeikontrolle&#39;))[Waren die Polizeikontrollen gestern mit Mohammed nur Zufall? Oder war es nur ein Einzelfall, wo die Predictive Policing Software nicht zu 100% funktioniert hat? Denn](else:)[Aber] wenn die Kriminalität innert so kurzen Zeit spürbar sinkt, ist das schon was Tolles.
+//&#39;&#39;(text-colour:cyan)[$name]: &#39;&#39;//Spannend bis anhin hatte ich immer Angst, dass die Polizei solche personenbezogenen Daten missbräuchlich verwenden würde. (if:(visited:&#39;Polizeikontrolle&#39;))[Waren die Polizeikontrollen gestern mit Mohammed nur Zufall? Oder war es nur ein Einzelfall, wo die Predictive Policing Software nicht zu 100% funktioniert hat? Denn](else:)[Aber] wenn die Kriminalität innert so kurzen Zeit spürbar sinkt, ist das schon was Tolles.
 
+(if:(visited:&#39;Pro &quot;Für Recht und Ordnung in Swissovia&quot;&#39;))[[[Weiter-&gt;Konsequenzen Nein 2]]]
+\(else:)[
 Ist es doch nicht so eine gute Idee, das Referendum gegen das Gesetz &quot;Für Recht und Ordnung in Swissovia&quot; zu unterstützen?
 
-[[Ich bin doch für das Gesetz &quot;Für Recht und Ordnung in Swissovia&quot;-&gt;Pro &quot;Für Recht und Ordnung in Swissovia&quot;]]
+[[👍 Ich bin doch für das Gesetz &quot;Für Recht und Ordnung in Swissovia&quot;-&gt;Pro &quot;Für Recht und Ordnung in Swissovia&quot;]]
 
-[[Nein, ich bleibe in der Partei &quot;Freiheit für alle&quot; und unterstütze das Referendum weiterhin -&gt;Konsequenzen Nein 2]]</tw-passagedata><tw-passagedata pid="20" name="Pro &quot;Für Recht und Ordnung in Swissovia&quot;" tags="" position="2750,325" size="100,100">(if:(visited:&#39;Partei &quot;Freiheit für alle&quot;&#39;))[(text-colour:red)[Ich bin aus der Partei &quot;Freiheit für alle&quot; ausgetreten.
+[[👎 Nein, ich bleibe in der Partei &quot;Freiheit für alle&quot; und unterstütze das Referendum weiterhin -&gt;Konsequenzen Nein 2]]]
+
+</tw-passagedata><tw-passagedata pid="19" name="Pro &quot;Für Recht und Ordnung in Swissovia&quot;" tags="Zeit2" position="2725,525" size="100,100">(if:(visited:&#39;Partei &quot;Freiheit für alle&quot;&#39;))[(text-colour:red)[Ich bin aus der Partei &quot;Freiheit für alle&quot; ausgetreten.
 ]]
 Heute unterstütze ich TixiTaxi, welches Behindertentransporte anbietet. Zwar fahren die Autos mittlerweile autonom, aber beim Ein- und Aussteigen brauchen die Passagiere Hilfe. Für mich ist das eine erfüllende Arbeit neben dem sonst sehr digitalen Alltag. 
 
@@ -319,19 +360,18 @@ Heute unterstütze ich TixiTaxi, welches Behindertentransporte anbietet. Zwar fa
 
 Begleitet werde ich heute zum ersten Mal von Mohammed. Mohammed musste wegen eines Bürgerkriegs aus seinem Heimatland fliehen und hat in der Schweiz Asyl beantragt. Auf einmal sehe ich ein Blaulicht im Rückspiegel und die Sirene des Streifenwagens geht an. Das kann doch nicht wahr sein, schon wieder ein Streifenwagen, der mich zum Anhalten auffordert. Das ist heute das zweite Mal. 
 
-[[Ich fahre rechts ran und stoppe das Auto -&gt;Polizeikontrolle]]</tw-passagedata><tw-passagedata pid="21" name="End World 2" tags="" position="3400,450" size="100,100">Das Referendum gegen das Gesetz ist zustande gekommen. Ich habe heute Morgen abgestimmt. Gerade sitze ich in meinem Wohnzimmer und spiele mit meinen Freunden eine Runde AR-Bowling. Plötzlich wird unser Spiel durch eine Eilmeldung unterbrochen.
+[[Ich weise das Auto an, rechts ran zu fahren -&gt;Polizeikontrolle]]</tw-passagedata><tw-passagedata pid="20" name="End World 2" tags="Zeit2" position="3400,450" size="100,100">Das Referendum gegen das Gesetz ist zustande gekommen. Ich habe heute Morgen abgestimmt. Gerade sitze ich in meinem Wohnzimmer und spiele mit meinen Freunden eine Runde AR-Bowling. Plötzlich wird unser Spiel durch eine Eilmeldung unterbrochen.
 
 (align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X&quot;)[📰⚠️📰⚠️📰⚠️📰⚠️📰⚠️📰⚠️
 Obwohl das Referendum gegen das Gesetz &quot;Für Recht und Ordnung in Swissovia&quot; zustande kam, ist dieses deutlich mit 78 % Nein Stimmen abgelehnt worden. Den Strafverfolgungsbehörden ist es somit weiterhin erlaubt, nicht nur anonyme, sondern auch personenbezogene Daten aus öffentlichem Verkehr, Kamerafeeds, Internetverkehr, Telefonaten und sozialen Medienprofilen bis hin zu Finanztransaktionen auszuwerten. Ebenso gibt das Justizministerium bekannt, weitere 1000 Hochleistungsquantencomputer für Predictive Policing anzuschaffen.
 📰⚠️📰⚠️📰⚠️📰⚠️📰⚠️📰⚠️]
-
 (if: (history:)&#39;s last is &quot;Konsequenzen Ja 2&quot;)[(set: $pp_stage_2 to &quot;ja&quot;)
 Da ich das Gesetz &quot;Für Recht und Ordnung in Swissovia&quot; befürworte, habe ich natürlich gegen das Referendum gestimmt. Zusammen mit meinen Freunden aus der Bowling Runde, die auch alle gegen das Referendum gestimmt haben, freue ich mich, dass das Referendum abgelehnt wurde und die Polizei ihre zusätzlichen Befugnisse behalten darf. 
 ](else:)[(set: $pp_stage_2 to &quot;nein&quot;)
 Es hat leider nicht geholfen, der Partei &quot;Freiheit für alle&quot; beizutreten und mitzuhelfen, das Referendum gegen das Gesetz &quot;Für Recht und Ordnung in Swissovia&quot; auf die Beine zu stellen. Zudem erfahre ich gerade, dass meine Freunde aus der Bowling Runde alle gegen das Referendum gestimmt haben. Ich bin über das Resultat der Abstimmung enttäuscht und verabschiede mich vorzeitig aus der AR-Bowlingrunde, da ich nun einen Spaziergang brauche, um das alles zu verdauen.
 ]
 
-[[Einige Jahrzehnte später...-&gt;Build World 3]]</tw-passagedata><tw-passagedata pid="22" name="Einleitung" tags="" position="400,450" size="100,100">####(text-colour:cyan)[Angaben zur Person]
+[[Einige Jahrzehnte später...-&gt;Build World 3]]</tw-passagedata><tw-passagedata pid="21" name="Einleitung" tags="Zeit1" position="500,450" size="100,100">####(text-colour:cyan)[Angaben zur Person]
 Die Geschichte wird aus deiner Perspektive in der Ich-Form 
 erzählt und du nimmst darin die Hauptrolle ein.
 Ab und zu wirst du auch mit deinem Namen angesprochen.
@@ -342,7 +382,7 @@ ansonsten nirgends gespeichert. Du kannst aber auch einen Phantasienamen
  für die Geschichte angeben, mit welchem du angesprochen werden 
 möchtest.//]
 
-[[Namen eingeben]]</tw-passagedata><tw-passagedata pid="23" name="Nahe Zukunft" tags="" position="700,25" size="100,100"></tw-passagedata><tw-passagedata pid="24" name="Entfernte Zukunft" tags="" position="2175,0" size="100,100"></tw-passagedata><tw-passagedata pid="25" name="Ferne Zukunft" tags="" position="3400,25" size="100,100"></tw-passagedata><tw-passagedata pid="26" name="Build World 3" tags="" position="3525,450" size="100,100">Seit dem gemeinsamen Feierabendbier mit Lena und James sind nun einige Jahrzehnte vergangen. Auch die Abstimmung über das Referendum liegt schon länger zurück.
+[[Einstellung abfragen]]</tw-passagedata><tw-passagedata pid="22" name="Nahe Zukunft" tags="" position="700,25" size="100,100"></tw-passagedata><tw-passagedata pid="23" name="Entfernte Zukunft" tags="" position="2175,0" size="100,100"></tw-passagedata><tw-passagedata pid="24" name="Ferne Zukunft" tags="" position="3400,25" size="100,100"></tw-passagedata><tw-passagedata pid="25" name="Build World 3" tags="Zeit3" position="3525,450" size="100,100">Seit dem gemeinsamen Feierabendbier mit Lena und James sind nun einige Jahrzehnte vergangen. Auch die Abstimmung über das Referendum liegt schon länger zurück.
  
 Die Menschheit hat einen beispiellosen technologischen Fortschritt erlebt, der das alltägliche Leben grundlegend verändert hat. Der Neuralink-Chip von Elon Musk ist nun bereits seit einiger Zeit ausgereift und immer mehr Menschen lassen sich einen solchen implantieren. Diese Chips erlauben, dass Menschen mit Hilfe ihrer Gedanken direkt mit Geräten kommunizieren können. Einst entwickelt für Menschen mit körperlichen Einschränkungen, sind sie mittlerweile für jedermann verfügbar, was eine Ära der beispiellosen Konnektivität und des Komforts eingeleitet hat. Die Integration von Gehirn-Computer-Schnittstellen durch implantierbare Chips ist zur Norm geworden.
  
@@ -353,129 +393,126 @@ So preist die Firma hinter Neuralink ihren Chip auch wie folgt an:
 (align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X&quot;)[&lt;img src=&quot;https://www.teslarati.com/wp-content/uploads/2020/08/Elon-Musk-2020-Update-Neuralink-Link-v0.9-install-1-c-2048x1044.jpg&quot; width=&quot;417&quot; height=&quot;220&quot;/&gt;]
 Nach längerer Bedenkzeit hatte auch ich mich dazu entschieden, den Schritt in diese neue Ära zu wagen und mir einen dieser fortschrittlichen Chips implantieren zu lassen. In Zeiten wie diesen ist es wichtig, am Puls der Zeit zu bleiben, und ich muss gestehen, dass diese Technologie mein Leben ungemein vereinfacht hat. Als jemand, der bereits in die Jahre gekommen ist, bietet mir der Chip eine Brücke in die digitale Moderne, ohne dass ich mich mit den neuesten Geräten und Benutzeroberflächen auseinandersetzen muss. Besonders wertvoll ist diese Unterstützung im Hinblick auf mein nachlassendes Gedächtnis, das mir zunehmend Sorgen bereitet hatte.
  
-[[Weiter-&gt;Build World 3_1]]</tw-passagedata><tw-passagedata pid="27" name="Build World 3_2" tags="" position="3825,450" size="100,100">Ich sitze gerade mit meiner AR-Brille im Wohnzimmer und bin bereits etwas verspätet für den Live-Stream eines Interviews mit einem Forscher, welcher Neuralink-Chips sowie deren Potenzial für das Predictive Policing untersucht hat. Ein kurzer Gedanke für das Beitreten zu dem Interview reicht und schon sehe ich die beiden Gesprächspartner als Hologramme in meinem Wohnzimmer vor mir stehen.
- 
+[[Weiter-&gt;Build World 3_1]]</tw-passagedata><tw-passagedata pid="26" name="Build World 3_2" tags="Zeit3" position="3825,450" size="100,100">Ich trage meine AR-Brille im Wohnzimmer und bin etwas spät dran, um den Live-Stream eines Interviews mit einem Forscher zu sehen, der Neuralink-Chips und deren Einsatzmöglichkeiten im Predictive Policing erforscht hat. Ein Gedanke genügt, und plötzlich erscheinen die Gesprächspartner als Hologramme vor mir.
+
 (align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X&quot;)[&lt;img src=&quot;https://lh3.googleusercontent.com/d/1byb_Zg6BeDJ-qV3GVnO5vkKhgLzkkylm=w1000?authuser=1/view&quot; width=&quot;540&quot; height=&quot;380&quot;/&gt;]
-&#39;&#39;//Moderatorin://&#39;&#39; Herr Müller, ihn ihrem heute veröffentlichen Bericht zu Neuralink-Chips haben sie sich, nebst dem bereits besprochenen, auch mit dem Potenzial für das Predictive Policing befasst. Zu welchen Erkenntnissen sind Sie gelangt?
- 
-&#39;&#39;//Herr Müller:// &#39;&#39; Diese Entwicklung hat das Potenzial im Bereich der Kriminalprävention zu bahnbrechenden Veränderungen zu führen. Durch die neueren Generationen der implantierbaren Chips, die nicht nur neuronale Aktivitäten, sondern auch die Konzentration von Botenstoffen wie Hormonen und Neurotransmittern auslesen können, wurden komplett neuartige Daten geschaffen. Diese wurden im Rahmen von Experimenten durch Quantencomputer analysiert, welche menschliche Verhaltensmuster mit einer bisher unerreichten Genauigkeit vorhersagen konnten.
+&#39;&#39;//(text-colour:#53885b)[Moderatorin]://&#39;&#39; Herr Müller, in Ihrem neuen Bericht haben Sie sich auch mit Neuralink-Chips im Predictive Policing befasst. Welche Erkenntnisse haben Sie gewonnen?
+
+//&#39;&#39;(text-colour:#B87333)[Herr Müller]: &#39;&#39;//Diese Technologie könnte in der Kriminalprävention bahnbrechend sein. Neuere Chipgenerationen können neuronale Aktivitäten und Botenstoffe auslesen, was neue Daten für Quantencomputer liefert. Diese können menschliche Verhaltensmuster extrem präzise vorhersagen.
  
 //Meine Biologiestunden in der Schule sind schon eine Weile her, was sind nochmals...//
 //[[... Botenstoffe-&gt;Definition Botenstoffe]]//
 //[[... Hormone-&gt; Definition Hormone]]//
 //[[... Neurotransmitter -&gt; Definition Neurotransmitter]]//
  
-&#39;&#39;//Moderatorin://&#39;&#39; Sie bezeichnen in den Risiken die Algorithmen der Quantencomputer als &quot;Black Box&quot;. Können Sie dies etwas ausführen?
+&#39;&#39;//(text-colour:#53885b)[Moderatorin]://&#39;&#39; Sie sprechen von den Algorithmen der Quantencomputer als &quot;Black Box&quot;. Können Sie das erläutern?
+
+//&#39;&#39;(text-colour:#B87333)[Herr Müller]: &#39;&#39;//Ja, die Algorithmen der Quantencomputer sind so komplex, dass selbst Experten sie kaum verstehen können. Ihre Vorhersagen sind aber so genau, dass sie bestehende Systeme deutlich übertreffen. Trotz des Risikos halte ich das für vertretbar.
+
+&#39;&#39;//(text-colour:#53885b)[Moderatorin]://&#39;&#39; Was würde sich ändern, wenn wir diese Chips im Predictive Policing einsetzen?
+
+//&#39;&#39;(text-colour:#B87333)[Herr Müller]: &#39;&#39;//Die Daten aus den Chips könnten helfen, potenzielle Straftaten früh zu erkennen und präventiv einzugreifen, was die Arbeit der Strafverfolgung revolutionieren würde.
+
+&#39;&#39;//(text-colour:#53885b)[Moderatorin]://&#39;&#39; Leider haben wir nicht mehr viel Zeit, aber wir haben weitere Informationen und Forschungsergebnisse von Herrn Müller verlinkt. Vielen Dank für das Gespräch, Herr Müller.
+
+//&#39;&#39;(text-colour:#B87333)[Herr Müller]: &#39;&#39;//Danke, dass ich hier sein durfte.
+
+&#39;&#39;//(text-colour:#53885b)[Moderatorin]://&#39;&#39; Das war unsere heutige Sendung. Wir haben nicht nur die Vorteile, sondern auch die ethischen und rechtlichen Fragen von Predictive Policing besprochen. In der nächsten Sendung werden wir weiter auf die rechtlichen Herausforderungen eingehen. Ich hoffe, Sie sind dann wieder dabei.
+
+Das Interview endet, und ich blicke wieder in mein Wohnzimmer. &quot;Sehr interessant&quot;, denke ich und beschliesse, online nach weiteren Meinungen zu suchen.
  
-&#39;&#39;//Herr Müller:// &#39;&#39; Ja gerne. Obwohl wir durch die Quantencomputer komplexe Berechnungen, wie beispielsweise das Analysieren grosser Datenmengen, innert kürzester Zeit ausführen können, haben die dafür genutzten Algorithmen und damit die Berechnungswege zu den getroffenen Vorhersagen eine Komplexität erreicht, welche selbst die renommiertesten Spezialist:innen nicht annähernd nachvollziehen können. Da die Genauigkeit der getroffenen Vorhersagen jedoch in Tests bestehende Systeme signfikant übertroffen haben, bin ich der Meinung, dass dies ein Risiko ist, welches wir in Kauf nehmen sollten.
- 
-&#39;&#39;//Moderatorin://&#39;&#39; Was würde sich denn konkret verändern, wenn die Chips beziehungsweise die Daten daraus für das Predictive Policing genutzt werden könnten?
- 
-&#39;&#39;//Herr Müller:// &#39;&#39; Die Experimente haben auch gezeigt, dass die Verwendung dieser neuartigen Daten in der Kriminalprävention ermöglichen würde, potenzielle Straftaten zu identifizieren, bevor sie geschehen. Dieser Ansatz würde damit die Effizienz der Strafverfolgungsbehörden revolutionieren, da er es ermöglichen würde, potenzielle Täter zu identifizieren und einzuschreiten, bevor ein Verbrechen tatsächlich verübt wird.
- 
-&#39;&#39;//Moderatorin://&#39;&#39; Das hört sich sehr spannend an. Aufgrund der Zeit können wir dies jedoch heute leider nicht noch weiter vertiefen. Für alle Interessierten haben wir weitere Infos so wie auch die Forschungsergebnisse von Herrn Müller unter diesem Beitrag verlinkt. Auf jeden Fall vielen Dank, Herr Müller, für Ihren Besuch und die Insights in Ihre Arbeit.
- 
-&#39;&#39;//Herr Müller:// &#39;&#39; Danke Ihnen, dass ich hier sein durfte.
- 
-&#39;&#39;//Moderatorin://&#39;&#39; Damit sind wir auch schon am Ende unserer heutigen Sendung angekommen. Nebst den diskutierten Vorteilen durch die Nutzung weiterer Daten im Predictive Policing, wirft diese auch grundlegende ethische und rechtliche Fragen auf. Insbesondere im Hinblick auf die Freiheit des Einzelnen und das Prinzip der Unschuldsvermutung. Das bestehende Rechtssystem sieht sich mit einem Paradigmenwechsel konfrontiert: Kann und darf eine Person für eine Tat bestraft werden, die sie möglicherweise nie begangen hätte?
-Genau dieser Frage werden wir uns in der nächsten Sendung widmen und hoffen, Sie wieder zu unseren Zuschauern zählen zu dürfen.
- 
-Mit diesen abschliessenden Worten wird das Video auf meiner AR-Brille beendet und ich sehe wieder mein Wohnzimmer vor mir. &quot;Das hört sich alles ausserordentlich spannend an und erinnert mich an die Zeit damals vor dem Referendum&quot;, denke ich mir, &quot;Dort habe ich mich auch zum letzten Mal so hin und her gerissen gefühlt wie gerade. Lass mich einmal online schauen, wie die Meinungen zu diesem Thema sind.&quot;
- 
-[[Webseite aufrufen-&gt; Build World 3_3]]</tw-passagedata><tw-passagedata pid="28" name="Build World 3_4" tags="" position="4300,625" size="100,100">Ich ziehe mir die Schuhe an, greife beim Rausgehen meine Jacke und verlasse die Wohnung. Es ist Frühling - die Vögel zwitschern und die Sonne scheint. Eine kühle Brise weht mir ins Gesicht und erinnert daran, dass vor kurzem noch tiefer Winter war. Ich gehe in Richtung des nahegelegenen Parks, der an solchen Tagen immer besonders schön ist.
+[[Webseite aufrufen-&gt; Build World 3_3]]</tw-passagedata><tw-passagedata pid="27" name="Build World 3_4" tags="Zeit3" position="4300,625" size="100,100">Ich ziehe mir die Schuhe an, greife beim Rausgehen meine Jacke und verlasse die Wohnung. Es ist Frühling - die Vögel zwitschern und die Sonne scheint. Eine kühle Brise weht mir ins Gesicht und erinnert daran, dass vor kurzem noch tiefer Winter war. Ich gehe in Richtung des nahe gelegenen Parks, der an solchen Tagen immer besonders schön ist.
 
 Beim Überqueren der Strasse sehe ich durch meine AR-Brille auf einem interaktiven Werbeplakat eine Frau, die mich anlächelt und mir zuwinkt. Über ihr prangt die Überschrift &quot;Jetzt teilnehmen und Steuern sparen!&quot;.
 
-Eine weitere Nachricht poppt auf meiner AR-Brille auf:
+Zeitgleich poppt eine Nachricht am oberen rechten Rand meiner AR-Brille auf:
 
-[[Werbung abspielen?-&gt;Werbung abspielen]]</tw-passagedata><tw-passagedata pid="29" name="Werbung abspielen" tags="" position="4300,450" size="100,100">(if:(visited:&#39;Build World 3_4&#39;))[](else:)[Der Stream meiner Lieblingsserie wird von einer Pushnachricht gestört. Ich sehe die Überschrift &quot;Jetzt teilnehmen und Steuern sparen!&quot;. &quot;Steuern sparen, ist ja nicht verkehrt&quot;, denke ich und öffne die Werbung.:]
+[[Klicke hier, um mehr über diese Werbung zu erfahren-&gt;Werbung abspielen]]</tw-passagedata><tw-passagedata pid="28" name="Werbung abspielen" tags="Zeit3" position="4300,450" size="100,100">(if:(visited:&#39;Build World 3_4&#39;))[](else:)[Der Stream meiner Lieblingsserie wird von einer Pushnachricht gestört. Ich sehe die Überschrift &quot;Jetzt teilnehmen und Steuern sparen!&quot;. &quot;Steuern sparen ist ja nicht verkehrt&quot;, denke ich und öffne die Werbung.:]
 
 (align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X&quot;)[📰⚠️📰⚠️📰⚠️📰⚠️📰⚠️📰⚠️
-Mit &quot;SafeConnect&quot; etwas bewirken und Vorteile geniessen! Sind Sie bereit, eine entscheidende Rolle bei der Schaffung einer sicheren Gesellschaft zu spielen und gleichzeitig persönliche Vorteile zu geniessen? Machen Sie mit bei SafeConnect, dem Programm der Regierung, das (if: $geschlecht contains &quot;weiblich&quot;) [Bürgerinnen] (else-if: $geschlecht contains &quot;männlich&quot;) [Bürger] (else-if: $geschlecht contains &quot;divers&quot;) [Bürger:innen] wie Ihnen helfen soll. Durch Ihre freiwillige Mitarbeit in unserem Programm verbinden Sie Ihren Neuralink-Chip zum &quot;SafeConnect&quot;-System. Die von Ihnen zur Verfügung gestellten Daten, werden vom System analysiert und tragen zu einer sicheren Gesellschaft bei!
+Mit &quot;SafeConnect&quot; etwas bewirken und Vorteile geniessen! Sind Sie bereit, eine entscheidende Rolle bei der Schaffung einer sicheren Gesellschaft zu spielen und gleichzeitig persönliche Vorteile zu geniessen? Machen Sie mit bei SafeConnect, dem Programm der Regierung, das (if: $geschlecht contains &quot;weiblich&quot;) [Bürgerinnen] (else-if: $geschlecht contains &quot;männlich&quot;) [Bürger] (else-if: $geschlecht contains &quot;divers&quot;) [Bürger:innen] wie Ihnen helfen soll. Durch Ihre freiwillige Mitarbeit in unserem Programm verbinden Sie Ihren Neuralink-Chip zum &quot;SafeConnect&quot;-System. Die von Ihnen zur Verfügung gestellten Daten werden vom System analysiert und tragen zu einer sicheren Gesellschaft bei!
 Alle profitieren: Sie helfen, Kosten in der Strafverfolgung zu sparen und die Sicherheit der Gesellschaft zu erhöhen, während Sie zudem noch Steuern sparen! Verpassen Sie diese einmalige Gelegenheit nicht! Werden Sie Teil der Lösung! Melden Sie sich noch heute für &quot;SafeConnect&quot; an und seien Sie die Veränderung, die Sie sehen wollen!
 📰⚠️📰⚠️📰⚠️📰⚠️📰⚠️📰⚠️]
 
 Am Ende des Werbeclips fällt mir zuunterst ein kleingeduckter Text auf. Dieser Text ist aber von blossem Auge kaum lesbar.
 
-[[Ich nutze die Vergrösserungsfunktion des AR-Headsets.-&gt;Kleingedrucktes]] &lt;!--
-ALEX: TEXT WARUM NICHT ANMELDEN
-ANDI: Text warum nicht anmelden m.E. auch nicht nötig? Wir haben eh schon viel zu viel text...
---&gt;</tw-passagedata><tw-passagedata pid="30" name="Definition VPN" tags="" position="2350,300" size="100,100">Virtual Private Network (deutsch „virtuelles privates Netzwerk“; kurz: VPN) bezeichnet eine Netzwerkverbindung, die von Unbeteiligten nicht einsehbar ist. Es dient dazu, Online-Aktivitäten zu anonymisieren und Daten vor unbefugtem Zugriff zu schützen, indem es den tatsächlichen Standort verbirgt und so tut, als ob der Zugriff auf das Internet von einem anderen Ort aus geschieht.
+[[Ich nutze die Vergrösserungsfunktion des AR-Headsets-&gt;Kleingedrucktes]]</tw-passagedata><tw-passagedata pid="29" name="Definition VPN" tags="Zeit2" position="2350,300" size="100,100">Virtual Private Network (deutsch „virtuelles privates Netzwerk“; kurz: VPN) bezeichnet eine Netzwerkverbindung, die von Unbeteiligten nicht einsehbar ist. Es dient dazu, Online-Aktivitäten zu anonymisieren und Daten vor unbefugtem Zugriff zu schützen, indem es den tatsächlichen Standort verbirgt und so tut, als ob der Zugriff auf das Internet von einem anderen Ort aus geschieht.
 
-[[Ah, stimmt. Jetzt weiss ich es wieder. -&gt;Build World 2.2]]</tw-passagedata><tw-passagedata pid="31" name="Definition Tor-Netzwerk" tags="" position="2350,600" size="100,100">Das Tor-Netzwerk ist ein System, das darauf ausgelegt ist, die Online-Privatsphäre und Anonymität seiner Nutzer zu maximieren. Es leitet Internetverkehr durch ein weltweites, freiwillig betriebenes Netzwerk von Relais, wodurch die Herkunft und das Ziel der Daten verschleiert werden. Durch diese Verschleierung ermöglicht Tor seinen Nutzern den Zugriff auf das Internet, ohne überwacht oder nachverfolgt zu werden, und kann auch den Zugang zu sogenannten &quot;Darknet&quot;-Seiten bieten.
+[[Ah, stimmt. Jetzt weiss ich es wieder -&gt;Build World 2.2]]</tw-passagedata><tw-passagedata pid="30" name="Definition Tor-Netzwerk" tags="Zeit2" position="2350,600" size="100,100">Das Tor-Netzwerk ist ein System, das darauf ausgelegt ist, die Online-Privatsphäre und Anonymität seiner Nutzer zu maximieren. Es leitet Internetverkehr durch ein weltweites, freiwillig betriebenes Netzwerk von Relais, wodurch die Herkunft und das Ziel der Daten verschleiert werden. Durch diese Verschleierung ermöglicht Tor seinen Nutzern den Zugriff auf das Internet, ohne überwacht oder nachverfolgt zu werden, und kann auch den Zugang zu sogenannten &quot;Darknet&quot;-Seiten bieten.
 
-[[Ah, stimmt. Jetzt erinnere ich mich wieder. -&gt;Build World 2.2]]</tw-passagedata><tw-passagedata pid="32" name="Polizeikontrolle" tags="" position="2950,250" size="100,100">Der Polizist steigt aus seinem Auto aus und nähert sich. Ich lasse mein Fenster runter.
+[[Ah, stimmt. Jetzt erinnere ich mich wieder-&gt;Build World 2.2]]</tw-passagedata><tw-passagedata pid="31" name="Polizeikontrolle" tags="Zeit2" position="2925,525" size="100,100">Der Polizist steigt aus seinem Auto aus und nähert sich. Ich lasse mein Fenster runter.
 
-//&#39;&#39;Polizist:&#39;&#39;// Guten Tag, mein Name ist Hungentobler von der Stadtpolizei. Dies ist eine routinemässige Verkehrskontrolle. Bitte Fahrzeug- und Führerausweis.
+//&#39;&#39;(text-colour:purple)[Polizist]:&#39;&#39;// Guten Tag, mein Name ist Hungentobler von der Stadtpolizei. Dies ist eine routinemässige Verkehrskontrolle. Bitte Fahrzeug- und Führerausweis.
 
-//&#39;&#39;$name:&#39;&#39;// Guten Tag, einen Moment ich suche Ihnen den Fahrzeugausweis und Führerausweis gleich heraus.
+//&#39;&#39;(text-colour:cyan)[$name]: &#39;&#39;//Guten Tag, einen Moment, ich suche Ihnen den Fahrzeugausweis und Führerausweis gleich heraus.
 
 Etwas verunsichert händige ich die Dokumente dem Polizisten aus. 
 
-//&#39;&#39;$name:&#39;&#39;// Was ist eigentlich der Grund, warum Sie mich angehalten haben? Das ist heute schon das zweite Mal, dass ich kontrolliert werde.
+//&#39;&#39;(text-colour:cyan)[$name]: &#39;&#39;//Was ist eigentlich der Grund, warum Sie mich angehalten haben? Das ist heute schon das zweite Mal, dass ich kontrolliert werde.
 
-//&#39;&#39;Polizist:&#39;&#39;// Aha, interessant, heute also schon das zweite Mal von der Polizei gestoppt worden. Was sagt man dazu. Wir werden nun das Auto wiegen. Ich werde die mobile Wage aufstellen, damit wir überprüfen können, ob das Nutzgewicht überschritten wurde.
+//&#39;&#39;(text-colour:purple)[Polizist]:&#39;&#39;// Aha, interessant, heute also schon das zweite Mal von der Polizei gestoppt worden. Was sagt man dazu. Bitte öffnen Sie den Kofferraum und steigen Sie mit Ihren Mitreisenden aus. Wir möchten ihr TixiTaxi genauer inspizieren.
 
-//&#39;&#39;$name:&#39;&#39;// Ja, das Prozedere kenne ich schon von der vorherigen Kontrolle. Ich kann Ihnen versichern, ich habe nichts Illegales getan und mein TixiTaxi ist nicht überladen. Wieso werde ich jetzt schon wieder kontrolliert?
+//&#39;&#39;(text-colour:cyan)[$name]: &#39;&#39;//Ja, das Prozedere kenne ich schon von der vorherigen Kontrolle. Ich kann Ihnen versichern, ich habe nichts Illegales getan und verstecke nichts in meinem TixiTaxi. Wieso werde ich jetzt schon wieder kontrolliert?
 
-//15 min später und nach mehrmaligem Nachfragen betreffend des Grundes für die Verkehrskontrolle ...//
+//15 min später, nach einer gründlichen Untersuchung vom Wageninneren und mehrmaligem Nachfragen betreffend des Grundes für die Verkehrskontrolle ...//
 
-//&#39;&#39;Polizist:&#39;&#39;// Aha, wahrhaftig, Ihr TixiTaxi ist nicht überladen. Spannend, unser System war sich zu 95% sicher, dass Sie Ihr TixiTaxi überladen haben. Aber die Waage lügt nicht. Somit ist alles in Ordnung. Bitte fahren sie weiter und einen schönen Tag!
+//&#39;&#39;(text-colour:purple)[Polizist]:&#39;&#39;// Ah ja, wahrhaftig, ich habe nichts Illegales in Ihrem TixiTaxi gefunden und auch sonst kann ich nichts Auffälliges entdecken. Spannend, unser System war sich zu 95% sicher, dass bei Ihrem TixiTaxi etwas nicht ganz koscher ist. Aber es ist alles in Ordnung. Bitte fahren sie weiter und einen schönen Tag!
 
 Die zweite Polizeikontrolle hinterlässt bei mir einen fahlen Geschmack. In meinem privaten Auto wurde ich noch nie angehalten. Und auch mit dem TixiTaxi gab es bisher noch nie Probleme. Warum wurde ich heute nun schon zweimal angehalten? Mein Blick schweift zu Mohammed. Er schaut mich ratlos an.
 
+(if:(visited:&#39;Partei &quot;Freiheit für alle&quot;&#39;))[[[Weiter-&gt;Konsequenzen Ja 2]]]
+\(else:)[
 Ich bin mir nicht mehr so sicher, ob ich nicht doch etwas gegen das Gesetz &quot;Für Recht und Ordnung in Swissovia&quot; unternehmen sollte.
 
-[[Ich trete doch der Partei &quot;Freiheit für alle&quot; bei, welche das Referendum ergriffen hat-&gt;Partei &quot;Freiheit für alle&quot;]]
+[[👎 Ich trete doch der Partei &quot;Freiheit für alle&quot; bei, welche das Referendum ergriffen hat-&gt;Partei &quot;Freiheit für alle&quot;]]
 
-[[Nein, ich bleibe bei meiner Meinung pro &quot;Für Recht und Ordnung in Swissovia&quot;-&gt;Konsequenzen Ja 2]]</tw-passagedata><tw-passagedata pid="33" name="Definition Quantencomputer" tags="" position="2175,600" size="100,100">Quantencomputer nutzen die Prinzipien der Quantenmechanik, um Informationen zu verarbeiten, was sie grundlegend von klassischen Computern unterscheidet, die auf Binärdaten basieren. Während herkömmliche Computer Bits verwenden, die entweder den Zustand 0 oder 1 annehmen können, arbeiten Quantencomputer mit Quantenbits oder Qubits, die gleichzeitig verschiedene Zustände annehmen können, was eine exponentiell höhere Rechenleistung ermöglicht. Diese Fähigkeit, komplexe Berechnungen schneller durchzuführen, macht Quantencomputer besonders geeignet für Aufgaben wie Kryptografie, Materialwissenschaften und komplexe Systemsimulationen, bei welchen traditionelle Computer an ihre Grenzen stossen.
+[[👍 Nein, ich bleibe bei meiner Meinung pro &quot;Für Recht und Ordnung in Swissovia&quot;-&gt;Konsequenzen Ja 2]]]</tw-passagedata><tw-passagedata pid="32" name="Definition Quantencomputer" tags="Zeit2" position="2175,600" size="100,100">Quantencomputer nutzen die Prinzipien der Quantenmechanik, um Informationen zu verarbeiten, was sie grundlegend von klassischen Computern unterscheidet, die auf Binärdaten basieren. Während herkömmliche Computer Bits verwenden, die entweder den Zustand 0 oder 1 annehmen können, arbeiten Quantencomputer mit Quantenbits oder Qubits, die gleichzeitig verschiedene Zustände annehmen können, was eine exponentiell höhere Rechenleistung ermöglicht. Diese Fähigkeit, komplexe Berechnungen schneller durchzuführen, macht Quantencomputer besonders geeignet für Aufgaben wie Kryptografie, Materialwissenschaften und komplexe Systemsimulationen, bei welchen traditionelle Computer an ihre Grenzen stossen.
 
-[[Ah genau, jetzt weiss ich es wieder.-&gt;Build World 2.1]]</tw-passagedata><tw-passagedata pid="34" name="Definition Botenstoffe" tags="" position="3675,625" size="100,100">Botenstoffe sind chemische Substanzen, die in Organismen Informationen zwischen Zellen und Organen übermitteln. Sie werden von spezifischen Zellen produziert und freigesetzt, um dann an andere Zellen zu binden und deren Verhalten oder Funktion zu beeinflussen. Diese Stoffe sind essentiell für die Regulation von Prozessen wie Wachstum, Stimmung, Immunantworten und Stoffwechsel.
+[[Ah genau, jetzt weiss ich es wieder-&gt;Build World 2.1]]</tw-passagedata><tw-passagedata pid="33" name="Definition Botenstoffe" tags="Zeit3" position="3675,625" size="100,100">Botenstoffe sind chemische Substanzen, die in Organismen Informationen zwischen Zellen und Organen übermitteln. Sie werden von spezifischen Zellen produziert und freigesetzt, um dann an andere Zellen zu binden und deren Verhalten oder Funktion zu beeinflussen. Diese Stoffe sind essentiell für die Regulation von Prozessen wie Wachstum, Stimmung, Immunantworten und Stoffwechsel.
  
 [[Und was sind Hormone?-&gt; Definition Hormone]]
 [[Was waren nochmals Neurotransmitter?-&gt; Definition Neurotransmitter]]
  
-[[Stimmt, das hatten wir tatsächlich mal im Unterricht behandelt -&gt;Build World 3_2]]</tw-passagedata><tw-passagedata pid="35" name=" Definition Neurotransmitter" tags="" position="3975,650" size="100,100">Neurotransmitter sind chemische Botenstoffe im Gehirn, die Informationen zwischen den Nervenzellen übertragen. Sie werden freigesetzt, wenn ein elektrisches Signal das Ende einer Nervenzelle erreicht, und binden an spezifische Rezeptoren der nächsten Nervenzelle, um so bestimmte Reaktionen oder Aktivitäten im Körper auszulösen. Diese Prozesse sind entscheidend für alles, was wir fühlen, denken und tun.
+[[Stimmt, das hatten wir tatsächlich mal im Unterricht behandelt -&gt;Build World 3_2]]</tw-passagedata><tw-passagedata pid="34" name=" Definition Neurotransmitter" tags="Zeit3" position="3975,650" size="100,100">Neurotransmitter sind chemische Botenstoffe im Gehirn, die Informationen zwischen den Nervenzellen übertragen. Sie werden freigesetzt, wenn ein elektrisches Signal das Ende einer Nervenzelle erreicht, und binden an spezifische Rezeptoren der nächsten Nervenzelle, um so bestimmte Reaktionen oder Aktivitäten im Körper auszulösen. Diese Prozesse sind entscheidend für alles, was wir fühlen, denken und tun.
  
  
-[[In dieser Stunde muss ich gefehlt haben, davon habe ich zum ersten Mal gehört-&gt;Build World 3_2]]</tw-passagedata><tw-passagedata pid="36" name=" Build World 3_3" tags="" position="4125,450" size="100,100">Die Webseite der Nachrichtenagentur öffnet sich. Ich lese die Kommentare unter dem Beitrag mit dem Interview. Nach einigen Kommentaren komme ich zum Schluss, dass diese Frage die Gesellschaft zu spalten scheint. Auf der einen Seite stehen die Befürworter:innen dieser neuen Technologie, die argumentieren, dass die drastische Reduzierung von Verbrechen und die Erhöhung der allgemeinen Sicherheit Priorität haben sollten. Auf der anderen Seite stehen Kritiker:innen, die warnen, dass solche Massnahmen die Grundlagen der persönlichen Freiheit und Autonomie untergraben könnten.
+[[In dieser Stunde muss ich gefehlt haben, davon habe ich zum ersten Mal gehört-&gt;Build World 3_2]]</tw-passagedata><tw-passagedata pid="35" name=" Build World 3_3" tags="Zeit3" position="4125,450" size="100,100">Die Webseite der Nachrichtenagentur öffnet sich. Ich lese die Kommentare unter dem Beitrag mit dem Interview. Nach einigen Kommentaren komme ich zum Schluss, dass diese Frage die Gesellschaft zu spalten scheint. Auf der einen Seite stehen die Befürworter:innen dieser neuen Technologie, die argumentieren, dass die drastische Reduzierung von Verbrechen und die Erhöhung der allgemeinen Sicherheit Priorität haben sollten. Auf der anderen Seite stehen Kritiker:innen, die warnen, dass solche Massnahmen die Grundlagen der persönlichen Freiheit und Autonomie untergraben könnten.
 
-Inmitten dieser Debatte arbeiten Juristen, Ethiker und Technologen gemeinsam an der Entwicklung neuer rechtlicher Rahmenbedingungen, die sowohl die Sicherheit der Gesellschaft gewährleisten als auch die Rechte des Einzelnen schützen sollen. Während einige Länder experimentelle Programme einführen, um die Wirksamkeit und Akzeptanz von erweiterten Predictive Policing Systemen zu erforschen, fordern internationale Organisationen transparente Richtlinien und strenge Überwachungsmechanismen.
+Inmitten dieser Debatte arbeiten Juristen, Ethiker und Technologen gemeinsam an der Entwicklung neuer rechtlicher Rahmenbedingungen, die sowohl die Sicherheit der Gesellschaft gewährleisten wie auch die Rechte des Einzelnen schützen sollen. Während einige Länder experimentelle Programme einführen, um die Wirksamkeit und Akzeptanz von erweiterten Predictive Policing Systemen zu erforschen, fordern internationale Organisationen transparente Richtlinien und strenge Überwachungsmechanismen.
 
 (align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X&quot;)[&lt;img src=&quot;https://static.techno-science.net/illustration/Libre/OAI/2024/02/02/file-zzuOwU56YbYeh7ktMRpsDRFY.jpg&quot; width=&quot;540&quot; height=&quot;320&quot;/&gt;]
-Plötzlich piepst es in meinem Kopf. Oben Rechts im Glass meiner AR-Brille sehe ich eine kleine Meldung: &quot;Du sitzt schon lange $name. Zeit rauszugehen und sich etwas zu bewegen!&quot;
-&quot;Draussen ist es aber doch noch so kalt..&quot;, denke ich mir.
+Plötzlich piepst es in meinem Kopf. Oben rechts im Glas meiner AR-Brille sehe ich eine kleine Meldung: &quot;Du sitzt schon lange $name. Zeit rauszugehen und sich etwas zu bewegen!&quot;
+&quot;Draussen ist es aber doch noch so kalt...&quot;, denke ich mir.
 
-[[Seufz, der Chip hat recht. Ich sollte wirklich wieder mal spazieren gehen.-&gt;Build World 3_4]]
+[[Seufz, der Chip hat recht. Ich sollte wirklich wieder mal spazieren gehen-&gt;Build World 3_4]]
 
-[[Ich bleibe lieber auf der Couch und streame meine Lieblingsserie.-&gt;Werbung abspielen]]</tw-passagedata><tw-passagedata pid="37" name="Kleingedrucktes" tags="" position="4475,450" size="100,100">(text-size:0.8)[//Die Nutzung von Hirn-Technologie-Schnittstellen für Zwecke des Predictive Policing ist rechtlich nicht abschliessend geregelt. Datenschützer und zivilgesellschaftliche Akteure haben bisher verhindert, dass eine grossflächige Anwendung für präventive Verbrechensbekämpfung genutzt werden kann. Durch eine freiwillige Einwilligung sind jedoch gemäss Paragraf 4 Absatz 2. b des Datenschutzgesetzes die Nutzung der Daten von Hirn-Technologie-Schnittstellen für Zwecke des Predictive Policings erlaubt.//]
+[[Ich bleibe lieber auf der Couch und streame meine Lieblingsserie-&gt;Werbung abspielen]]</tw-passagedata><tw-passagedata pid="36" name="Kleingedrucktes" tags="Zeit3" position="4475,450" size="100,100">(text-size:0.8)[//Die Nutzung von Hirn-Technologie-Schnittstellen für Zwecke des Predictive Policing ist rechtlich nicht abschliessend geregelt. Datenschützer und zivilgesellschaftliche Akteure haben bisher verhindert, dass eine grossflächige Anwendung für präventive Verbrechensbekämpfung genutzt werden kann. Durch eine freiwillige Einwilligung sind jedoch gemäss Paragraf 4 Absatz 2. b des Datenschutzgesetzes die Nutzung der Daten von Hirn-Technologie-Schnittstellen für Zwecke des Predictive Policings erlaubt.//]
 
 &quot;SafeConnect&quot; klingt schon interessant... Ich erinnere mich an das Experteninterview mit Herrn Müller. Möchte ich wirklich, dass der Staat auf diese Daten zugreifen kann? Andererseits bin ich ein aufrechter Mensch, also habe ich doch nichts zu befürchten, oder? Eine knifflige Frage.
 
-(link: &#39;Zum &quot;SafeConnect&quot; Programm anmelden&#39;)[
+(link: &#39;👍 Mich beim &quot;SafeConnect&quot; Programm anmelden&#39;)[
 	(set: $pp_stage_3 to &quot;ja&quot;)
 	(go-to: &quot;Ende World 3&quot;)
 ]
 
-(link: &#39;Ich verzichte darauf, mich zum Programm anzumelden.&#39;)[
+(link: &#39;👎 Ich verzichte darauf, mich beim Programm anzumelden&#39;)[
 	(set: $pp_stage_3 to &quot;nein&quot;)
 	(go-to: &quot;Ende World 3&quot;)
-]</tw-passagedata><tw-passagedata pid="38" name="Ende World 3" tags="" position="4625,450" size="100,100">Seit der &quot;SafeConnect&quot; Werbung sind nun ein paar Monate vergangen.
+]</tw-passagedata><tw-passagedata pid="37" name="Ende World 3" tags="Zeit3" position="4625,450" size="100,100">Seit der &quot;SafeConnect&quot; Werbung sind nun ein paar Monate vergangen.
 
 Es ist Montagmorgen. Durch einen simulierten Sonnenaufgang werde ich langsam von meinem Chip zum optimalen Zeitpunkt meiner Leichtschlafphase geweckt. Mit viel Energie und Elan möchte ich in meinen Tag starten, da kündigt mir eine virtuelle Stimme einen Anruf an.
-
 (if: $pp_stage_3 contains &quot;ja&quot;and $pp_stage_2 contains &quot;ja&quot;)[
 James ruft mich an. Ich nehme den Anruf via AR-Brille entgegen.
 
-//&#39;&#39;James: &#39;&#39;// Hallo $name, Wie geht es dir? 
+//&#39;&#39;(text-colour:red)[James]:  &#39;&#39;//Hallo $name, Wie geht es dir? 
 
-//&#39;&#39;$name: &#39;&#39;//Hey James! Sehr gut, Danke! Und selbst?
+//&#39;&#39;(text-colour:cyan)[$name]: &#39;&#39;//Hey James! Sehr gut, Danke! Und selbst?
 
-//&#39;&#39;James: &#39;&#39;//Seufzt... Danke, ja, es geht mir mehr schlecht als recht. Du weisst ja sicher noch, dass ich gegenüber dem ganzen Predicitve Policing kritisch eingestellt war. Ich habe mich daher auch geweigert an diesem &quot;SafeConnect&quot; mitzumachen. Und jetzt hat mir doch tatsächlich mein Arbeitgeber diese Woche gekündigt mit der Begründung, dass ich ein Risikofaktor sei... Kannst du das glauben?
+//&#39;&#39;(text-colour:red)[James]:  &#39;&#39;//Seufzt... Danke, ja, es geht mir mehr schlecht als recht. Du weisst ja sicher noch, dass ich gegenüber dem ganzen Predicitve Policing kritisch eingestellt war. Ich habe mich daher auch geweigert, an diesem &quot;SafeConnect&quot; mitzumachen. Und jetzt hat mir doch tatsächlich mein Arbeitgeber diese Woche gekündigt mit der Begründung, dass ich ein Risikofaktor sei... Kannst du das glauben?
 
-//&#39;&#39;$name: &#39;&#39;//Uff, das tut mir Leid. Das ist ja echt heftig. Ich habe bislang nur Gutes über das &quot;SafeConnect&quot; gehört. Ich persönlich finde das Programm super und es hat mir bislang nur Vorteile gebracht. Zudem habe ich bereits von mehreren Fällen gehört, bei denen ein Delikt vor dem Eintreten verhindert werden konnte. Scheint also eine gute Sache zu sein. Vielleicht meldest du dich doch lieber an? Veilleicht kriegst du dann deinen Job wieder zurück.
+//&#39;&#39;(text-colour:cyan)[$name]: &#39;&#39;//Uff, das tut mir leid. Das ist ja echt heftig. Ich habe bislang nur Gutes über das &quot;SafeConnect&quot; gehört. Ich persönlich finde das Programm super und es hat mir bislang nur Vorteile gebracht. Zudem habe ich bereits von mehreren Fällen gehört, bei denen ein Delikt vor dem Eintreten verhindert werden konnte. Scheint also eine gute Sache zu sein. Vielleicht meldest du dich doch lieber an? Vielleicht kriegst du dann deinen Job wieder zurück.
 
-//&#39;&#39;James: &#39;&#39;//Nein, das kommt für mich nicht in Frage! Ich bin immer noch Mitglied der Partei &quot;Freiheit für alle&quot;. Dieses ganze Predictive Policing Zeug ist doch absoluter Wahnsinn! Lena hat sogar den Kontakt zu mir abgebrochen! Sie reagiert auf keine meiner Nachrichten mehr. Und der Staat hat es auf mich abgesehen. Ich habe für eine Bewerbung einen Betreibungsregisterauszug bestellt. Ich warte schon seit drei Monaten und auch meine Nachfragen werden nicht beantwortet!
+//&#39;&#39;(text-colour:red)[James]:  &#39;&#39;//Nein, das kommt für mich nicht in Frage! Ich bin immer noch Mitglied der Partei &quot;Freiheit für alle&quot;. Dieses ganze Predictive Policing Zeug ist doch absoluter Wahnsinn! Lena hat sogar den Kontakt zu mir abgebrochen! Sie reagiert auf keine meiner Nachrichten mehr. Und der Staat hat es auf mich abgesehen. Ich habe für eine Bewerbung einen Betreibungsregisterauszug bestellt. Ich warte schon seit drei Monaten und auch meine Nachfragen werden nicht beantwortet!
 
 Ich will gerade etwas Tröstliches zu James sagen, da wird der Anruf unterbrochen und eine rote Mitteilung in der AR-Brille verkündet:
 
@@ -486,15 +523,15 @@ Die Aussagen von James beschäftigen mich noch eine ganze Weile. Ich frage mich,
 ](else-if: $pp_stage_3 contains &quot;nein&quot;and $pp_stage_2 contains &quot;nein&quot;)[
 Lena ruft mich an. Ich nehme den Anruf via AR-Brille entgegen.
 
-//&#39;&#39;$name: &#39;&#39;// Hallo Lena, Wie geht es dir? 
+//&#39;&#39;(text-colour:cyan)[$name]: &#39;&#39;// Hallo Lena, Wie geht es dir? 
 
-//&#39;&#39;Lena: &#39;&#39;//Hey $name! Sehr gut, Danke! Und selbst?
+//&#39;&#39;(text-colour:green)[Lena]:  &#39;&#39;//Hey $name! Sehr gut, Danke! Und selbst?
 
-//&#39;&#39;$name: &#39;&#39;//Seufzt... Danke, ja, es geht mir mehr schlecht als recht. Du weisst, ich war eher kritisch gegenüber Predictive Policing eingestellt und bin somit nicht dem Programm &quot;SafeConnect&quot; beigetreten. Seitdem darf ich nicht mehr im Pflegeheim helfen! Die Heimleitung wünscht meine ehrenamtliche Arbeit nicht mehr. Sie meinen, dass ich ein Risikofaktor für die Bewohner:innen sein könnte.
+//&#39;&#39;(text-colour:cyan)[$name]: &#39;&#39;//Seufzt... Danke, ja, es geht mir mehr schlecht als recht. Du weisst, ich war eher kritisch gegenüber Predictive Policing eingestellt und bin somit nicht dem Programm &quot;SafeConnect&quot; beigetreten. Seitdem darf ich nicht mehr im Pflegeheim helfen! Die Heimleitung wünscht meine ehrenamtliche Arbeit nicht mehr. Sie meinen, dass ich ein Risikofaktor für die Bewohner:innen sein könnte.
 
-//&#39;&#39;Lena: &#39;&#39;//Uff, das ist nicht schön zu hören und tut mir leid. Ich habe bislang nur Gutes über das &quot;SafeConnect&quot; gehört. Ich persönlich finde das Programm super und es hat mir bislang nur Vorteile gebracht. Zudem habe ich bereits von mehreren Fällen gehört, bei denen ein Delikt vor dem Eintreten verhindert werden konnte. Scheint also eine gute Sache zu sein. Vielleicht meldest du dich doch lieber an? Veilleicht kriegst du dann deinen Job wieder zurück.
+//&#39;&#39;(text-colour:green)[Lena]:  &#39;&#39;//Uff, das ist nicht schön zu hören und tut mir leid. Ich habe bislang nur Gutes über das &quot;SafeConnect&quot; gehört. Ich persönlich finde das Programm super und es hat mir bislang nur Vorteile gebracht. Zudem habe ich bereits von mehreren Fällen gehört, bei denen ein Delikt vor dem Eintreten verhindert werden konnte. Scheint also eine gute Sache zu sein. Vielleicht meldest du dich doch lieber an? Vielleicht kriegst du dann deinen Job wieder zurück.
 
-//&#39;&#39;$name: &#39;&#39;//Nein, das kommt für mich nicht in Frage! Ich bin immer noch Mitglied der Partei &quot;Freiheit für alle&quot;. Dieses ganze Predictive Policing Zeug ist doch absoluter Wahnsinn! Paul hat sogar den Kontakt zu mir abgebrochen. Er reagiert auf keine meiner Nachrichten mehr. Und der Staat hat es auf mich abgesehen. Ich habe für eine Wohnungsbewerbung einen Betreibungsregisterauszug bestellt. Ich warte schon seit drei Monaten auf den und auch meine Nachfragen werden nicht beantwortet.
+//&#39;&#39;(text-colour:cyan)[$name]: &#39;&#39;//Nein, das kommt für mich nicht in Frage! Ich bin immer noch Mitglied der Partei &quot;Freiheit für alle&quot;. Dieses ganze Predictive Policing Zeug ist doch absoluter Wahnsinn! Paul hat sogar den Kontakt zu mir abgebrochen. Er reagiert auf keine meiner Nachrichten mehr. Und der Staat hat es auf mich abgesehen. Ich habe für eine Wohnungsbewerbung einen Betreibungsregisterauszug bestellt. Ich warte schon seit drei Monaten auf den und auch meine Nachfragen werden nicht beantwortet.
 
 Als Lena gerade etwas sagen will, wird der Anruf unterbrochen und eine rote Mitteilung in der AR-Brille verkündet:
 
@@ -505,27 +542,27 @@ Die Aussagen von Lena beschäftigen mich noch eine ganze Weile. Ich frage mich, 
 ](else:)[
 Ah stimmt... Heute steht unser virtueller Morgenkaffee mit James und Lena an. Ich nehme den Anruf entgegen.
 
-//&#39;&#39;James: &#39;&#39;// Hallo zusammen, Wie geht es euch so? 
+//&#39;&#39;(text-colour:red)[James]:  &#39;&#39;// Hallo zusammen, Wie geht es euch so? 
 
-//&#39;&#39;$name: &#39;&#39;//Hey James! Ganz gut, Danke! Wie geht es dir?
+//&#39;&#39;(text-colour:cyan)[$name]: &#39;&#39;//Hey James! Ganz gut, Danke! Wie geht es dir?
 
-//&#39;&#39;James: &#39;&#39;//Seufzt... Danke, ja, es geht mir mehr schlecht als recht. Ihr wisst ja sicher noch, dass ich gegenüber dem ganzen Predicitve Policing kritisch eingestellt war. Ich habe mich daher auch geweigert an diesem &quot;SafeConnect&quot; mitzumachen. Und jetzt hat mir doch tatsächlich mein Arbeitgeber diese Woche gekündigt mit der Begründung, dass ich ein Risikofaktor sei... Könnt ihr das glauben?
+//&#39;&#39;(text-colour:red)[James]:  &#39;&#39;//Seufzt... Danke, ja, es geht mir mehr schlecht als recht. Ihr wisst ja sicher noch, dass ich gegenüber dem ganzen Predicitve Policing kritisch eingestellt war. Ich habe mich daher auch geweigert, an diesem &quot;SafeConnect&quot; mitzumachen. Und jetzt hat mir doch tatsächlich mein Arbeitgeber diese Woche gekündigt mit der Begründung, dass ich ein Risikofaktor sei... Könnt ihr das glauben?
 
-//&#39;&#39;$name: &#39;&#39;//Uff, das nicht schön zu hören und tut mir leid. Warum hast du dich nicht bei mir gemeldet?
+//&#39;&#39;(text-colour:cyan)[$name]: &#39;&#39;//Uff, das ist nicht schön zu hören und tut mir leid. Warum hast du dich nicht bei mir gemeldet?
 
-//&#39;&#39;James: &#39;&#39;//Ich war mir nicht sicher, wie du reagieren würdest. Ich bin immer noch Mitglied der Partei &quot;Freiheit für alle&quot; und Paul hat darum den Kontakt zu mir abgebrochen. Er reagiert auf keine meiner Nachrichten mehr. Auch der Staat hat es auf mich abgesehen. Ich habe für eine Bewerbung einen Betreibungsregisterauszug bestellt. Ich warte schon seit drei Monaten auf den und auch meine Nachfragen werden nicht beantwortet!
+//&#39;&#39;(text-colour:red)[James]:  &#39;&#39;//Ich war mir nicht sicher, wie du reagieren würdest. Ich bin immer noch Mitglied der Partei &quot;Freiheit für alle&quot; und Paul hat darum den Kontakt zu mir abgebrochen. Er reagiert auf keine meiner Nachrichten mehr. Auch der Staat hat es auf mich abgesehen. Ich habe für eine Bewerbung einen Betreibungsregisterauszug bestellt. Ich warte schon seit drei Monaten auf den und auch meine Nachfragen werden nicht beantwortet!
 
-//&#39;&#39;Lena: &#39;&#39;// Oh je... tut mir auch leid zu hören. Seit ich dem &quot;SafeConnect&quot; Programm beigetreten bin, geht es mir blendend. Ich habe auch von mehreren Fällen gehört, bei denen ein Delikt vor dem Eintreten verhindert werden konnten. Ich habe mich noch nie so sicher gefühlt und profitiere ausserdem von Steuervorteilen. 
+//&#39;&#39;(text-colour:green)[Lena]:  &#39;&#39;//Oh je... tut mir auch leid zu hören. Seit ich dem &quot;SafeConnect&quot; Programm beigetreten bin, geht es mir blendend. Ich habe auch von mehreren Fällen gehört, bei denen ein Delikt vor dem Eintreten verhindert werden konnten. Ich habe mich noch nie so sicher gefühlt und profitiere ausserdem von Steuervorteilen. 
 
 Wir plaudern noch weitere 15 Minuten miteinander und verabschieden uns dann. Die Aussagen von Lena und James beschäftigen mich noch eine ganze Weile. Ich frage mich, wie mein Leben sich entwickelt hätte, wenn ich andere Wege gegangen wäre.
 ] 
 
-[[Zum Ende der Geschichte-&gt;ENDE]]</tw-passagedata><tw-passagedata pid="39" name="ENDE" tags="" position="4800,450" size="100,100">Filename: WI&amp;#95BD2&amp;#95BigData&amp;#95DataScience&amp;#95Strafverfolgung.html
+[[Zum Ende der Geschichte-&gt;Auswertung]]</tw-passagedata><tw-passagedata pid="38" name="ENDE" tags="Zeit3" position="5150,400" size="100,100">Filename: WI&amp;#95BD2&amp;#95BigData&amp;#95DataScience&amp;#95Strafverfolgung.html
 &#39;&#39;(text-size:1.5)[(text-colour:grey)[ENDE - WI-BD2-Big Data/Data Science und Strafverfolgung]]&#39;&#39;
  
 Das ist das Ende dieser Geschichte. Wir hoffen, es hat dir Spass gemacht und dich angeregt, über dieses Thema nachzudenken.
  
-(text-colour:cyan)[Mit dem Klick auf den untenstehenden Link &quot;&#39;&#39;Daten übermitteln&#39;&#39;&quot; öffnet sich ein neues Browser-Tab und du wirst auf die externe Website LimeSurvey weitergeleitet.
+(text-colour:blue)[Mit dem Klick auf den unten stehenden Link &quot;&#39;&#39;Daten übermitteln&#39;&#39;&quot; öffnet sich ein neues Browser-Tab und du wirst auf die externe Website LimeSurvey weitergeleitet.
  
 Das kann einige Sekunden dauern - bitte warte, bis die Seite erscheint.
  
@@ -539,13 +576,11 @@ So sendest du uns automatisch folgende Daten:
 Dein Name, die IP-Adresse oder Geo-Daten werden &#39;&#39;NICHT&#39;&#39; aufgezeichnet.
  
 Nochmals herzlichen Dank für deine Teilnahme!
- 
 (set: $path to (str: (history:)))
 (set: $umfrage to &quot;https://peteral2.limesurvey.net/237763?lang=de&amp;geschlecht=&quot;+$geschlecht+&quot;&amp;bildung=&quot;+$bildung+&quot;&amp;alter=&quot;+$alter+&quot;&amp;verlauf=&quot;+$path)
- 
 (link:&quot;Daten übermitteln&quot;)[(open-url: $umfrage)]
  
- 
+
 Klicke den Link unten, um die Geschichte neu zu starten.
  
 [[Zurück zum Start -&gt;Intro]]
@@ -555,17 +590,76 @@ Klicke den Link unten, um die Geschichte neu zu starten.
 (set: $geschlecht to &quot;weiblich&quot;)
 (set: $alter to &quot;18&quot;)
 (set: $bildung to &quot;Schule&quot;)
---&gt;</tw-passagedata><tw-passagedata pid="40" name="Build World 3_1" tags="" position="3650,450" size="100,100">Parallel zur Entwicklung der Gehirn-Computer-Schnittstellen haben Quantencomputer, einst aufgrund ihrer enormen Kosten das Privileg grosser Unternehmen, ihren Weg in private Haushalte gefunden. Ähnlich der Revolution durch PCs, die den Mainframes folgten, sind Quantencomputer nun ein unverzichtbarer Bestandteil jedes Haushalts, was das Verarbeiten gigantischer Datenmengen zum neuen Standard gemacht hat.
+--&gt;</tw-passagedata><tw-passagedata pid="39" name="Build World 3_1" tags="Zeit3" position="3650,450" size="100,100">Parallel zur Entwicklung der Gehirn-Computer-Schnittstellen haben Quantencomputer aufgrund gesunkener Produktionskosten ihren Weg in private Haushalte gefunden. Ähnlich der Revolution durch PCs, die den Mainframes folgten, sind Quantencomputer nun ein unverzichtbarer Bestandteil jedes Haushalts, was das Verarbeiten gigantischer Datenmengen zum neuen Standard gemacht hat.
  
-AR-Brillen, die mit der Umgebung, sowie falls vorhanden mit den implantierten Chips, kommunizieren und das Benutzererlebnis in Echtzeit anpassen, basieren auf dieser fortschrittlichen Rechentechnik und bieten ein immersives Erlebnis, wie es zuvor unvorstellbar war. In dieser neuen Ära sind die Städte zu pulsierenden Knotenpunkten der Technologie und Innovation geworden. Gebäude und Fahrzeuge sind intelligent vernetzt, optimieren Energieverbrauch und Verkehrsfluss durch den Einsatz von Quantencomputertechnologie. Öffentliche Räume und Wohnungen passen sich auf Basis der kontinuierlich analysierten Daten, welche unter anderem auch durch die implantierten Chips generiert werden, automatisch den Bedürfnissen und der Stimmung ihrer Bewohner:innen an. Auch die Bildung hat einen Sprung nach vorne gemacht. Schulen und Universitäten nutzen Augmented Reality und Quantencomputer, um ein dynamisches Lernumfeld zu schaffen, in dem Schüler:innen durch direktes Erleben und Interagieren in virtuellen Welten lernen. Bei Vorhandensein eines Chips kann der Zugriff auf Wissen oder Internetsuchen durch eine einfache Gedankenabfrage erfolgen, wodurch das Lernen beschleunigt und personalisiert wird.
- 
+AR-Brillen, die mit der Umgebung sowie falls vorhanden mit den implantierten Chips kommunizieren und das Benutzererlebnis in Echtzeit anpassen, basieren auf dieser fortschrittlichen Rechentechnik. Diese AR-Brillen bieten ein immersives Erlebnis, wie es zuvor unvorstellbar war. In dieser neuen Ära sind die Städte zu pulsierenden Knotenpunkten der Technologie und Innovation geworden. Gebäude und Fahrzeuge sind intelligent vernetzt, optimieren Energieverbrauch und Verkehrsfluss durch den Einsatz von Quantencomputertechnologie. Öffentliche Räume und Wohnungen passen sich auf Basis der kontinuierlich analysierten Daten, welche unter anderem auch durch die implantierten Chips generiert werden, automatisch den Bedürfnissen und der Stimmung ihrer Bewohner:innen an. Auch die Bildung hat einen Sprung nach vorne gemacht. Schulen und Universitäten nutzen Augmented Reality und Quantencomputer, um ein dynamisches Lernumfeld zu schaffen, in dem Schüler:innen durch direktes Erleben und Interagieren in virtuellen Welten lernen. Bei Vorhandensein eines Chips kann der Zugriff auf Wissen oder Internetsuchen durch eine einfache Gedankenabfrage erfolgen, wodurch das Lernen beschleunigt und personalisiert wird.
+
+(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X&quot;)[&lt;img src=&quot;https://media.licdn.com/dms/image/D5612AQHRCOj5MpjSOw/article-cover_image-shrink_720_1280/0/1699501367806?e=2147483647&amp;v=beta&amp;t=LloBbIJF2QVMWy7tG5Zsw_Tq2qtRrKHHqjqw0NV9zoU&quot; width=&quot;417&quot;/&gt;]
 In dieser fortschrittlichen Welt, in der die Grenzen zwischen Mensch und Technologie zunehmend verschwimmen, hat die breite Nutzung von Gehirn-Computer-Schnittstellen und die damit verbundene Fähigkeit, komplexe Datenmuster aus dem menschlichen Gehirn und Körper zu extrahieren, die Tür zu einer neuen Ära der prädiktiven Analytik geöffnet.
  
-[[An einem ruhigen Sonntagnachmittag... -&gt;Build World 3_2]]</tw-passagedata><tw-passagedata pid="41" name=" Definition Hormone" tags="" position="3850,775" size="100,100">Hormone sind spezielle Botenstoffe, die von Drüsen im Körper produziert und ins Blut abgegeben werden, um entfernte Organe oder Gewebe zu beeinflussen. Sie regulieren wichtige Funktionen wie Wachstum, Stoffwechsel, Fortpflanzung und Stimmung. Durch die Bindung an spezifische Rezeptoren in Zielzellen steuern Hormone komplexe Prozesse und helfen dem Körper, sein inneres Gleichgewicht zu erhalten. Bekannte Hormone sind zum Beispiel Insulin, Östrogene / Testosteron oder Dopamin.
+[[An einem ruhigen Sonntagnachmittag... -&gt;Build World 3_2]]</tw-passagedata><tw-passagedata pid="40" name=" Definition Hormone" tags="Zeit3" position="3850,775" size="100,100">Hormone sind spezielle Botenstoffe, die von Drüsen im Körper produziert und ins Blut abgegeben werden, um entfernte Organe oder Gewebe zu beeinflussen. Sie regulieren wichtige Funktionen wie Wachstum, Stoffwechsel, Fortpflanzung und Stimmung. Durch die Bindung an spezifische Rezeptoren in Zielzellen steuern Hormone komplexe Prozesse und helfen dem Körper, sein inneres Gleichgewicht zu erhalten. Bekannte Hormone sind zum Beispiel Insulin, Östrogene / Testosteron oder Dopamin.
  
 [[Was waren nochmals Neurotransmitter?-&gt; Definition Neurotransmitter]]
  
-[[Stimmt, das hatten wir tatsächlich mal im Unterricht behandelt -&gt;Build World 3_2]]</tw-passagedata></tw-storydata>
+[[Stimmt, das hatten wir tatsächlich mal im Unterricht behandelt -&gt;Build World 3_2]]</tw-passagedata><tw-passagedata pid="41" name="Einstellung abfragen" tags="Zeit1" position="450,600" size="100,100">####(text-colour:cyan)[Angaben zur Person]
+Die Inhalte dieser Geschichte sind gegebenenfalls kontrovers. Um festzustellen, ob die Geschichte bei dir einen Einfluss auf deine Meinung macht, würden wir dir gerne einige Fragen stellen.
+
+Wie stehst du dazu, dass die Polizei **anonyme** Daten auswerten darf, um mögliche Problemzonen zu identifizieren? (text-colour:blue)[(dropdown: bind $meinung1a, &quot;Bitte auswählen...&quot;, &quot;Sehr negativ&quot;, &quot;Eher negativ&quot;, &quot;Neutral&quot;, &quot;Eher positiv&quot;, &quot;Sehr positiv&quot;)]
+
+Wie stehtst du dazu, dass die Polizei **personenbezogene** Daten auswerten darf um mögliche verdächtige Personen zu identifizieren? (text-colour:blue)[(dropdown: bind $meinung2a, &quot;Bitte auswählen...&quot;, &quot;Sehr negativ&quot;, &quot;Eher negativ&quot;, &quot;Neutral&quot;, &quot;Eher positiv&quot;, &quot;Sehr positiv&quot;)]
+
+Wie stehtst du dazu, dass die Polizei mittels Datenanalyse pntenzielle Verbrechen aufspüren kann, bevor die überhaupt geschen? (text-colour:blue)[(dropdown: bind $meinung3a, &quot;Bitte auswählen...&quot;, &quot;Sehr negativ&quot;, &quot;Eher negativ&quot;, &quot;Neutral&quot;, &quot;Eher positiv&quot;, &quot;Sehr positiv&quot;)]
+
+[[Weiter -&gt;Namen eingeben]] </tw-passagedata><tw-passagedata pid="42" name="Auswertung" tags="Zeit3" position="4800,450" size="100,100">####(text-colour:cyan)[Einstellung nach der Geschichte]
+
+Wie stehst du jetzt dazu, dass die Polizei **anonyme** Daten auswerten darf, um mögliche Problemzonen zu identifizieren? (text-colour:blue)[(dropdown: bind $meinung1b, &quot;Bitte auswählen...&quot;, &quot;Sehr negativ&quot;, &quot;Eher negativ&quot;, &quot;Neutral&quot;, &quot;Eher positiv&quot;, &quot;Sehr positiv&quot;)]
+
+Wie stehtst du jetzt dazu, dass die Polizei **personenbezogene** Daten auswerten darf, um mögliche verdächtige Personen zu identifizieren? (text-colour:blue)[(dropdown: bind $meinung2b, &quot;Bitte auswählen...&quot;, &quot;Sehr negativ&quot;, &quot;Eher negativ&quot;, &quot;Neutral&quot;, &quot;Eher positiv&quot;, &quot;Sehr positiv&quot;)]
+
+Wie stehtst du jetzt dazu, dass die Polizei mittels Datenanalyse potenzielle Verbrechen aufspüren kann, bevor die überhaupt geschen? (text-colour:blue)[(dropdown: bind $meinung3b, &quot;Bitte auswählen...&quot;, &quot;Sehr negativ&quot;, &quot;Eher negativ&quot;, &quot;Neutral&quot;, &quot;Eher positiv&quot;, &quot;Sehr positiv&quot;)]
+
+[[Vergleichen-&gt;Vorher/nacher]] </tw-passagedata><tw-passagedata pid="43" name="Vorher/nacher" tags="Zeit3" position="4975,450" size="100,100">####(text-colour:cyan)[Vergleiche deine Meinung]
+
+Hier findest du einen Vergleich deiner Meinung vor und nach der Geschichte:
+
+Wie stehst du jetzt dazu, dass die Polizei **anonyme** Daten auswerten darf, um mögliche Problemzonen zu identifizieren?
+Am Anfang: $meinung1a
+Jetzt: $meinung1b
+
+Wie stehtst du jetzt dazu, dass die Polizei **personenbezogene** Daten auswerten darf, um mögliche verdächtige Personen zu identifizieren?
+Am Anfang: $meinung2a
+Jetzt: $meinung2b
+
+Wie stehtst du jetzt dazu, dass die Polizei mittels Datenanalyse potenzielle Verbrechen aufspüren kann, bevor die überhaupt geschen?
+Am Anfang: $meinung3a
+Jetzt: $meinung3b
+
+[[Zum Ende der Geschichte-&gt;ENDE]] </tw-passagedata><tw-passagedata pid="44" name="Podiumsdiskussion" tags="Zeit2" position="2525,450" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X&quot;)[&lt;img src=&quot;https://www.ilkagroenewold.de/wp-content/uploads/2017/07/podiumsdiskussion-mit-moderatorin-ilka-groenewold.jpg&quot; alt=&quot;Podiums Diskussion&quot; width=&quot;417&quot; height=&quot;278&quot;/&gt;]
+Ich nehme an einer virtuellen Podiumsdiskussion zum Referendum über das Gesetz &quot;Für Recht und Ordnung in Swissovia&quot; teil.
+
+&#39;&#39;//(text-colour:#53885b)[Moderator]://&#39;&#39; Willkommen zur Diskussion über das neue Gesetz. Ich gebe das Wort an Frau Antić von der Arbeitsgruppe des Bundes.
+
+//&#39;&#39;(text-colour:magenta)[Frau Antić]: &#39;&#39;//Danke! In Swissovia ist die Kriminalität gestiegen, und wir müssen mit modernen Methoden darauf reagieren. Das neue Gesetz ermöglicht Datenschutzlockerungen und Investitionen in Predictive Policing, um die Kriminalität effektiv zu bekämpfen.
+
+&#39;&#39;//(text-colour:#53885b)[Moderator]://&#39;&#39; Die ersten Ergebnisse scheinen positiv. Wie genau wurde das erreicht?
+
+//&#39;&#39;(text-colour:magenta)[Frau Antić]: &#39;&#39;//Wir nutzen jetzt auch personenbezogene Daten und haben überall Sensoren und biometrische Scanner installiert. Mit Quantencomputern und verbesserten Algorithmen können wir potenzielle Verbrechen und Verdächtige in Echtzeit identifizieren.
+
+&#39;&#39;//(text-colour:#53885b)[Moderator]://&#39;&#39; Ein interessanter Ansatz, aber auch mit Kritik verbunden. Herr Müller, welche Bedenken haben Sie?
+
+//&#39;&#39;(text-colour:#B87333)[Herr Müller]: &#39;&#39;//Ich sehe vor allem Umwelt- und Überwachungsprobleme. Quantencomputer verbrauchen viel Energie, und es besteht die Gefahr des Missbrauchs dieser Technologie, besonders zur Überwachung von Minderheiten und politischen Gegnern. Das bedroht die Meinungsfreiheit und lässt uns fragen, ob Datenschutz noch relevant ist.
+
+&#39;&#39;//(text-colour:#53885b)[Moderator]://&#39;&#39; Sie weisen auch auf Fehler der Software hin. Gibt es Verbesserungen durch den Einsatz von Quantencomputern?
+
+//&#39;&#39;(text-colour:#B87333)[Herr Müller]: &#39;&#39;//Meine Studien zeigen, dass Fehler weiterhin bestehen. Falsche Vorhersagen können schwerwiegende Folgen haben, wie die fälschliche Beschuldigung Unschuldiger.
+
+Nach diesen Diskussionen verlasse ich das virtuelle Meeting und blicke nachdenklich aus dem Fenster, während ich über das Gehörte nachdenke.
+
+[[👍 Ich trete der Partei &quot;Freiheit für alle&quot; bei, welche das Referendum ergreifen will-&gt;Partei &quot;Freiheit für alle&quot;]]
+
+[[👎 Ich möchte das Referendum nicht unterstützen -&gt;Pro &quot;Für Recht und Ordnung in Swissovia&quot;]]
+
+</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
