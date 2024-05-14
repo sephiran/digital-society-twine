@@ -12,7 +12,7 @@
 <tw-storydata name="WI_BD2_BigData_DataScience_Strafverfolgung" startnode="1" creator="Twine" creator-version="2.8.1" format="Harlowe" format-version="3.3.8" ifid="DDFAA9D5-489F-4E7F-AA91-E4BB81160559" options="" tags="DSO" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-story {
     font: 100% "Avenir Next", serif;
   	font-size: 1.5em;
-	line-height: 1.5em;
+	line-height: 1.3em;
   	padding: 5% 10%;
 }
 tw-story[tags ="Zeit1"] {
@@ -154,8 +154,7 @@ Seit dem Feierabendbier mit Lena und James ist nun bereits etwas Zeit vergangen.
  
 Es ist Freitagabend, ich liege noch wach zu Hause im Bett. Eigentlich hatte ich geplant, dieses Wochenende mit Lena und James wegzufahren. In letzter Minute hat mich jedoch eine leichte Grippe erwischt, weswegen ich zu Hause geblieben bin.
  
-Plötzlich höre ich unten im Haus ein Geräusch. &quot;Ist wahrscheinlich nur die Katze, die nach Hause gekommen ist&quot;, denke ich.
-Jetzt höre ich jedoch plötzlich leise Stimmen reden und weitere lautere Geräusche. Ich schrecke panisch im Bett hoch und lausche angestrengt. Jetzt höre ich klar und deutlich, wie sich zwei Männer flüsternd unterhalten. Ich sammle mich einige Sekunden lang, fasse dann all meinen Mut zusammen, schleiche zur Schlafzimmertür und öffne diese langsam. Wie versteinert starre ich in ein vermummtes Gesicht. Das Gesicht starrt erschrocken zurück.
+Plötzlich höre ich unten im Haus ein Geräusch. &quot;Ist wahrscheinlich nur die Katze, die nach Hause gekommen ist&quot;, denke ich. Jetzt höre ich jedoch plötzlich leise Stimmen reden und weitere lautere Geräusche. Ich schrecke panisch im Bett hoch und lausche angestrengt. Nun höre ich klar und deutlich, wie sich zwei Männer flüsternd unterhalten. Ich sammle mich einige Sekunden lang, fasse dann all meinen Mut zusammen, schleiche zur Schlafzimmertür und öffne diese langsam. Wie versteinert starre ich in ein vermummtes Gesicht. Das Gesicht starrt erschrocken zurück.
 
 (align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X&quot;)[&lt;img 
 src=&quot;https://www.news38.de/wp-content/uploads/sites/5/2022/04/Einbrecher.jpg&quot; width=&quot;600&quot; height=&quot;400&quot;/&gt;]
@@ -165,15 +164,15 @@ Ich denke mir: &quot;Ruhe bewahren. Ruhe bewahren. Ruhe bewahren.&quot;
  
 Kurze Zeit später trifft ein Streifenwagen ein. Ich erkläre den zwei Polizistinnen die Situation.
  
-Eine der zwei erwidert: Ja, das scheint wohl die Bande zu sein, der wir schon seit längerem auf der Spur sind. Leider kriegen wir die einfach nicht zu fassen.
+//&#39;&#39;(text-colour:purple)[Polizistin]:&#39;&#39;// Ja, das scheint wohl die Bande zu sein, der wir schon seit längerem auf der Spur sind. Leider kriegen wir die einfach nicht zu fassen.
  
 //&#39;&#39;(text-colour:navy)[$name]: &#39;&#39;//Seit längerem? Benutzen Sie denn keine Predictive Policing Software? Die sollte doch genau solche Muster erkennen?
  
 //&#39;&#39;(text-colour:purple)[Polizistin]:&#39;&#39;// Doch schon, aber die Bande stellt sich klüger an als andere. Und unsere Software ist ziemlich eingeschränkt. Hätten wir nur mehr Daten, dann könnten wir sie vielleicht schnappen. Aber das Volk wollte das ja nicht. Ich konnte die Argumente gegen die Initiative ja noch nachvollziehen, aber man kann halt nicht restriktiven Datenschutz und ein zuverlässiges Predictive Policing haben.
  
-Nachdem die Polizistinnen sich umgeschaut und ein paar Fotos gemacht haben, verlassen sie die Wohnung mit der Zusicherung, dass sie die Bande sicher irgendwann zu fassen kriegen, obwohl sie dabei nicht sehr zuversichtlich klingen.
+Nachdem die Polizistinnen sich umgeschaut und ein paar Fotos gemacht haben, verlassen sie die Wohnung mit der Zusicherung, dass sie die Bande sicher irgendwann zu fassen kriegen. Sie klingen dabei aber nicht sehr zuversichtlich.
 
-Sie lassen mich nachdenklich in der Küche mit dem aufgebrochenen Fenster zurück. Mein Blick schweift über die Kommode in der Ecke, wo ich immer die Uhr (if: $geschlecht is &quot;männlich&quot;)[meines Grossvaters](else:)[meiner Grossmutter] hinlege. Ein mir teures Erbstück. (if: $geschlecht is &quot;männlich&quot;)[Opas](else:)[Omas] Uhr liegt jedoch nicht mehr dort.
+Nachdenklich sitze ich in der Küche mit dem aufgebrochenen Fenster. Mein Blick schweift über die Kommode in der Ecke, wo ich immer die Uhr (if: $geschlecht is &quot;männlich&quot;)[meines Grossvaters](else:)[meiner Grossmutter] hinlege. Ein mir teures Erbstück. (if: $geschlecht is &quot;männlich&quot;)[Opas](else:)[Omas] Uhr liegt jedoch nicht mehr dort.
 
 [[➡️ Weiter-&gt;Build World 2.1]]</tw-passagedata><tw-passagedata pid="4" name="Konsequenzen Ja 2" tags="Zeit2" position="3100,525" size="100,100">(set: $progress to (round: ($visitedPassages&#39;s length / $totalPassages * 100)))(print: &#39;&lt;div id=&quot;progress-container&quot;&gt;&lt;div id=&quot;progress-bar&quot; style=&quot;width: &#39;+(text: $progress)+&#39;%;&quot;&gt;&lt;/div&gt;&lt;/div&gt;&#39;)(if: not ($visitedPassages contains (passage:)&#39;s name))[(set: $visitedPassages to it + (a: (passage:)&#39;s name))]
 Mit der Kombination aus Quantencomputern und den Lockerungen im Datenschutz sinkt die Kriminalität weiter. Ich lese in der Zeitung die Schlagzeile &quot;Swissovia wird zu einem der sichersten Länder der Welt&quot;. Die Wirtschaft floriert und die Mehrheit der Bevölkerung scheint glücklich zu sein. Der Source Code vom Predictive Policing System wird offengelegt und die Privatsphäre des Einzelnen ist gemäss den Strafverfolgungsbehörden bestmöglich gewahrt.
@@ -192,7 +191,7 @@ Mit meinen Investitionen in den $COIN habe ich ein riesiges Vermögen erwirtscha
 
 [[➡️ Weiter-&gt;End World 2]]</tw-passagedata><tw-passagedata pid="6" name="Personendaten" tags="Zeit1" position="275,450" size="100,100">(set: $progress to (round: ($visitedPassages&#39;s length / $totalPassages * 100)))(print: &#39;&lt;div id=&quot;progress-container&quot;&gt;&lt;div id=&quot;progress-bar&quot; style=&quot;width: &#39;+(text: $progress)+&#39;%;&quot;&gt;&lt;/div&gt;&lt;/div&gt;&#39;)(if: not ($visitedPassages contains (passage:)&#39;s name))[(set: $visitedPassages to it + (a: (passage:)&#39;s name))]
 ####(text-colour:navy)[Angaben zur Person]
-Für eine möglichst realitätsnahe Erzählung der Geschichte bitten wir dich, die folgenden Daten anzugeben. Diese werden &#39;&#39;nicht &#39;&#39;abgespeichert. Zum Schluss der Geschichte hast du die Wahl, uns deine Angaben sowie den gewählten Erzählungsstrang zur Auswertung zukommen zu lassen. Dementsprechend kannst du hier natürlich auch fiktive Angaben vornehmen.
+Für eine möglichst realitätsnahe Erzählung der Geschichte bitten wir dich, die folgenden Daten anzugeben. Diese werden grundsätzlich &#39;&#39;nicht &#39;&#39;abgespeichert. Jedoch hast du zum Schluss der Geschichte die Wahl, uns deine Angaben sowie den gewählten Erzählungsstrang zur Auswertung zukommen zu lassen. Dementsprechend kannst du hier natürlich auch fiktive Angaben vornehmen.
 
 
 Geschlecht: (text-colour:blue)[(dropdown: bind $geschlecht, &quot;Bitte auswählen...&quot;, &quot;weiblich&quot;, &quot;männlich&quot;, &quot;divers&quot;)]
@@ -206,7 +205,7 @@ Was ist dein höchster Bildungsabschluss?
 (text-colour:blue)[(dropdown: bind $bildung, &quot;Bitte auswählen...&quot;, &quot;obligatorische Schule&quot;, &quot;Sekundarstufe II&quot;, &quot;Tertiärstufe&quot;)]
 
 
-[[➡️ Weiter-&gt;Einleitung]]</tw-passagedata><tw-passagedata pid="7" name="Build World 1_1" tags="Zeit1" position="675,450" size="100,100">(set: $progress to (round: ($visitedPassages&#39;s length / $totalPassages * 100)))(print: &#39;&lt;div id=&quot;progress-container&quot;&gt;&lt;div id=&quot;progress-bar&quot; style=&quot;width: &#39;+(text: $progress)+&#39;%;&quot;&gt;&lt;/div&gt;&lt;/div&gt;&#39;)(if: not ($visitedPassages contains (passage:)&#39;s name))[(set: $visitedPassages to it + (a: (passage:)&#39;s name))]
+[[➡️ Einstellung abfragen-&gt;Einstellung abfragen]]</tw-passagedata><tw-passagedata pid="7" name="Build World 1_1" tags="Zeit1" position="675,450" size="100,100">(set: $progress to (round: ($visitedPassages&#39;s length / $totalPassages * 100)))(print: &#39;&lt;div id=&quot;progress-container&quot;&gt;&lt;div id=&quot;progress-bar&quot; style=&quot;width: &#39;+(text: $progress)+&#39;%;&quot;&gt;&lt;/div&gt;&lt;/div&gt;&#39;)(if: not ($visitedPassages contains (passage:)&#39;s name))[(set: $visitedPassages to it + (a: (passage:)&#39;s name))]
 Wir befinden uns im Stadtzentrum von Gasel, das subtile, aber spürbare Veränderungen durchgemacht hat. Das Stadtbild hat sich in den letzten Jahren gewandelt und die Stadt ist wesentlich digitaler geworden. Ich verlasse gerade das Büro und warte auf das nächste Tram. Auf der gegenüberliegenden Strassenseite sehe ich eine Szene, die die Veränderungen des Stadtbilds inklusive der Einwohner:innen gut zusammenfasst: Leute starren auf ihre Smartphones, während sie vor digitalen Werbeanzeigen sitzen. 
 
 (align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X&quot;)[&lt;img 
@@ -215,11 +214,12 @@ alt=&quot;Augmented Reality&quot; width=&quot;600&quot; height=&quot;400&quot;&g
 
 Die städtische Infrastruktur ist nicht nur digitaler, sondern auch smarter geworden. Öffentliche Verkehrsmittel sind vernetzt und passen ihre Routen und Zeitpläne in Echtzeit an die Bedürfnisse der Bürger:innen an. Die Einwohner:innen nutzen vermehrt Apps, um Dienstleistungen von der Müllabfuhr bis zur Parkplatzsuche zu koordinieren. Diese Dienstleistungen werden ermöglicht durch ein Netzwerk von Sensoren und Kameras, welche ständig Daten sammeln. Vermehrt sind auch Überwachungskameras auf den Strassen zu sehen. 
 
-[[🚃 Mein Tram fährt ein und ich steige ins Tram-&gt;Build World 1_2]]</tw-passagedata><tw-passagedata pid="8" name="Namen eingeben" tags="Zeit1" position="500,750" size="100,100">(set: $progress to (round: ($visitedPassages&#39;s length / $totalPassages * 100)))(print: &#39;&lt;div id=&quot;progress-container&quot;&gt;&lt;div id=&quot;progress-bar&quot; style=&quot;width: &#39;+(text: $progress)+&#39;%;&quot;&gt;&lt;/div&gt;&lt;/div&gt;&#39;)(if: not ($visitedPassages contains (passage:)&#39;s name))[(set: $visitedPassages to it + (a: (passage:)&#39;s name))]
+[[🚃 Mein Tram fährt ein und ich steige ins Tram-&gt;Build World 1_2]]</tw-passagedata><tw-passagedata pid="8" name="Namen eingeben" tags="Zeit1" position="575,725" size="100,100">(set: $progress to (round: ($visitedPassages&#39;s length / $totalPassages * 100)))(print: &#39;&lt;div id=&quot;progress-container&quot;&gt;&lt;div id=&quot;progress-bar&quot; style=&quot;width: &#39;+(text: $progress)+&#39;%;&quot;&gt;&lt;/div&gt;&lt;/div&gt;&#39;)(if: not ($visitedPassages contains (passage:)&#39;s name))[(set: $visitedPassages to it + (a: (passage:)&#39;s name))]
 (set: $name to (prompt: [Bitte den gewünschten Namen eingeben:],&quot;Vorname&quot;,&quot;&quot;,&quot;OK&quot;))
 Hallo **(text-colour:navy)[$name]!**
 
 Dann geht es nun los mit der Geschichte. Wir wünschen dir viel Spass dabei!
+
 
 [[🚀 Starte die Geschichte-&gt;Build World 1_1]] 
 
@@ -248,8 +248,7 @@ alt=&quot;Sommerabend in Bar&quot; width=&quot;600&quot; height=&quot;400&quot;&
 
 //&#39;&#39;(text-colour:red)[James]: &#39;&#39;//Haben sie geschrieben, was das Ganze kosten wird?
 
-//&#39;&#39;(text-colour:navy)[$name]: &#39;&#39;//Die genaue Zahl weiss ich nicht mehr, aber es sollen wohl mehrere Millionen pro Jahr sein, die für diese Weiterentwicklung der bestehenden Systeme benötigt werden. Interessanterweise sollen die Kosten für die Polizei und Gesellschaft dennoch langfristig sinken, da die vorhanden Ressourcen effizienter eingesetzt werden könnten. 
-Obwohl ich selbst in dem Bereich arbeite, weiss ich nicht, was ich von dieser Erweiterung halten soll. Wie steht ihr dazu?
+//&#39;&#39;(text-colour:navy)[$name]: &#39;&#39;//Die genaue Zahl weiss ich nicht mehr, aber es sollen wohl mehrere Millionen pro Jahr sein, die für diese Weiterentwicklung der bestehenden Systeme benötigt werden. Interessanterweise sollen die Kosten für die Polizei und Gesellschaft dennoch langfristig sinken, da die vorhanden Ressourcen effizienter eingesetzt werden könnten. Obwohl ich selbst in dem Bereich arbeite, weiss ich nicht, was ich von dieser Erweiterung halten soll. Wie steht ihr dazu?
 
 Gerade als Lena etwas sagen möchte, beginnt es zu regnen. Hastig stehen wir auf und packen unsere Sachen.
 
@@ -278,7 +277,7 @@ src=&quot;https://as2.ftcdn.net/v2/jpg/02/25/30/57/1000_F_225305754_n0xvCCiIFV0Y
 alt=&quot;Augmented Reality&quot; width=&quot;600&quot; height=&quot;400&quot;/&gt;]
 //&#39;&#39;(text-colour:green)[Lena]:  &#39;&#39;//Das war wirklich knapp! Stellt euch vor, die Polizei hätte so etwas wie einen Wetterbericht, der vorhersagt, wo Verbrechen passieren werden. Das wäre doch toll! Mehr Sicherheit, weniger Kriminalität und gleichzeitig könnten Einsparungen bei der Polizei in unser Sozialversicherungssystem fliessen. Ich sehe das als eine Win-Win-Situation, bei der mehr Geld und mehr Sicherheit herauskommen.
 
-//&#39;&#39;(text-colour:red)[James]:  &#39;&#39;//Das klingt zwar gut, Lena, aber es ist komplizierter. Hast du keine Bedenken wegen der zunehmenden Überwachung und dem schleichenden Verlust unserer Freiheit? Predictive Policing führt auch zu mehr Racial Profiling. Und ein solches Überwachungssystem kann missbraucht werden. Hast du nie George Orwells „1984“ gelesen?
+//&#39;&#39;(text-colour:red)[James]:  &#39;&#39;//Das klingt zwar gut, Lena, aber so einfach ist das nicht. Hast du keine Bedenken wegen der zunehmenden Überwachung und dem schleichenden Verlust unserer Freiheit? Predictive Policing führt auch zu mehr Racial Profiling. Und ein solches Überwachungssystem kann missbraucht werden. Hast du nie George Orwells „1984“ gelesen?
 
 Plötzlich spüre ich eine Hand auf meiner Schulter.
 
@@ -295,7 +294,7 @@ Hinter dir steht Paul, ein alter Freund.
 
 //&#39;&#39;(text-colour:grey)[Paul]:  &#39;&#39;//Ah, ihr seid also schon bei den tiefgreifenden politischen Diskussionen angelangt? Da brauche ich zuerst noch ein paar Drinks, bevor ich so weit bin. Ja, ja, irgendwann wird die Regierung alles über uns wissen. Mit den ganzen digitalen Spuren, die wir hinterlassen, können wir ja sowieso nichts dagegen machen. Als könnte heute noch jemand ohne Handy und den ganzen Apps überleben. 
 
-//&#39;&#39;(text-colour:grey)[Paul]:  &#39;&#39;//(In leicht ironischem Tonfall)//&#39;&#39;:&#39;&#39;// Sobald Elon Musk dann noch seinen Neuralink auf den Markt bringt, können bald auch unsere Gedanken überwacht werden.
+//&#39;&#39;(text-colour:grey)[Paul]  &#39;&#39;//(In leicht ironischem Tonfall)//&#39;&#39;:&#39;&#39;// Sobald Elon Musk dann noch seinen Neuralink auf den Markt bringt, können bald auch unsere Gedanken überwacht werden.
 
 //&#39;&#39;(text-colour:green)[Lena]:  &#39;&#39;//Neuralink?
 
@@ -331,7 +330,7 @@ Durch die Diskussion mit James und Lena habe ich nochmals die verschiedenen Pers
 
 [[👍 Du hast Recht Lena, ich werde für die Initiative stimmen -&gt;Ja 1]]
 
-[[👎 Nein Lena, ich sehe das wie James. Die Risiken sind zu gross und ich werde nein stimmen -&gt;Nein 1]]</tw-passagedata><tw-passagedata pid="16" name="Build World 2.1" tags="Zeit2" position="2175,450" size="100,100">(set: $progress to (round: ($visitedPassages&#39;s length / $totalPassages * 100)))(print: &#39;&lt;div id=&quot;progress-container&quot;&gt;&lt;div id=&quot;progress-bar&quot; style=&quot;width: &#39;+(text: $progress)+&#39;%;&quot;&gt;&lt;/div&gt;&lt;/div&gt;&#39;)(if: not ($visitedPassages contains (passage:)&#39;s name))[(set: $visitedPassages to it + (a: (passage:)&#39;s name))]
+[[👎 Nein Lena, ich sehe das wie James. Die Risiken sind zu gross und ich werde &quot;Nein&quot; stimmen -&gt;Nein 1]]</tw-passagedata><tw-passagedata pid="16" name="Build World 2.1" tags="Zeit2" position="2175,450" size="100,100">(set: $progress to (round: ($visitedPassages&#39;s length / $totalPassages * 100)))(print: &#39;&lt;div id=&quot;progress-container&quot;&gt;&lt;div id=&quot;progress-bar&quot; style=&quot;width: &#39;+(text: $progress)+&#39;%;&quot;&gt;&lt;/div&gt;&lt;/div&gt;&#39;)(if: not ($visitedPassages contains (passage:)&#39;s name))[(set: $visitedPassages to it + (a: (passage:)&#39;s name))]
 (text-style:&quot;bold&quot;)[//Bereits 15 Jahre sind vergangen//], seit ich mich damals mit Lena und James auf ein Feierabendbier getroffen und über die Initiative zum Predictive Policing gesprochen hatte.
 
 Die Welt ist moderner geworden. Smartphones wurden durch intelligente und vernetzte Augmented Reality (AR) Brillen ersetzt. Auf den Strassen sind selbstfahrende, elektrische Autos zu sehen. Alles und jede:r scheint heutzutage mit dem Internet verbunden zu sein. Ebenso finden Quantencomputer vermehrt Verwendung. Allerdings sind diese Computer bislang für den privaten Gebrauch nur sehr teuer zu erwerben.
@@ -370,7 +369,7 @@ Ich beschliesse meinen Job (if: $geschlecht contains &quot;weiblich&quot;) [als 
 Durch die zunehmende Technologisierung haben sich auch die Unterschiede der Länder und Bevölkerungsschichten nochmals verstärkt. In einzelnen Ländern kommt es mit Hilfe der neuen technischen Möglichkeiten zunehmend zu Unterdrückung. Als Reaktion sind vermehrt Terroranschläge erfolgt, um gegen diese Unterdrückung und Ungleichheit vorzugehen. Auch ist die Kriminalitätsrate in Swissovia deutlich angestiegen. Aufgrund eines in letzter Sekunde vereitelten Terroranschlags und der rasant steigenden Kriminalitätsrate, sah sich die Regierung gezwungen den Strafverfolgungsbehörden per Notdekret zu erlauben, (if:(visited:&quot;Ja 1&quot;))[auch personenbezogene Daten mit der Predictive Policing Software auszuwerten](else:)[das Predictive Policing System signifikant zu erweitern. Dabei dürfen nun Daten aus dem Internetverkehr, den Sensoren aus dem öffentlichen Verkehr sowie aus dem Einwählen in einen Telefonmasten ausgewertet und verwendet werden. Zusätzlich ist auch die Auswertung von personenbezogenen Daten erlaubt]. Dies, obwohl (if:(visited:&quot;Ja 1&quot;))[in der Initiative vor 16 Jahren beschossen wurde, dass exakt diese Daten nicht mit der Predictive Policing Software ausgewertet werden dürfen](else:)[die Initiative dazu vor 16 Jahren abgelehnt wurde].
 Die notwendige Gesetzesänderung, um diese Befugnisse rechtlich zu legitimieren, wurde nun unter dem Namen &quot;Für Recht und Ordnung in Swissovia&quot; dem Parlament in die Vernehmlassung übergeben. Gegen diese Gesetzesänderung regt sich jedoch Widerstand und es werden Unterschriften für ein Referendum gesammelt.
  
-Ich bin hin und her gerissen, ob ich das Referendum gegen das Gesetz &quot;Für Recht und Ordnung in Swissovia&quot; unterstützen soll oder nicht. Auf der Website des Komitees gegen das Gesetz erfahre ich, dass gleich eine Podiumsdiskussion via Livestream direkt aus dem Kongresszentrum übertragen wird. Ich beschliesse, am Event teilzunehmen.
+Ich bin hin und her gerissen, ob ich das Referendum gegen das Gesetz &quot;Für Recht und Ordnung in Swissovia&quot; unterstützen soll oder nicht. Auf der Website des Komitees gegen das Gesetz erfahre ich, dass gleich eine Podiumsdiskussion via Livestream direkt aus dem Kongresszentrum übertragen wird. Ich beschliesse am Event teilzunehmen.
  
 [[📞 Ich wähle mich mit der &quot;Anrufen Geste&quot; via AR-Brille in die Podiumsdiskussion mit ein-&gt;Podiumsdiskussion]]</tw-passagedata><tw-passagedata pid="18" name="Partei &quot;Freiheit für alle&quot;" tags="Zeit2" position="2825,225" size="100,100">(set: $progress to (round: ($visitedPassages&#39;s length / $totalPassages * 100)))(print: &#39;&lt;div id=&quot;progress-container&quot;&gt;&lt;div id=&quot;progress-bar&quot; style=&quot;width: &#39;+(text: $progress)+&#39;%;&quot;&gt;&lt;/div&gt;&lt;/div&gt;&#39;)
 Ich bin der Partei &quot;Freiheit für alle&quot; beigetreten und sammle fleissig Unterschriften für das Referendum gegen das Gesetz &quot;Für Recht und Ordnung in Swissovia&quot;. Heute kann ich aber keine Unterschriften sammeln, da ich im Pflegeheim aushelfe. Ich gehe gerade am Aufenthaltsraum vorbei, als ich von Franz angesprochen werde, der gerade durch seine Zeitung blättert. Franz hat zuvor als Kommissar bei der Polizei gearbeitet und ist fasziniert von dem Zeitungsartikel über die Predictive Policing Software.
@@ -412,10 +411,10 @@ Es hat leider nicht geholfen, der Partei &quot;Freiheit für alle&quot; beizutre
 
 [[➡️ Einige Jahrzehnte später...-&gt;Build World 3]]</tw-passagedata><tw-passagedata pid="21" name="Einleitung" tags="Zeit1" position="450,450" size="100,100">(set: $progress to (round: ($visitedPassages&#39;s length / $totalPassages * 100)))(print: &#39;&lt;div id=&quot;progress-container&quot;&gt;&lt;div id=&quot;progress-bar&quot; style=&quot;width: &#39;+(text: $progress)+&#39;%;&quot;&gt;&lt;/div&gt;&lt;/div&gt;&#39;)(if: not ($visitedPassages contains (passage:)&#39;s name))[(set: $visitedPassages to it + (a: (passage:)&#39;s name))]
 ####(text-colour:navy)[Erzählweise]
-Die Geschichte wird aus deiner Perspektive in der Ich-Form erzählt und du nimmst darin die Hauptrolle ein. Ab und zu wirst du auch mit deinem Namen angesprochen. Bitte sag mir, wie du in der Geschichte heissen möchtest.
+Die Geschichte wird aus deiner Perspektive in der Ich-Form erzählt und du nimmst darin die Hauptrolle ein. Ab und zu wirst du auch mit deinem Namen angesprochen. Bitte sag uns, wie du in der Geschichte heissen möchtest.
 (text-size:0.8)[//Der Name wird nur innerhalb des Browsers in  dieser Geschichte verwendet, um sie persönlicher zu gestalten; und  ansonsten nirgends gespeichert. Du kannst aber auch einen Phantasienamen für die Geschichte angeben, mit welchem du angesprochen werden möchtest.//]
 
-[[➡️ Einstellung abfragen-&gt;Einstellung abfragen]]</tw-passagedata><tw-passagedata pid="22" name="Nahe Zukunft" tags="" position="700,25" size="100,100"></tw-passagedata><tw-passagedata pid="23" name="Entfernte Zukunft" tags="" position="2175,0" size="100,100"></tw-passagedata><tw-passagedata pid="24" name="Ferne Zukunft" tags="" position="3400,25" size="100,100"></tw-passagedata><tw-passagedata pid="25" name="Build World 3" tags="Zeit3" position="3525,450" size="100,100">(set: $progress to (round: ($visitedPassages&#39;s length / $totalPassages * 100)))(print: &#39;&lt;div id=&quot;progress-container&quot;&gt;&lt;div id=&quot;progress-bar&quot; style=&quot;width: &#39;+(text: $progress)+&#39;%;&quot;&gt;&lt;/div&gt;&lt;/div&gt;&#39;)(if: not ($visitedPassages contains (passage:)&#39;s name))[(set: $visitedPassages to it + (a: (passage:)&#39;s name))]
+[[➡️ Namen eingeben-&gt;Namen eingeben]]</tw-passagedata><tw-passagedata pid="22" name="Nahe Zukunft" tags="" position="700,25" size="100,100"></tw-passagedata><tw-passagedata pid="23" name="Entfernte Zukunft" tags="" position="2175,0" size="100,100"></tw-passagedata><tw-passagedata pid="24" name="Ferne Zukunft" tags="" position="3400,25" size="100,100"></tw-passagedata><tw-passagedata pid="25" name="Build World 3" tags="Zeit3" position="3525,450" size="100,100">(set: $progress to (round: ($visitedPassages&#39;s length / $totalPassages * 100)))(print: &#39;&lt;div id=&quot;progress-container&quot;&gt;&lt;div id=&quot;progress-bar&quot; style=&quot;width: &#39;+(text: $progress)+&#39;%;&quot;&gt;&lt;/div&gt;&lt;/div&gt;&#39;)(if: not ($visitedPassages contains (passage:)&#39;s name))[(set: $visitedPassages to it + (a: (passage:)&#39;s name))]
 Seit dem gemeinsamen Feierabendbier mit Lena und James sind nun einige Jahrzehnte vergangen. Auch die Abstimmung über das Referendum liegt schon länger zurück.
  
 Die Menschheit hat einen beispiellosen technologischen Fortschritt erlebt, der das alltägliche Leben grundlegend verändert hat. Der Neuralink-Chip von Elon Musk ist nun bereits seit einiger Zeit ausgereift und immer mehr Menschen lassen sich einen solchen implantieren. Diese Chips erlauben, dass Menschen mit Hilfe ihrer Gedanken direkt mit Geräten kommunizieren können. Einst entwickelt für Menschen mit körperlichen Einschränkungen, sind sie mittlerweile für jedermann verfügbar, was eine Ära der beispiellosen Konnektivität und des Komforts eingeleitet hat. Die Integration von Gehirn-Computer-Schnittstellen durch implantierbare Chips ist zur Norm geworden.
@@ -651,38 +650,38 @@ Hormone sind spezielle Botenstoffe, die von Drüsen im Körper produziert und in
 [[Was waren nochmals Neurotransmitter?-&gt; Definition Neurotransmitter]]
  
 [[👍 Stimmt, das hatten wir tatsächlich mal im Unterricht behandelt -&gt;Build World 3_2]]</tw-passagedata><tw-passagedata pid="41" name="Einstellung abfragen" tags="Zeit1" position="400,600" size="100,100">(set: $progress to (round: ($visitedPassages&#39;s length / $totalPassages * 100)))(print: &#39;&lt;div id=&quot;progress-container&quot;&gt;&lt;div id=&quot;progress-bar&quot; style=&quot;width: &#39;+(text: $progress)+&#39;%;&quot;&gt;&lt;/div&gt;&lt;/div&gt;&#39;)(if: not ($visitedPassages contains (passage:)&#39;s name))[(set: $visitedPassages to it + (a: (passage:)&#39;s name))]
-####(text-colour:navy)[Angaben zur Person]
-Die Inhalte dieser Geschichte sind gegebenenfalls kontrovers. Um festzustellen, ob die Geschichte bei dir einen Einfluss auf deine Meinung macht, würden wir dir gerne einige Fragen stellen.
+####(text-colour:navy)[Angaben zur Einstellung]
+Die Inhalte dieser Geschichte sind gegebenenfalls kontrovers. Um festzustellen, ob die Geschichte bei dir einen Einfluss auf deine Meinung hat, würden wir dir gerne einige Fragen stellen. Diese Fragen werden dir am Ende der Geschichte abermals gestellt, um zu prüfen, ob es eine Veränderung in deiner Einstellung gab.
 
-Wie stehst du dazu, dass die Polizei **anonyme** Daten auswerten darf, um mögliche Problemzonen zu identifizieren? (text-colour:blue)[(dropdown: bind $meinung1a, &quot;Bitte auswählen...&quot;, &quot;Sehr negativ&quot;, &quot;Eher negativ&quot;, &quot;Neutral&quot;, &quot;Eher positiv&quot;, &quot;Sehr positiv&quot;)]
+Wie stehst du dazu, dass die Polizei **anonyme** Daten auswerten darf, um mögliche Risikogebiete für Verbrechen zu identifizieren? (text-colour:blue)[(dropdown: bind $meinung1a, &quot;Bitte auswählen...&quot;, &quot;Sehr negativ&quot;, &quot;Eher negativ&quot;, &quot;Neutral&quot;, &quot;Eher positiv&quot;, &quot;Sehr positiv&quot;)]
 
-Wie stehtst du dazu, dass die Polizei **personenbezogene** Daten auswerten darf um mögliche verdächtige Personen zu identifizieren? (text-colour:blue)[(dropdown: bind $meinung2a, &quot;Bitte auswählen...&quot;, &quot;Sehr negativ&quot;, &quot;Eher negativ&quot;, &quot;Neutral&quot;, &quot;Eher positiv&quot;, &quot;Sehr positiv&quot;)]
+Wie stehtst du dazu, dass die Polizei **personenbezogene** Daten auswerten darf, um mögliche verdächtige Personen zu identifizieren? (text-colour:blue)[(dropdown: bind $meinung2a, &quot;Bitte auswählen...&quot;, &quot;Sehr negativ&quot;, &quot;Eher negativ&quot;, &quot;Neutral&quot;, &quot;Eher positiv&quot;, &quot;Sehr positiv&quot;)]
 
-Wie stehtst du dazu, dass die Polizei mittels Datenanalyse pntenzielle Verbrechen aufspüren kann, bevor die überhaupt geschen? (text-colour:blue)[(dropdown: bind $meinung3a, &quot;Bitte auswählen...&quot;, &quot;Sehr negativ&quot;, &quot;Eher negativ&quot;, &quot;Neutral&quot;, &quot;Eher positiv&quot;, &quot;Sehr positiv&quot;)]
+Wie stehtst du dazu, dass die Polizei mittels Datenanalyse potenzielle Verbrechen identifizieren kann, bevor die überhaupt geschehen? (text-colour:blue)[(dropdown: bind $meinung3a, &quot;Bitte auswählen...&quot;, &quot;Sehr negativ&quot;, &quot;Eher negativ&quot;, &quot;Neutral&quot;, &quot;Eher positiv&quot;, &quot;Sehr positiv&quot;)]
 
-[[➡️ Weiter -&gt;Namen eingeben]] </tw-passagedata><tw-passagedata pid="42" name="Auswertung" tags="Zeit3" position="4800,450" size="100,100">(set: $progress to (round: ($visitedPassages&#39;s length / $totalPassages * 100)))(print: &#39;&lt;div id=&quot;progress-container&quot;&gt;&lt;div id=&quot;progress-bar&quot; style=&quot;width: &#39;+(text: $progress)+&#39;%;&quot;&gt;&lt;/div&gt;&lt;/div&gt;&#39;)(if: not ($visitedPassages contains (passage:)&#39;s name))[(set: $visitedPassages to it + (a: (passage:)&#39;s name))]
+[[➡️ Weiter -&gt;Einleitung]] </tw-passagedata><tw-passagedata pid="42" name="Auswertung" tags="Zeit3" position="4800,450" size="100,100">(set: $progress to (round: ($visitedPassages&#39;s length / $totalPassages * 100)))(print: &#39;&lt;div id=&quot;progress-container&quot;&gt;&lt;div id=&quot;progress-bar&quot; style=&quot;width: &#39;+(text: $progress)+&#39;%;&quot;&gt;&lt;/div&gt;&lt;/div&gt;&#39;)(if: not ($visitedPassages contains (passage:)&#39;s name))[(set: $visitedPassages to it + (a: (passage:)&#39;s name))]
 ####(text-colour:navy)[Einstellung nach der Geschichte]
 
-Wie stehst du jetzt dazu, dass die Polizei **anonyme** Daten auswerten darf, um mögliche Problemzonen zu identifizieren? (text-colour:blue)[(dropdown: bind $meinung1b, &quot;Bitte auswählen...&quot;, &quot;Sehr negativ&quot;, &quot;Eher negativ&quot;, &quot;Neutral&quot;, &quot;Eher positiv&quot;, &quot;Sehr positiv&quot;)]
+Wie stehst du dazu, dass die Polizei **anonyme** Daten auswerten darf, um mögliche Risikogebiete für Verbrechen zu identifizieren? (text-colour:blue)[(dropdown: bind $meinung1b, &quot;Bitte auswählen...&quot;, &quot;Sehr negativ&quot;, &quot;Eher negativ&quot;, &quot;Neutral&quot;, &quot;Eher positiv&quot;, &quot;Sehr positiv&quot;)]
 
-Wie stehtst du jetzt dazu, dass die Polizei **personenbezogene** Daten auswerten darf, um mögliche verdächtige Personen zu identifizieren? (text-colour:blue)[(dropdown: bind $meinung2b, &quot;Bitte auswählen...&quot;, &quot;Sehr negativ&quot;, &quot;Eher negativ&quot;, &quot;Neutral&quot;, &quot;Eher positiv&quot;, &quot;Sehr positiv&quot;)]
+Wie stehtst du dazu, dass die Polizei **personenbezogene** Daten auswerten darf, um mögliche verdächtige Personen zu identifizieren? (text-colour:blue)[(dropdown: bind $meinung2b, &quot;Bitte auswählen...&quot;, &quot;Sehr negativ&quot;, &quot;Eher negativ&quot;, &quot;Neutral&quot;, &quot;Eher positiv&quot;, &quot;Sehr positiv&quot;)]
 
-Wie stehtst du jetzt dazu, dass die Polizei mittels Datenanalyse potenzielle Verbrechen aufspüren kann, bevor die überhaupt geschen? (text-colour:blue)[(dropdown: bind $meinung3b, &quot;Bitte auswählen...&quot;, &quot;Sehr negativ&quot;, &quot;Eher negativ&quot;, &quot;Neutral&quot;, &quot;Eher positiv&quot;, &quot;Sehr positiv&quot;)]
+Wie stehtst du dazu, dass die Polizei mittels Datenanalyse potenzielle Verbrechen identifizieren kann, bevor die überhaupt geschehen? (text-colour:blue)[(dropdown: bind $meinung3b, &quot;Bitte auswählen...&quot;, &quot;Sehr negativ&quot;, &quot;Eher negativ&quot;, &quot;Neutral&quot;, &quot;Eher positiv&quot;, &quot;Sehr positiv&quot;)]
 
 [[➡️ Vergleichen-&gt;Vorher/nacher]] </tw-passagedata><tw-passagedata pid="43" name="Vorher/nacher" tags="Zeit3" position="4975,450" size="100,100">(set: $progress to (round: ($visitedPassages&#39;s length / $totalPassages * 100)))(print: &#39;&lt;div id=&quot;progress-container&quot;&gt;&lt;div id=&quot;progress-bar&quot; style=&quot;width: &#39;+(text: $progress)+&#39;%;&quot;&gt;&lt;/div&gt;&lt;/div&gt;&#39;)(if: not ($visitedPassages contains (passage:)&#39;s name))[(set: $visitedPassages to it + (a: (passage:)&#39;s name))]
 ####(text-colour:navy)[Vergleiche deine Meinung]
 
 Hier findest du einen Vergleich deiner Meinung vor und nach der Geschichte:
 
-Wie stehst du jetzt dazu, dass die Polizei **anonyme** Daten auswerten darf, um mögliche Problemzonen zu identifizieren?
+Wie stehst du dazu, dass die Polizei **anonyme** Daten auswerten darf, um mögliche Risikogebiete für Verbrechen zu identifizieren?
 Am Anfang: $meinung1a
 Jetzt: $meinung1b
 
-Wie stehtst du jetzt dazu, dass die Polizei **personenbezogene** Daten auswerten darf, um mögliche verdächtige Personen zu identifizieren?
+Wie stehtst du dazu, dass die Polizei **personenbezogene** Daten auswerten darf, um mögliche verdächtige Personen zu identifizieren?
 Am Anfang: $meinung2a
 Jetzt: $meinung2b
 
-Wie stehtst du jetzt dazu, dass die Polizei mittels Datenanalyse potenzielle Verbrechen aufspüren kann, bevor die überhaupt geschen?
+Wie stehtst du dazu, dass die Polizei mittels Datenanalyse potenzielle Verbrechen identifizieren kann, bevor die überhaupt geschehen?
 Am Anfang: $meinung3a
 Jetzt: $meinung3b
 
