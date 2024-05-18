@@ -108,7 +108,7 @@ Dies ist der Anfang einer interaktiven Geschichte, die wir im Rahmen des Moduls 
 
 Die Geschichte dreht sich um Predictive Policing, also den Einsatz von Datenanalyse-Techniken in der Strafverfolgung, um Verbrechen vorherzusagen und zu verhindern.
 
-Das Lesen der Geschichte dauert ca. 15 - 20 Minuten. Dabei gelangst du an Stellen, wo du dich entscheiden musst, wie die Geschichte weitergehen soll. Dazu kannst du jeweils den entsprechenden Link am Ende einer Seite anklicken. Stell dir bei deinen Entscheidungen jeweils die Frage, ob deine Wahl &#39;&#39;deiner gewünschten Zukunft &#39;&#39;entspricht.
+Das Lesen der Geschichte dauert ca. 15 Minuten. Dabei gelangst du an Stellen, wo du dich entscheiden musst, wie die Geschichte weitergehen soll. Dazu kannst du jeweils den entsprechenden Link am Ende einer Seite anklicken. Stell dir bei deinen Entscheidungen jeweils die Frage, ob deine Wahl &#39;&#39;deiner gewünschten Zukunft &#39;&#39;entspricht.
 
 Wir beginnen mit ein paar Fragen zu deiner Person. 
 
@@ -318,7 +318,7 @@ Nachdem er sich verabschiedet hat, geht Paul wieder auf die andere Seite der Bar
 ]</tw-passagedata><tw-passagedata pid="15" name="James kommt zurück" tags="Zeit1" position="1525,450" size="100,100">(set: $progress to (round: ($visitedPassages&#39;s length / $totalPassages * 100)))(print: &#39;&lt;div id=&quot;progress-container&quot;&gt;&lt;div id=&quot;progress-bar&quot; style=&quot;width: &#39;+(text: $progress)+&#39;%;&quot;&gt;&lt;/div&gt;&lt;/div&gt;&#39;)(if: not ($visitedPassages contains (passage:)&#39;s name))[(set: $visitedPassages to it + (a: (passage:)&#39;s name))]
 (if: $drink is 0) [James kommt zurück und setzt sich wieder auf seinen Stuhl.](if: $drink is 1) [James kommt zurück, stellt dein Getränk vor dich und setzt sich wieder auf seinen Stuhl.]
 
-//&#39;&#39;(text-colour:green)[Lena]:  &#39;&#39;//Wo waren wir? Ach ja, das Sammeln und Auswerten der Daten. Das mit der Überwachung stört mich nicht wirklich. Ich habe ja nichts zu verbergen. Und wenn jemand etwas zu verbergen hat, sollte man den ja auch erwischen, nicht? Zudem vertraue ich unserer Regierung, dass das System richtig eingesetzt wird. Da gibts doch sicher verschiedenste Organe, die die Entwicklung und Nutzung überwachen. Wir leben schliesslich in einem Rechtsstaat. Ausserdem arbeitet ja $name in der Entwicklerfirma. Er wird schon aufpassen. Nicht wahr, $name? (Lena zwinkert mir zu).
+//&#39;&#39;(text-colour:green)[Lena]:  &#39;&#39;//Wo waren wir? Ach ja, das Sammeln und Auswerten der Daten. Das mit der Überwachung stört mich nicht wirklich. Ich habe ja nichts zu verbergen. Und wenn jemand etwas zu verbergen hat, sollte man den ja auch erwischen, nicht? Zudem vertraue ich unserer Regierung, dass das System richtig eingesetzt wird. Da gibts doch sicher verschiedenste Organe, die die Entwicklung und Nutzung überwachen. Wir leben schliesslich in einem Rechtsstaat. Ausserdem arbeitet ja $name in der Entwicklerfirma. (if: $geschlecht is &quot;männlich&quot;) [Er wird] (if: $geschlecht is &quot;weiblich&quot;) [Sie wird] (if: $geschlecht is &quot;divers&quot;) [Du wirst] schon aufpassen. Nicht wahr, $name? (Lena zwinkert mir zu).
 
 //&#39;&#39;(text-colour:red)[James]:  &#39;&#39;//Das ist ein Trugschluss, Lena. Es geht nicht darum, ob man etwas zu verbergen hat. Es geht um Gerechtigkeit und gleiche Behandlung für alle. Ich habe einfach Bedenken, dass das System nicht alle von uns gleich behandelt. Mit meiner dunklen Hautfarbe ist doch schon vorprogrammiert, dass das System besonders auf mich ausgerichtet ist. Rechtsstaat hin oder her. Solche Systeme sind aus meiner Sicht brandgefährlich.
 
@@ -479,7 +479,7 @@ Virtual Private Network (deutsch „virtuelles privates Netzwerk“; kurz: VPN) 
 Das Tor-Netzwerk ist ein System, das darauf ausgelegt ist, die Online-Privatsphäre und Anonymität seiner Nutzer zu maximieren. Es leitet Internetverkehr durch ein weltweites, freiwillig betriebenes Netzwerk von Relais, wodurch die Herkunft und das Ziel der Daten verschleiert werden. Durch diese Verschleierung ermöglicht Tor seinen Nutzern den Zugriff auf das Internet, ohne überwacht oder nachverfolgt zu werden, und kann auch den Zugang zu sogenannten &quot;Darknet&quot;-Seiten bieten.
 
 [[👍 Ah, stimmt. Jetzt erinnere ich mich wieder-&gt;Build World 2.2]]</tw-passagedata><tw-passagedata pid="31" name="Polizeikontrolle" tags="Zeit2" position="2925,525" size="100,100">(set: $progress to (round: ($visitedPassages&#39;s length / $totalPassages * 100)))(print: &#39;&lt;div id=&quot;progress-container&quot;&gt;&lt;div id=&quot;progress-bar&quot; style=&quot;width: &#39;+(text: $progress)+&#39;%;&quot;&gt;&lt;/div&gt;&lt;/div&gt;&#39;)
-(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X&quot;)[&lt;img src=&quot;https://raw.githubusercontent.com/sephiran/digital-society-twine/main/polizeikontrolle.webp&quot; width=&quot;600px&quot;/&gt;]
+(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X&quot;)[&lt;img src=&quot;https://media04.lokalkompass.de/article/2012/07/20/6/2761716_XXL.jpg&quot; width=&quot;600px&quot;/&gt;]
 //Der Polizist steigt aus seinem Auto aus und nähert sich. Ich lasse mein Fenster runter.//
 
 //&#39;&#39;(text-colour:purple)[Polizist]:&#39;&#39;// Guten Tag, mein Name ist Hungentobler von der Stadtpolizei. Dies ist eine routinemässige Verkehrskontrolle. Bitte Fahrzeug- und Führerausweis.
@@ -617,26 +617,32 @@ So sendest du uns automatisch folgende Daten:
 - Zeit &amp; Datum der Teilnahme
  
 Dein Name, die IP-Adresse oder Geo-Daten werden &#39;&#39;NICHT&#39;&#39; aufgezeichnet.
- 
+
+
 Nochmals herzlichen Dank für deine Teilnahme!
 (set: $path to (str: (history:)))
-(set: $umfrage to &quot;https://peteral2.limesurvey.net/237763?lang=de&amp;geschlecht=&quot;+$geschlecht+&quot;&amp;bildung=&quot;+$bildung+&quot;&amp;alter=&quot;+$alter+&quot;&amp;verlauf=&quot;+$path)
+(set: $umfrage to &quot;https://peteral2.limesurvey.net/237763?lang=de&amp;geschlecht=&quot;+$geschlecht+&quot;&amp;bildung=&quot;+$bildung+&quot;&amp;alter=&quot;+$alter+&quot;&amp;vorherAnonym=&quot;+$meinung1a+&quot;&amp;vorherPersonenbezog=&quot;+$meinung2a+&quot;&amp;vorherIdent=&quot;+$meinung3a+&quot;&amp;nachherAnonym=&quot;+$meinung1b+&quot;&amp;nachherPersonenbezog=&quot;+$meinung2b+&quot;&amp;nachherIdent=&quot;+$meinung3b+&quot;&amp;verlauf=&quot;+$path)
 (link:&quot;📤 Daten übermitteln 📤&quot;)[(open-url: $umfrage)]
  
-
-
-
 
 Klicke den Link unten, um die Geschichte neu zu starten.
  
 [[🚀 Zurück zum Start -&gt;Intro]]
+
  
 &lt;!-- for Testing
-(set: $path to (str: (history:)))
+(set: $path to &quot;mein Verlauf in der Geschichte&quot;)
 (set: $geschlecht to &quot;weiblich&quot;)
 (set: $alter to &quot;18&quot;)
 (set: $bildung to &quot;Schule&quot;)
---&gt;</tw-passagedata><tw-passagedata pid="39" name="Build World 3_1" tags="Zeit3" position="3650,450" size="100,100">(set: $progress to (round: ($visitedPassages&#39;s length / $totalPassages * 100)))(print: &#39;&lt;div id=&quot;progress-container&quot;&gt;&lt;div id=&quot;progress-bar&quot; style=&quot;width: &#39;+(text: $progress)+&#39;%;&quot;&gt;&lt;/div&gt;&lt;/div&gt;&#39;)(if: not ($visitedPassages contains (passage:)&#39;s name))[(set: $visitedPassages to it + (a: (passage:)&#39;s name))]
+(set: $meinung1a to &quot;Meine Meinung vorher zu anonym&quot;)
+(set: $meinung2a to &quot;Meinung Meinung vorher zu personenbezogen&quot;)
+(set: $meinung3a to &quot;Meine Meinung vorher zu identifizieren&quot;)
+(set: $meinung1b to &quot;Meine Meinung nachher zu anonym&quot;)
+(set: $meinung2b to &quot;Meine Meinung nachher zu personenbezogen&quot;)
+(set: $meinung3b to &quot;Meine Meinung nachher zu identifizieren&quot;)
+--&gt;
+</tw-passagedata><tw-passagedata pid="39" name="Build World 3_1" tags="Zeit3" position="3650,450" size="100,100">(set: $progress to (round: ($visitedPassages&#39;s length / $totalPassages * 100)))(print: &#39;&lt;div id=&quot;progress-container&quot;&gt;&lt;div id=&quot;progress-bar&quot; style=&quot;width: &#39;+(text: $progress)+&#39;%;&quot;&gt;&lt;/div&gt;&lt;/div&gt;&#39;)(if: not ($visitedPassages contains (passage:)&#39;s name))[(set: $visitedPassages to it + (a: (passage:)&#39;s name))]
 Parallel zur Entwicklung der Gehirn-Computer-Schnittstellen haben Quantencomputer aufgrund gesunkener Produktionskosten ihren Weg in private Haushalte gefunden. Ähnlich der Revolution durch PCs, die den Mainframes folgten, sind Quantencomputer nun ein unverzichtbarer Bestandteil jedes Haushalts, was das Verarbeiten gigantischer Datenmengen zum neuen Standard gemacht hat.
  
 AR-Brillen, die mit der Umgebung sowie falls vorhanden mit den implantierten Chips kommunizieren und das Benutzererlebnis in Echtzeit anpassen, basieren auf dieser fortschrittlichen Rechentechnik. Diese AR-Brillen bieten ein immersives Erlebnis, wie es zuvor unvorstellbar war. In dieser neuen Ära sind die Städte zu pulsierenden Knotenpunkten der Technologie und Innovation geworden. Gebäude und Fahrzeuge sind intelligent vernetzt, optimieren Energieverbrauch und Verkehrsfluss durch den Einsatz von Quantencomputertechnologie. Öffentliche Räume und Wohnungen passen sich auf Basis der kontinuierlich analysierten Daten, welche unter anderem auch durch die implantierten Chips generiert werden, automatisch den Bedürfnissen und der Stimmung ihrer Bewohner:innen an. Auch die Bildung hat einen Sprung nach vorne gemacht. Schulen und Universitäten nutzen Augmented Reality und Quantencomputer, um ein dynamisches Lernumfeld zu schaffen, in dem Schüler:innen durch direktes Erleben und Interagieren in virtuellen Welten lernen. Bei Vorhandensein eines Chips kann der Zugriff auf Wissen oder Internetsuchen durch eine einfache Gedankenabfrage erfolgen, wodurch das Lernen beschleunigt und personalisiert wird.
